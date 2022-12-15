@@ -17,7 +17,7 @@ footer a{
     color: gray;
 }
 footer .sub-container{
-    margin: 0px 30px 0px 30px;
+    margin: 0px 20px 0px 20px;
 }
 footer .sub-container .btn{
     margin: 10px 0px 0px 0px;
@@ -60,6 +60,7 @@ footer .original-return{
 .sub-container .original img{
     height: 50px;
     width: 50px;
+    margin: 0px 20px 0px 0px;
 }
 .sub-container .original .text span{
     color: black;
