@@ -11,9 +11,9 @@ fetch('https://fakestoreapi.com/products').then((data)=>{
 });
 
 
-// ===========================vineet===========================
+// ===========================vineet header js code===========================
 
-// ==============================For Laptop view========================
+// ==============================For Laptop view===========================
 
 const header_men = document.querySelector(".header_men");
 const header_women = document.querySelector(".header_women");
@@ -24,39 +24,33 @@ const women = document.querySelector(".women");
 const kids = document.querySelector(".kids");
 
 function openSubmenuMen(){
-    console.log("vineet");
-    console.log(men)
-    if(men.style.display !=="flex"){
-        men.style.display = "flex"
-    }else{
-        men.style.display = "none";
-    }
-    // men.style.display= "block";
+    // console.log("vineet");
+    men.style.display= "flex";
 
 }
-// function ab(){
-//     men.style.display="none";
-// }
+function closeSubmenuMen(){
+    men.style.display="none";
+}
 function openSubmenuWomen() {
     console.log(women)
-    if(women.style.display !=="flex"){
-        women.style.display = "flex"
-    }else{
-        women.style.display = "none";
-    }
+    men.style.display= "flex";
+}
+function closeSubmenuWomen() {
+    console.log(women)
+    men.style.display= "none";
 }
 function openSubmenuKids(){
-    if(kids.style.display !=="flex"){
-        kids.style.display = "flex"
-    }else{
-        kids.style.display = "none";
-    }
+    men.style.display= "flex";
 }
-
+function closeSubmenuKids(){
+    men.style.display= "none";
+}
 header_men.addEventListener('mouseover', openSubmenuMen);
-header_men.addEventListener('mouseout', ab);
-header_women.addEventListener('click', openSubmenuWomen);
-header_kids.addEventListener('click', openSubmenuKids);
+header_men.addEventListener('mouseout', closeSubmenuMen);
+header_women.addEventListener('mouseover', openSubmenuWomen);
+header_women.addEventListener('mouseout', closeSubmenuWomen);
+header_kids.addEventListener('mouseover', openSubmenuKids);
+header_kids.addEventListener('mouseout', closeSubmenuKids);
 
 
 // ===========================For Tab and Mobile view=================
