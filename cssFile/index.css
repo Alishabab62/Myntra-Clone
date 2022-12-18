@@ -32,7 +32,10 @@
     grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto;
 }
 
-
+/* ===============================vineet Header css code start================= */
+body{
+    background-color: rgb(225, 224, 224);
+}
 .header{
     background-color: white;
     /* height: 2em; */
@@ -117,7 +120,44 @@
 .kids{
     display: none;
 }
-
+.home{
+    display: none;
+}
+.beauty{
+    display: none;
+}
+.studio{
+    display: none;
+}
+.profile{
+    display: none;
+}
+.header_profile_submenu_div{
+    border:1px solid lightgray;
+    background-color: white;
+    color: rgb(99, 98, 98);
+    cursor: pointer;
+    position: absolute;
+    margin-top: 2.7%;
+    margin-left: -6%;
+    padding: 1%;
+    font-size: medium;
+}
+.header_profile_submenu_div p{
+    padding: 2%;
+}
+.header_profile_submenu_div p b{
+    color: black;
+}
+.login_div{
+    border: 1px solid rgb(167, 164, 164);
+    color: #ff3f6c;
+    width: 62%;
+    padding: 3%;
+    padding-left: 4%;
+    margin-left: 6%;
+    margin: 4%;
+}
 /* .header_menu:hover{
     border-radius: 10px;
     padding: 3px;
@@ -158,7 +198,7 @@
     background-color: rgb(165, 165, 165);
     display: none;
 }
-
+/* =========================vineet's header code end======================= */
 
 .text-banner-container{
     width: 100%;
