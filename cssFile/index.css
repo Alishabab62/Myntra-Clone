@@ -230,40 +230,66 @@ h4 {
     display: flex;
 }
 
+
+
+
+
+/* Footer */
+
+
+
+
 footer{
     background-color: #fafbfc;
     font-family: Arial, Helvetica, sans-serif;
 }
 footer .container{
-    display: flex;
+    /* display: flex; */
     width: 72%;
-    padding: 50px 0px 0px 0px;
-    margin: auto;
+    /* padding: 50px 0px 0px 0px; */
+    margin-left: 10%;
+}
+.container-1{
+    display: flex;
+    width: 100%;
+    margin-left: -64px;
+    margin-bottom: 20px;
+}
+footer .shop-container{
+    display: none;
+    margin-left: 0px;
+}
+.shop-container .shop-container-tab{
+    display: flex;
+    margin: 56px 0px 0px -64px;
 }
 footer a{
     text-decoration: none;
     color: gray;
 }
-footer .sub-container{
-    margin: 0px 20px 0px 20px;
+footer .container-1 .sub-container{
+    margin: 0px 15px 0px 12px;
 }
 footer .sub-container .btn{
     margin: 10px 0px 0px 0px;
-    font-size: 0.7em;
+    font-size: 0.8em;
 }
-.container .sub-container .online-shopping-tab,.useful-link-tab,.customer-policies-tab,.myntra-app-tab,.logos{
+.container .container-1 .sub-container .online-shopping-tab,.useful-link-tab,.customer-policies-tab,.myntra-app-tab,.logos,.shop-container{
     margin-top: 20px;
 }
-footer .sub-container .heading{
+footer .container-1 .sub-container .heading{
     margin:30px 0px 30px 0px;
     font-size: 0.8em;
     font-weight: bold;
-}
-.sub-container .myntra-app .myntra-app-tab{
+} 
+.container-1 .sub-container .myntra-app .myntra-app-tab{
     display: flex;
     width: 150px;
     height: 50px;
     object-fit: cover;
+}
+footer .sub-container .keep-in-touch-res{
+    display: none;
 }
 .sub-container .myntra-app .myntra-app-tab img{
     height: 100%;
@@ -282,7 +308,7 @@ footer .sub-container .heading{
 .sub-container .original{
     display: flex;
 }
-footer .original-return{
+footer .container-1 .original-return{
     margin: 30px 0px 0px 150px;
 }
 .sub-container .original img{
@@ -293,4 +319,40 @@ footer .original-return{
 .sub-container .original .text span{
     color: black;
     font-weight:bold ;
+}
+.container-2{
+    width: 100%;
+    margin-top: 25px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+.container-2 .heading{
+    margin: 20px 0px 20px 0px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+.container-2 .item-container{
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-2 .item-container a{
+    font-size: 0.8em;
+}
+.container-2 .item-container .item{
+    margin: 0px 10px 0px 0px;
+}
+.container-2 .contact-div{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.container-2 .contact-div .contact a{
+    color: blue;
+}
+.container-2 .contact-div .all-right{
+    color: gray
 }

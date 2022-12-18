@@ -38,11 +38,60 @@
     .header_text{
         margin-top: -4%;
     }
+    footer .container{
+        width: 95%;
+        margin: auto;
+    }
+   footer .original-return,.mobile-app {
+        display: none;
+    }
+    footer .container-1{
+        flex-direction: column;
+    }
+    footer .sub-container .keep-in-touch-res{
+        display: block;
+    }
+    footer .online-shopping-tab{
+        display: flex;
+    }
+    footer .shop-container{
+        display: flex;
+    }
+    footer .shop-container .item{
+        margin: 0px 10px 0px 0px;
+    }
+    footer .container .sub-container .online-shopping-tab,.useful-link-tab,.customer-policies-tab,.myntra-app-tab,.logos,.shop-container{
+       display: flex;
+       margin-left: 65px;
+    }
+    footer .sub-container .btn{
+        margin: 0px 10px 0px 0px;
+    }
+    footer .container-1 .sub-container .heading{
+        margin: 30px 0px 30px 65px;
+    }
+   footer .container-2 .item-container{
+        width: 100%;
+        margin: 0px 0px 0px 10px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    footer .container-2 .heading{
+        margin: 20px 0px 20px 10px;
+    }
 }
+
+
 @media only screen and (max-width:820px){
     .header_text{
         margin-top: -5.5%;
         margin-left: 10%;
+    }
+    footer .container .sub-container .online-shopping-tab,.useful-link-tab,.customer-policies-tab,.myntra-app-tab,.logos,.shop-container{
+       flex-wrap: wrap;
+     }
+     footer .sub-container .btn{
+        margin: 5px 10px 5px 0px;
     }
 }
 
