@@ -1,0 +1,31 @@
+html,body{
+    margin:0%;
+    padding:0%;
+}
+.banner1{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    
+}
+.product1{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+    /* grid-template-rows:  auto auto; */
+}
+.product1 img{
+    height: 100%;
+    width: 100%;
+}
+.product2-1{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+}
+.products2 img{
+    height: 100%;
+    width: 100%;
+}
+.product2-2{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto;
+}
+
