@@ -31,6 +31,18 @@
     }
    
 }
+@media only screen and (max-width:550px){
+    .header_text{
+        margin-top: -6%;
+        margin-left: 10%;
+    }
+    .header_icon_div i{
+        margin-top: -6%;
+    }
+}
+
+/* ========================Vineet Responsive code end ============== */
+
 
 
 
@@ -115,18 +127,6 @@
         margin-left: 10px;
     }
 }
-@media only screen and (max-width:550px){
-    .header_text{
-        margin-top: -6%;
-        margin-left: 10%;
-    }
-    .header_icon_div i{
-        margin-top: -6%;
-    }
-}
-
-/* ========================Vineet Responsive code end ============== */
-
 
 
 

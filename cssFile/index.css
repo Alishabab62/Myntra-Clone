@@ -42,6 +42,8 @@ body{
     padding: 2.5%;
     display: flex;
     justify-content: space-evenly;
+    position: sticky;
+    top: 0;
 }
 .header_menu{
     font-size: 1em;
@@ -188,7 +190,7 @@ body{
     position: fixed;
     margin-top: 3%;
     left: 0;
-    width: 25%;
+    width: 50%;
     background-color: rgb(165, 165, 165);
     display: none;
 }
