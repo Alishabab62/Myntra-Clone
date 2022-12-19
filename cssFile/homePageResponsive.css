@@ -95,6 +95,26 @@
     }
 }
 
+@media only  screen and (max-width:600px) {
+    footer .container-3{
+        flex-direction: column;
+        margin-left: 8px;
+    }
+    footer .container-3 .cont-2{
+        margin-top: -96px;
+    }
+    footer .container-2 .contact-div{
+        flex-direction: column;
+        padding-bottom: 0px;
+        margin-left: 8px;
+    }
+    footer .container-3 .cont-1 .heading{
+        margin-left: 0px;
+    }
+    footer .container-4 .text{
+        margin-left: 10px;
+    }
+}
 @media only screen and (max-width:550px){
     .header_text{
         margin-top: -6%;
