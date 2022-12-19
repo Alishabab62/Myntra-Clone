@@ -30,6 +30,7 @@ const home = document.querySelector(".home");
 const beauty = document.querySelector(".beauty");
 const studio = document.querySelector(".studio");
 const profile = document.querySelector(".profile");
+const profileMouseOut = document.querySelector(".header_profile_submenu_div");
 
 function openSubmenuMen(){
     // console.log("vineet");
@@ -89,8 +90,7 @@ header_beauty.addEventListener('mouseout', closeSubmenuBeauty);
 header_studio.addEventListener('mouseover', openSubmenuStudio);
 header_studio.addEventListener('mouseout', closeSubmenuStudio);
 header_profile.addEventListener('mouseover', openSubmenuProfile);
-header_profile.addEventListener('mouseout', closeSubmenuProfile);
-
+profileMouseOut.addEventListener('mouseout', closeSubmenuProfile);
 
 // ===========================For Tab and Mobile view=================
 
