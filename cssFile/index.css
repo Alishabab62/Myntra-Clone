@@ -166,6 +166,9 @@ body {
 }
 /* =========================vineet's header code end======================= */
 
+
+
+
 .text-banner-container {
   width: 100%;
   padding: 3%;
@@ -181,21 +184,7 @@ h4 {
   padding: 1%;
 }
 
-.images1 {
-  display: flex;
-}
-.images1 img {
-  width: 12.5%;
-}
-.images2 {
-  display: flex;
-}
-.images2 img {
-  width: 14.3%;
-}
-.images3rd {
-  display: flex;
-}
+
 
 /* ---------------general css----------- */
 
@@ -258,13 +247,15 @@ h4 {
   }
 }
 
+
+
 /* Footer */
 
 footer {
   background-color: #fafbfc;
   font-family: Arial, Helvetica, sans-serif;
 }
-footer .container {
+footer .footer-container {
   /* display: flex; */
   width: 72%;
   /* padding: 50px 0px 0px 0px; */
