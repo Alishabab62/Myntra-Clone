@@ -199,7 +199,7 @@ h4 {
 
 /* ---------------general css----------- */
 
-/* .container {
+ .container {
   max-width: 1400px;
   display: flex;
   flex-direction: column;
@@ -208,14 +208,7 @@ h4 {
   text-align: center;
 }
 
-.azeeb {
-  max-width: 1400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-} */
+
 
 /* ---------------------css of images----------------- */
 .logoimages {
