@@ -6,6 +6,7 @@ html,body{
 body{
     background-color: rgb(255, 237, 239);
 }
+
 .centre{
     height: 80%;
     width: 30%;
@@ -13,10 +14,12 @@ body{
     margin: auto;
     margin-top: 2%;
 }
+
 .text{
     margin-left: 10%;
     
 }
+
 .text p{
     margin-left: 10%; 
     font-weight: normal;
@@ -102,3 +105,4 @@ a{
         width: 100%;
       }
  }
+
