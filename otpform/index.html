@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="otp.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Myntra</title>
 </head>
 <body>
+    <div class="otp"></div>
     <div class="centre">
         <img src="images/Screenshot 2022-12-19 211024.png" height="25%" width="25%">
         
@@ -17,16 +18,18 @@
         </text>
         
         <div class="flex">
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <input type="text">
+            <input type="text" id="otp1">
+            <input type="text" id="otp2">
+            <input type="text" id="otp3">
+            <input type="text" id="otp4">
         </div>
-        <p class="text2">Resend OTP in 30</p>  <!--by dom timer of 30 seconds--> 
+        <div id="wrong"></div>
+        <p class="text2" id="timer">Resend OTP in 30</p>  <!--by dom timer of 30 seconds--> 
+        <button id="btn">Verify</button>
         <p id="text3">Log in using <span>Password</span></p>
         <p id="text4">Having trouble loggin in?<span> Get help</span></p>
 
         </div>  
 </body>
-<script src="../signinupmyntra/sign.js"></script>
+<script src="../otpform/otp.js"></script>
 </html>
