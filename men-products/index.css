@@ -75,7 +75,7 @@
     color: rgb(133, 132, 132);
     cursor: pointer;
     display: flex;
-    margin-top: 6%;
+    margin-top: 4.5%;
     width: 50%;
     position: absolute;
     left: 12%;
@@ -88,7 +88,7 @@
     margin: 5%;
   }
   .submenu_column p {
-    margin-top: 15%;
+    margin-top: 10%;
   }
   .men {
     display: none;
@@ -117,19 +117,25 @@
       color: rgb(99, 98, 98);
       cursor: pointer;
       position: absolute;
-      margin-top: 2%;
-      margin-left: -6%;
+      margin-top: 1%;
+      margin-left: -7%;
       padding: 1%;
       font-size: medium;
   }
+  .header_profile_submenu_hr{
+    margin-top: 7%;
+  }
   .header_profile_submenu_div p b{
       color: black;
+  }
+  .header_profile_submenu_div p{
+    padding: 1%;
   }
   .login_div{
       border: 1px solid rgb(167, 164, 164);
       color: #ff3f6c;
       display: inline;
-      padding: 8px;
+      padding: 3%;
   }
   .login_div a{
       color: #ff3f6c;
