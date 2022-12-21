@@ -44,7 +44,6 @@ body{
     font-size: 0.8rem;
     color: #afb0b3;
     margin-top: 7%;
-    margin-bottom: 10%;
 }
 #text3{
     margin-left: 12%;
@@ -61,7 +60,20 @@ body{
 #text4 span{
     color: rgb(255, 33, 96);
 }
-
+#btn{
+    background-color: transparent;
+    border: 1px solid rgb(255, 33, 96);
+    padding: 4px 8px 4px 8px;
+    margin-left: 12%;
+    color: rgb(255, 33, 96);
+    font-weight: bold;
+    border-radius: 3px;
+}
+#wrong{
+    color: red;
+    margin-left: 25%;
+    margin-top: 10px;
+}
 
 @media only screen and (max-width:900px){
     .centre{
