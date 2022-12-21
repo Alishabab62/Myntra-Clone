@@ -1,10 +1,3 @@
-
-
-
-// ===========================vineet header js code start===========================
-
-// ==============================For Laptop view===========================
-
 const header_men = document.querySelector(".header_men");
 const header_women = document.querySelector(".header_women");
 const header_kids = document.querySelector(".header_kids");
@@ -100,4 +93,31 @@ function openSideBar(){
 
 burgerIcon.addEventListener('click', openSideBar);
 
-// =================================vineet's js code end======================
+
+
+
+
+
+
+
+
+
+
+
+let addProduct=document.getElementById('add-product');
+let productDiv="";
+fetch('https://fakestoreapi.com/products').then((data)=>{
+    return data.json();
+}).then((data2)=>{
+    for(let item of data2){
+        let product=document.createElement('div');
+        product.classList="product"
+        product.innerHTML=`<img src="${item.image}" alt="">
+        <div class="item-name">${item.title}</div>
+        <div class="description">${item.description}</div>
+        <div class="price">${item.price}</div>`
+        addProduct.appendChild(product)
+        console.log(item)
+    }
+})
+
