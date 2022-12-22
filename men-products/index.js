@@ -110,6 +110,11 @@ fetch("https://fakestoreapi.com/products")
         item.price * 2
       }</span><span id="discount-percentage">(50% OFF)</span></span></div>`;
       addProduct.appendChild(product);
-      console.log(item);
     }
   });
+
+  addProduct = document.getElementById("add-product");
+  console.log(addProduct);
+  addProduct.addEventListener('click',(e)=>{
+    console.log(e.target.parentElement.childNodes[6].innerText)
+  })
