@@ -42,9 +42,12 @@ const wrong=document.getElementById("wrong")
 const btn=document.getElementById('btn');
 
 btn.addEventListener('click', ()=>{
-    if(num1!=otp1.value && num2!=otp2.value &&  num3!=otp3.value && num4!=otp4.value){
+    console.log(otp1.value,otp2.value,otp4.value);
+    if(num1!=otp1.value || num2!=otp2.value ||  num3!=otp3.value || num4!=otp4.value){
         wrong.innerText="Wrong OTP";
-        console.log(wrong.innerText)
+        setTimeout(()=>{
+            wrong.innerText="";
+        },1000)
     }
     else{
         console.log("right");

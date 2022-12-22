@@ -94,6 +94,7 @@ burgerIcon.addEventListener("click", openSideBar);
 
 let addProduct = document.getElementById("add-product");
 let productDiv = "";
+
 fetch("https://fakestoreapi.com/products")
   .then((data) => {
     return data.json();
