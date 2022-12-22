@@ -115,7 +115,7 @@ fetch('https://fakestoreapi.com/products').then((data)=>{
         product.innerHTML=`<img src="${item.image}" alt="">
         <div class="item-name">${item.title}</div>
         <div class="description">${item.description}</div>
-        <div class="price">${item.price}</div>`
+        <div class="price">Rs.${item.price}</div>`
         addProduct.appendChild(product)
         console.log(item)
     }
