@@ -6,7 +6,7 @@ window.addEventListener('load',()=>{
     let itemName=localStorage.getItem('itemName');
     let itemDescription=localStorage.getItem("itemDescription");
     let itemPrice=localStorage.getItem("itemPrice");
-    mainBag.innerHTML=` <div class="product">
+    mainBag.innerHTML+=` <div class="product">
     <div class="image"><img src="${itemImage}" alt=""></div>
     <div class="description">
         <div class="item-name">${itemName}</div>
