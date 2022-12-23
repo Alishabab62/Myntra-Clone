@@ -59,6 +59,7 @@ body {
 }
 .header_icon_div i {
   margin-left: 25%;
+  color: black;
 }
 .logo {
   cursor: pointer;
