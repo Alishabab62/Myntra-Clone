@@ -106,7 +106,7 @@ fetch("https://fakestoreapi.com/products")
       product.innerHTML = `<img src="${item.image}" alt="">
         <div class="item-name">${item.title}</div>
         <div class="description">${item.description}</div>
-        <div class="price">Rs.${item.price}<span id="discount-price">${
+        <div class="price">Rs.<span>${item.price}</span><span id="discount-price">${
         item.price * 2
       }</span><span id="discount-percentage">(50% OFF)</span></span></div>`;
       addProduct.appendChild(product);
@@ -116,5 +116,16 @@ fetch("https://fakestoreapi.com/products")
   addProduct = document.getElementById("add-product");
   console.log(addProduct);
   addProduct.addEventListener('click',(e)=>{
-    console.log(e.target.parentElement.childNodes[6].innerText)
-  })
+    let item=e.target.parentElement.children[0].src;
+    let itemName=e.target.parentElement.children[1].innerText;
+    let description=e.target.parentElement.children[2].innerText;
+    let price=e.target.parentElement.children[3].firstElementChild.innerText;
+    localStorage.setItem("itemLink",item);
+    localStorage.setItem("itemName",itemName);
+    localStorage.setItem("itemDescription",description);
+    localStorage.setItem("itemPrice",price);
+    
+  });
+ 
+  let a= localStorage.getItem("Key");
+  console.log(a)
