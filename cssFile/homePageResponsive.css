@@ -104,13 +104,6 @@
     .burger_div{
         height: 150%;
     }
-    /* .header_text{
-        margin-top: -5.5%;
-        margin-left: 10%;
-    }
-    .header_icon_div i{
-        margin-top: -4.5%;
-    } */
     footer .container .sub-container .online-shopping-tab,.useful-link-tab,.customer-policies-tab,.myntra-app-tab,.logos,.shop-container{
        flex-wrap: wrap;
      }
