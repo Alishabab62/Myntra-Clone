@@ -1,0 +1,93 @@
+/* ---------------general css----------- */
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+/* ---------------------css of images----------------- */
+.images1 img, .images3 img, .images4 img {
+    width: 160px;
+}
+
+.images2 img {
+    width: 180px;
+}
+
+.images5 img {
+    width: 320px;
+} 
+
+h4 {
+    text-transform: uppercase;
+    color: #3e4152;
+    letter-spacing: .15em;
+    font-size: 1.8em;
+    margin: 5px 0 10px 30px;
+    max-height: 5em;
+    font-weight: 500;
+}
+
+ .banner1{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    
+} 
+.product1{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto; 
+ grid-template-rows:  auto auto; 
+} 
+.product1 img{
+    height: 100%;
+    width: 100%;
+}
+.product2-1{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+}
+.products2 img{
+    height: 100%;
+    width: 100%;
+}
+.product2-2{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto;
+}
+.text-banner-container{
+    width: 100%;
+    padding: 3%;
+}
+
+
+
+
+
+
+
+/* @media only screen and (max-width:480px){
+    h4 {
+        font-size: 1em;  
+    }
+    .images1 {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        
+
+    }
+    .images3rd {
+        width:100%;
+    }
+
+} */
