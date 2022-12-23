@@ -41,7 +41,7 @@ body {
 .header_input_div{
     /* border: 1px solid; */
     background-color:  rgb(244, 242, 242);
-    width: 22%;
+    width: 23%;
     margin-left: 5%;
     margin-right: 2%;
     padding: 0.5%;
@@ -59,7 +59,7 @@ body {
 }
 .header_icon_div i {
   margin-left: 25%;
-  color: black;
+  color: rgb(0, 0, 0);
 }
 .logo {
   cursor: pointer;
@@ -146,8 +146,7 @@ p{
 }
 .burger_div p{
   width: 50%;
-  margin-top: -9%;
-  /* padding: 0%; */
+  /* font-weight: bold; */
 }
 .menu li {
   list-style: none;
@@ -168,7 +167,7 @@ p{
 .sidebarMenu {
   height: 100%;
   position: fixed;
-  margin-top: 3%;
+  margin-top: 1%;
   left: 0;
   width: 50%;
   background-color: rgb(165, 165, 165);

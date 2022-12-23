@@ -1,37 +1,24 @@
 
 /* ==============================Vineet's Responsive Code start===================== */
 
-@media only screen and (max-width:1300px) {
+@media only screen and (max-width:1200px) {
     .header_menu, .logo, .header_input_div, .header_icon_text, .new_pink{
         display: none;
     }
-    .header{
-        display: block;
+    .burger_div{
+        display: flex;
+        justify-content: space-between;
     }
-    .header_text{
-        margin-left: 5%;
-        margin-top: -2.5%;
-        font-size: 1.5em;
-    }
-    .header i{
-        font-size: 4vh;
-    }
-    .header_icon_div i{
-        float: right;
-        margin-left: 3%;
-        margin-top: -2.2%;
-    }
-    
 }
 
 
-@media only screen and (min-width:1299px) {
+@media only screen and (min-width:1200px) {
     .burger_div{
         display: none;
     }
    
 }
-@media only screen and (max-width:550px){
+/* @media only screen and (max-width:550px){
     .header_text{
         margin-top: -6%;
         margin-left: 10%;
@@ -40,12 +27,12 @@
         margin-top: -6%;
     }
 
-}
-@media only screen and (max-width:421px){
+} */
+/* @media only screen and (max-width:421px){
     #phone_view_icon{
         margin-top: -8%;
     }
-}
+} */
 
 /* ========================Vineet Responsive code end ============== */
 
@@ -53,12 +40,9 @@
 
 
 @media only screen and (max-width:1000px){
-    .header_text{
-        margin-top: -4%;
-    }
     footer .container{
         width: 95%;
-        margin: auto;
+        /* margin: auto; */
     }
    footer .original-return,.mobile-app {
         display: none;
@@ -101,9 +85,6 @@
 
 
 @media only screen and (max-width:821px){
-    .burger_div{
-        height: 150%;
-    }
     footer .container .sub-container .online-shopping-tab,.useful-link-tab,.customer-policies-tab,.myntra-app-tab,.logos,.shop-container{
        flex-wrap: wrap;
      }
