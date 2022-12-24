@@ -123,12 +123,42 @@ fetch("https://fakestoreapi.com/products")
   });
 
   addProduct = document.getElementById("add-product");
+  addProduct.addEventListener("click", (e) => {
   let productArray = [];
-addProduct.addEventListener("click", (e) => {
   let item = e.target.parentElement.children[0].src;
   let itemName = e.target.parentElement.children[1].innerText;
   let description = e.target.parentElement.children[2].innerText;
   let price = e.target.parentElement.children[3].firstElementChild.innerText;
+
+
+
+  // if (productArray.length == 0) {
+  //   productArray.push({
+  //     itemLink: item,
+  //     itemName: itemName,
+  //     description: description,
+  //     price: price,
+  //   });
+  // } else {
+  //   let flag = true;
+  //   let a = localStorage.getItem("productArray");
+  //   let productArray = JSON.parse(a);
+  //   for (let i = 0; i < productArray.length; i++) {
+  //     if (productArray[i].itemLink == item) {
+  //       flag = false;
+  //     }
+  //   }
+  //   if (flag) {
+  //     productArray.push({
+  //       itemLink: item,
+  //       itemName: itemName,
+  //       description: description,
+  //       price: price,
+  //     });
+  //   }
+  // }
+
+
 
   if (productArray.length == 0) {
     productArray.push({
@@ -140,16 +170,22 @@ addProduct.addEventListener("click", (e) => {
     console.log(productArray[0].itemLink);
   }
 
+  let flag=true;
+  const a = localStorage.getItem("productArray");
+   productArray = JSON.parse(a);
   for (let i = 0; i < productArray.length; i++) {
-    if (productArray[i].itemLink != item) {
-      productArray.push({
-        itemLink: item,
-        itemName: itemName,
-        description: description,
-        price: price,
-      });
+    if (productArray[i].itemLink == item){
+     flag=false;
     }
   }
+  if(flag){
+  productArray.push({
+    itemLink: item,
+    itemName: itemName,
+    description: description,
+    price: price,
+  });
+}
   localStorage.setItem("productArray", JSON.stringify(productArray));
 });
 const storedBlogs = localStorage.getItem("productArray");
