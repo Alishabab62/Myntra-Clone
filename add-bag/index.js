@@ -37,7 +37,7 @@ window.addEventListener('load',()=>{
                     <option value="M">4</option>
                 </select>
             </div>
-           <div class="remove-box"><div class="price">Rs.${product.price}</div><button id="remove-btn">Remove</button></div>
+           <div class="remove-box"><div class="price">Rs.${product.price}</div><button class="remove-btn">Remove</button></div>
         </div>
     </div>`
     })
@@ -52,11 +52,15 @@ window.addEventListener('load',()=>{
     totalItem.innerText=productObj.length;      //totalItem
     localStorage.setItem("totalMrp",price);
     localStorage.setItem("totalProduct",productObj.length);   
+});
+
+// function to remove item
+
+mainBag.addEventListener('click',(e)=>{
+        if(e.target.classList.contains('remove-btn')){
+            console.log(e);
+            e.target.parentNode.parentNode.parentNode.remove();
+        }
 })
-// const removeBtn=document.querySelector('.size')
-// console.log(removeBtn);
-// removeBtn.addEventListener("click",(e)=>{
-//     console.log(e);
-// })
 
 
