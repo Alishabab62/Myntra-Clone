@@ -9,35 +9,54 @@ logo.addEventListener('click',(()=>{
 // ================================================
 
 const mainBag=document.querySelector('.product-bag');
-
-let product="";
+const totalAmount=document.querySelector('#total-amount');
+const totalAmountDiscount=document.querySelector('#total-amount-discount');
+const totalItem=document.querySelector('#total-item');
 window.addEventListener('load',()=>{
-    let itemImage=localStorage.getItem("itemLink");
-    let itemName=localStorage.getItem('itemName');
-    let itemDescription=localStorage.getItem("itemDescription");
-    let itemPrice=localStorage.getItem("itemPrice");
-    mainBag.innerHTML+=` <div class="product">
-    <div class="image"><img src="${itemImage}" alt=""></div>
-    <div class="description">
-        <div class="item-name">${itemName}</div>
-        <div class="item-description">${itemDescription}</div>
-        <div class="size">Size:
-            <select name="size" id="size">
-                <option value="M">S</option>
-                <option value="M">M</option>
-                <option value="M">L</option>
-                <option value="M">XL</option>
-            </select>
-    </div>
-        <div class="quantity">Qty:
-            <select name="quantity" id="quantity">
-                <option value="M">1</option>
-                <option value="M">2</option>
-                <option value="M">3</option>
-                <option value="M">4</option>
-            </select>
+    let a=localStorage.getItem("productArray");
+    let productObj=(JSON.parse(a));
+    productObj.forEach((product)=>{
+        mainBag.innerHTML+=` <div class="product">
+        <div class="image"><img src="${product.itemLink}" alt=""></div>
+        <div class="description">
+            <div class="item-name">${product.itemName}</div>
+            <div class="item-description">${product.description}</div>
+            <div class="size">Size:
+                <select name="size" id="quantity">
+                    <option value="M">S</option>
+                    <option value="M">M</option>
+                    <option value="M">L</option>
+                    <option value="M">XL</option>
+                </select>
         </div>
-        <div class="price">${itemPrice}</div>
-    </div>
-</div>`
+            <div class="quantity">Qty:
+                <select name="quantity" id="quantity">
+                    <option value="M">1</option>
+                    <option value="M">2</option>
+                    <option value="M">3</option>
+                    <option value="M">4</option>
+                </select>
+            </div>
+           <div class="remove-box"><div class="price">Rs.${product.price}</div><button id="remove-btn">Remove</button></div>
+        </div>
+    </div>`
+    })
+    let price=0;
+    productObj.forEach((product)=>{
+        let p=Number(product.price);
+        price += p;
+    });
+    // console.log(price);
+    totalAmount.innerText=price;               //totalAmount
+    totalAmountDiscount.innerText=price;      //totalAmountDiscount
+    totalItem.innerText=productObj.length;      //totalItem
+    localStorage.setItem("totalMrp",price);
+    localStorage.setItem("totalProduct",productObj.length);   
 })
+// const removeBtn=document.querySelector('.size')
+// console.log(removeBtn);
+// removeBtn.addEventListener("click",(e)=>{
+//     console.log(e);
+// })
+
+

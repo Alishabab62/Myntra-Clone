@@ -182,7 +182,6 @@
     width: 5%;
 }
 .item_selected{
-    /* border: 1px solid var(--lightgray); */
     padding: 1%;
     margin: 0.6%;
     margin-left: 15%;
@@ -207,6 +206,9 @@ button:hover{
     width: 46%;
     background-color: white;
     margin-left: 15%;
+    border: 1px solid rgb(250, 144, 161);
+    margin-top: 5px;
+    border-radius: 3px;
 }
 .product-bag .product .image{
     width: 30%;
@@ -218,7 +220,6 @@ button:hover{
 }
 .product-bag .product .description{
     width: 70%;
-    /* background-color: aqua; */
     display: flex;
     flex-direction: column;
     margin-left: 20px;
@@ -235,11 +236,26 @@ button:hover{
     width: 100%;
     overflow: hidden;
 }
-.product .product-bag .size{
-    padding: 5px;
-    background-color:lightgray;
-}
-.product-bag.product #quantity{
+.product-bag .product #quantity{
     background-color: lightgray;
-    padding: 5px;
+    padding: 3px 10px;
+    border-radius: 3px;
+    border: 1px solid rgb(250, 144, 161);
+
+}
+.product .remove-box{
+    display: flex;
+    justify-content: space-between;
+}
+.product .remove-box button{
+    background-color: rgb(255, 79, 109);
+    padding: 3px 10px;
+    border-radius: 3px;
+    color: white;
+    border: none;
+    margin-right: 10px;
+}
+.product .remove-box button:hover{
+    background-color: rgb(250, 144, 161);
+    color: white;
 }
