@@ -75,6 +75,13 @@ header_studio.addEventListener("mouseout", closeSubmenuStudio);
 header_profile.addEventListener("mouseover", openSubmenuProfile);
 profileMouseOut.addEventListener("mouseout", closeSubmenuProfile);
 
+const logo = document.querySelector(".logo")
+
+logo.addEventListener('click',(()=>{
+    console.log("vineet")
+    location = '../index.html'
+}))
+
 // ===========================For Tab and Mobile view=================
 
 const burgerIcon = document.querySelector("#burgerIcon");

@@ -7,7 +7,7 @@ btn.addEventListener('click',()=>{
 })
 
 const timer=document.querySelector('.text2');
-console.log(timer.innerText)
+// console.log(timer.innerText)
 let time=30;
 function time1(){
     timer.innerText=`Resend OTP in ${time--}`;
@@ -15,3 +15,12 @@ function time1(){
 }
 //timer
 setTimeout(time1,1000)
+
+// =======================================================
+
+const logo = document.querySelector(".logo")
+
+logo.addEventListener('click',(()=>{
+    console.log("vineet")
+    location = '../index.html'
+}))

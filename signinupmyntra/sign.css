@@ -33,7 +33,7 @@ body{
 .text span{
     color: #535766;
 }
-input{
+#number{
    margin-left: 10%;  
    width: 80%;
    height: 2rem;

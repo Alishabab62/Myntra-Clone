@@ -12,6 +12,7 @@ const header_home = document.querySelector(".header_home");
 const header_beauty = document.querySelector(".header_beauty");
 const header_studio = document.querySelector(".header_studio");
 const header_profile = document.querySelector(".header_icon_div");
+const logo = document.querySelector(".logo")
 
 const men = document.querySelector(".men");
 const women = document.querySelector(".women");
@@ -81,6 +82,9 @@ header_studio.addEventListener('mouseover', openSubmenuStudio);
 header_studio.addEventListener('mouseout', closeSubmenuStudio);
 header_profile.addEventListener('mouseover', openSubmenuProfile);
 profileMouseOut.addEventListener('mouseout', closeSubmenuProfile);
+logo.addEventListener('click',(()=>{
+    location = 'index.html'
+}))
 
 // ===========================For Tab and Mobile view=================
 
