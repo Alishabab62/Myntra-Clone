@@ -117,6 +117,9 @@
   padding: 1%;
   font-size: medium;
 }
+.header_profile_submenu_hr{
+  margin-top: 7%;
+}
 .header_profile_submenu_div p b {
   color: black;
 }
@@ -265,8 +268,8 @@ p {
   background-color: lightgray;
   text-align: center;
 }
-.brands_text_div {
-  width: 90%;
+.brands_text_div img{
+  width: 95%;
   margin-left: 5%;
 }
 .brands_img_div {
@@ -277,6 +280,23 @@ p {
   width: 19%;
   cursor: pointer;
 }
+
+@media only screen and (max-width:1300px) {
+  .right_sidebar_text{
+    display: none;
+  }
+}
+@media only screen and (max-width:600px) {
+  .text_below_big_img{
+    display: none;
+  }
+}
+
+
+
+
+
+
 
 /* Footer */
 

@@ -121,6 +121,9 @@ body {
       padding: 1%;
       font-size: medium;
   }
+  .header_profile_submenu_hr{
+    margin-top: 7%;
+  }
   .header_profile_submenu_div p b{
       color: black;
   }
