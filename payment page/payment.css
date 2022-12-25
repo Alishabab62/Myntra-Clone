@@ -205,25 +205,21 @@
 .support{
     font-size: x-small;
 }
+.display-in-phone{
+    display: none;
+}
 
 
 
 
 
 
-@media only screen and (max-width:1328px){
+@media only screen and (max-width:1328px) and (min-width:588px){
+    
     .footerr{
      display: none;
     }
-    .right{
-        display: none;
-    }
-    /* .all-container-box{
-        width: 70%;
-
-        /* margin-left: 5%; */
-   
-    
+ 
     .details input{
         padding: 2.3%;
     }
@@ -233,11 +229,110 @@
     #lasttext{
         width: 80%;
        }
-    
-    
+    .half-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .button-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .right{
+        margin-top: 3%;
+        margin-left: 25%;
+    }
+
+    .midbox h3{
+    margin-top: 2%;
+    }
+    .buttons{
+        width: 70%;
+    }
+    .buttons button{
+        font-size: 20px
+    }
+    #textchange {
+        font-size: 20px;
+        width: 79%;
+    }
+    .buttons img{
+        margin-right: 2%;
+    }
+    #button4 img{
+        margin-left: -0%;
+    }
+    #button5 img{
+        margin-left: -0%;
+    }
+    #button6 img{
+        margin-left: -0%;
+    }
+    .midbox {
+        margin-left: 15%;
+    }
+    #lasttext{
+        margin-bottom: 3%;
+    }
+    .blank h4{
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+    #verifyandpay {
+        margin-left: 1.5%;
+    }
+
+
 }
+
+
+
+/* //svg viewbox */
 /* //for phone */
 @media only screen and (max-width:588px){
+    .logo {
+        margin-top: -15px;
+        width: 14%;
+    }
+    .header_center{
+        display: none;
+    }
+    
+    .blank h4{
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+    
+        .midbox {
+        margin-left: 15%;
+        display: none;
+    }
+    .display-in-phone{
+        display: flex;
+        justify-content: space-around;
+        border: 1px solid rgb(212, 212, 212);
+        font-size: 20px ;
+        padding: 10px;
+        box-shadow: 4px 3px 30px 1px #969696;
+               
+    }
+    .display-in-phone-left{
+        margin-left: 5%;
+    }
+    .display-in-phone-right{
+        margin: auto;
+       width: 40%;
+    }
+    .display-in-phone-right button{
+        color: white;
+        background-color: rgb(255, 33, 96);
+        /* border: none; */
+        width: 120%;
+        padding-top: 7%;
+        padding-bottom: 7%;
+        border-radius: 10px;
+        
+        
+    }
     .headbox{
         width: 85%;
     }
@@ -245,8 +340,10 @@
        display: none;
       }
       .right{
-        display: none;
-    } 
+        margin-top: 3%;
+        margin-left: 25%;
+    }
+      
     /* .all-container-box{
         width: 80%;
         margin-left: 1.5%;
@@ -260,5 +357,34 @@
        #lasttext{
         width: 80%;
        }
+       .half-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .button-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .midbox h3{
+        margin-top: 2%;
+        }
+        .buttons{
+            width: 70%;
+        }
+        .buttons img{
+            margin-right: 2%;
+        }
+        #button4 img{
+            margin-left: -0%;
+        }
+        #button5 img{
+            margin-left: -0%;
+        }
+        #button6 img{
+            margin-left: -0%;
+        }
+        #lasttext{
+            margin-bottom: 3%;
+        }
  }
  
