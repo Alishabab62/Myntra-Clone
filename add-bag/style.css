@@ -259,3 +259,48 @@ button:hover{
     background-color: rgb(250, 144, 161);
     color: white;
 }
+.header2{
+    border: 1px solid var(--lightgray);
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+}
+.left_div{
+    display: flex;
+    padding: 2%;
+}
+.right_div{
+    padding: 2%;
+}
+
+
+
+@media only screen and (max-width:1100px) {
+    .header{
+        display: none;
+    }
+    .right_sidebar{
+        display: none;
+    }
+    .check_delivery, .available_offer, .no_convenience_fee, .item_selected{
+        width: 97%;
+        margin-left: 0;
+        padding: 2%;
+    }
+    .product-bag{
+        width: 97%;
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width:520px) {
+    .item_selected p{
+        display: none;
+    }
+}
+
+@media only screen and (min-width:1099px) {
+    .header2{
+        display: none;
+    }
+}
