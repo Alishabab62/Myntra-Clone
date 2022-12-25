@@ -16,7 +16,7 @@ function time1(){
 //timer
 setTimeout(time1,1000)
 
-// =======================================================
+// =============================Go to Home Page==========================
 
 const logo = document.querySelector(".logo")
 

@@ -161,9 +161,3 @@ addProduct.addEventListener("click", (e) => {
   }
 });
 
-addProduct.addEventListener('mouseover',(e)=>{
- 
- })
- addProduct.addEventListener('mouseout',(e)=>{
-  
-   })

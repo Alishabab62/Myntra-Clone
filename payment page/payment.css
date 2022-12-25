@@ -181,7 +181,7 @@
     font-weight: bold;
 }
 .header_right img{
-    height: 60%;
+    width: 20%;
 }
 .header_right p{
     margin: 1%;
@@ -206,7 +206,11 @@
     font-size: x-small;
 }
 
-
+@media only screen and (max-width:1000px) {
+    .header_center{
+        display: none;
+    }
+}
 
 
 
