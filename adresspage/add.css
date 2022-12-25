@@ -2,12 +2,22 @@
     width: 80%;
     font-size: 30px;
     border: 1px solid rgb(177, 176, 176);
+    display: none;
 }
+.address{
+    display: flex;
+    margin-left:60px ;
+}
+
 .user-address-container input {
     margin-left: 5%;
 }
+
 .user-address-container p{
     padding-left: 7%;
+}
+.address p{
+    padding-left: 0%;
 }
 .user-address-container button{
     font-weight: bolder;
@@ -21,7 +31,7 @@
     font-weight: bolder;
 }
 .details{
-    display: none;   
+    /* display: none;       */
     margin: auto;
     height: 70%;
     width: 35%;

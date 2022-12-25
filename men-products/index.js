@@ -88,8 +88,6 @@ const burgerIcon = document.querySelector("#burgerIcon");
 const sidebar = document.querySelector(".sidebarMenu");
 
 function openSideBar() {
-  // console.log("vineet");
-  // sidebar.style.display="block"
   if (sidebar.style.display !== "block") {
     sidebar.style.display = "block";
   } else {
@@ -102,7 +100,7 @@ burgerIcon.addEventListener("click", openSideBar);
 let addProduct = document.getElementById("add-product");
 let productDiv = "";
 
-fetch("https://fakestoreapi.com/products")
+ fetch("https://fakestoreapi.com/products")
   .then((data) => {
     return data.json();
   })
@@ -121,6 +119,8 @@ fetch("https://fakestoreapi.com/products")
       }</span><span id="discount-percentage">(50% OFF)</span></span></div>`;
       addProduct.appendChild(product);
     }
+  }).catch((error)=>{
+    console.log("Error:",error)
   });
 
 addProduct = document.getElementById("add-product");
@@ -160,3 +160,15 @@ console.log(price)
   }
 });
 
+//wishlist button event
+addProduct.addEventListener("mouseover",(e)=>{
+  if(e.target.classList.contains("product")){
+    console.log(e.target.parentElement.childElement)
+    e.target.childNodes[6].style.display="block";
+  }
+})
+addProduct.addEventListener("mouseout",(e)=>{
+  if(e.target.parentElement.children){
+    e.target.childNodes[6].style.display="none";
+  }
+})
