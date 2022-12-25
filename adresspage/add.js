@@ -5,7 +5,6 @@ logo.addEventListener('click',(()=>{
     location = '../index.html'
 }));
 
-
 const totalMrp=document.querySelector("#side");
 const totalAmount=document.querySelector('.side-total');
 const discount=document.querySelector("#colorc");
@@ -17,3 +16,35 @@ totalMrp.innerText=totalBill;
 totalAmount.innerText=totalBill-discountPrice;
 let total=localStorage.getItem("totalProduct");
 totalProduct.innerText=total;
+//addresscode
+const totalDetails = document.querySelector(".details");
+const button = document.querySelector("#b3")
+
+
+button.addEventListener( "click", ((e)=>{
+    console.log(e.target.parentNode.parentNode.childNodes);
+    const addressDetails = e.target.parentNode.parentNode.childNodes
+    let name=addressDetails[3].value;
+    let mobileNo=addressDetails[5].value;
+    let pincode = addressDetails[9].value;
+    let address = addressDetails[11].value;
+    let locality = addressDetails[13].value;
+    let city = addressDetails[15].value;
+    let state = addressDetails[17].value;
+    console.log(name,mobileNo,pincode,address,locality,city,state);
+    let allDetailsArray = [{
+        "name": name,
+        "mobileNo" : mobileNo,
+        "pincode":pincode,
+        "address":address,
+        "locality":locality,
+        "city":city,
+        "state":state
+    }]
+    localStorage.setItem("addressDetails",JSON.stringify(allDetailsArray))
+    totalDetails.style.display="none";
+
+
+
+}));
+// 359,11,13,15,17
