@@ -76,7 +76,6 @@ body{
     width: 85%;
     font-size: 15px;
     margin-top: 6%;
-    padding-bottom: 19%;     /*value will change after placing header*/
 }
 .text3 span{
     color: rgb(255, 33, 96) ;
@@ -106,3 +105,22 @@ a{
       }
  }
 
+/* ============================================================ */
+
+.or{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    padding: 3%;
+}
+.create_acc{
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgb(255, 33, 96);
+    margin-left: 9%;
+    width: 83%;
+    height: 2.5rem;
+    margin-bottom: 2%;
+    border: none;
+}
