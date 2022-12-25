@@ -207,7 +207,9 @@ p{
 
 /* =========================vineet's header code end======================= */
 body{
-  background-color: rgb(247, 247, 196);
+  /* background-color: rgb(247, 247, 196); */
+  background-image: linear-gradient(to bottom right,#fcecf3, #f6eade );
+
 }
 .main{
     /* border: 1px solid; */
