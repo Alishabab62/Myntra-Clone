@@ -192,3 +192,14 @@ fetch("https://fakestoreapi.com/products")
 // }
 });
 
+// ===============================Add Bag=======================
+
+// const product = document.querySelector('.item-name');
+
+// product.addEventListener('mouseover', ((e)=>{
+//   console.log('vineet');
+//   e.target.innerHTML=`<div class="add_bag">
+//                                     <i class="fa-regular fa-heart"></i>
+//                                     <p>Add Bag</p>
+//                                   </div>`
+// }))
