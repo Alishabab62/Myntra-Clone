@@ -129,8 +129,8 @@ addProduct.addEventListener("click", (e) => {
   let item = e.target.parentElement.children[0].src;
   let itemName = e.target.parentElement.children[1].innerText;
   let description = e.target.parentElement.children[2].innerText;
-  let price = e.target.parentElement.children[3].firstElementChild.innerText;
-
+  let price = e.target.parentElement.children[4].firstElementChild.innerText;
+console.log(price)
   if (productArray.length == 0) {
     productArray.push({
       itemLink: item,
@@ -147,7 +147,6 @@ addProduct.addEventListener("click", (e) => {
       if (value.itemLink == item) {
         flag = false;
       }
-      console.log(value.itemLink, i);
     });
     if (flag) {
       productArray.push({
