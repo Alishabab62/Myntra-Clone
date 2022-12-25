@@ -75,12 +75,12 @@ header_studio.addEventListener("mouseout", closeSubmenuStudio);
 header_profile.addEventListener("mouseover", openSubmenuProfile);
 profileMouseOut.addEventListener("mouseout", closeSubmenuProfile);
 
-const logo = document.querySelector(".logo")
+const logo = document.querySelector(".logo");
 
-logo.addEventListener('click',(()=>{
-    console.log("vineet")
-    location = '../index.html'
-}))
+logo.addEventListener("click", () => {
+  console.log("vineet");
+  location = "../index.html";
+});
 
 // ===========================For Tab and Mobile view=================
 
@@ -113,7 +113,8 @@ fetch("https://fakestoreapi.com/products")
       product.innerHTML = `<img src="${item.image}" alt="">
         <div class="item-name">${item.title}</div>
         <div class="description">${item.description}</div>
-        <div class="price">Rs.<span>${
+       <div class="add-to-wishlist-btn"><button id="wishlist-btn">WISHLIST</button></div>
+      <div class="price">Rs.<span>${
           item.price
         }</span><span id="discount-price">${
         item.price * 2
@@ -122,84 +123,41 @@ fetch("https://fakestoreapi.com/products")
     }
   });
 
-  addProduct = document.getElementById("add-product");
-  let productArray = [];
-  addProduct.addEventListener("click", (e) => {
+addProduct = document.getElementById("add-product");
+let productArray = [];
+addProduct.addEventListener("click", (e) => {
   let item = e.target.parentElement.children[0].src;
   let itemName = e.target.parentElement.children[1].innerText;
   let description = e.target.parentElement.children[2].innerText;
   let price = e.target.parentElement.children[3].firstElementChild.innerText;
 
-  
   if (productArray.length == 0) {
     productArray.push({
-      "itemLink": item,
-      "itemName": itemName,
-      "description": description,
-      "price": price,
+      itemLink: item,
+      itemName: itemName,
+      description: description,
+      price: price,
     });
     localStorage.setItem("productArray", JSON.stringify(productArray));
   } else {
     let flag = true;
     let a = localStorage.getItem("productArray");
     let productArrayy = JSON.parse(a);
-    productArrayy.forEach((value,i)=>{
-        if (value.itemLink == item) {
+    productArrayy.forEach((value, i) => {
+      if (value.itemLink == item) {
         flag = false;
       }
-      console.log(value.itemLink,i);
-    })
+      console.log(value.itemLink, i);
+    });
     if (flag) {
-      productArray.push(
-        {
-        "itemLink": item,
-        "itemName": itemName,
-        "description": description,
-        "price": price,
-      }
-      );
+      productArray.push({
+        itemLink: item,
+        itemName: itemName,
+        description: description,
+        price: price,
+      });
     }
     localStorage.setItem("productArray", JSON.stringify(productArray));
   }
-
-
-// let flag=true;
-//   if (productArray.length <= 0) {
-//     productArray.push({
-//       itemLink: item,
-//       itemName: itemName,
-//       description: description,
-//       price: price,
-//     });
-//     console.log(productArray[0].itemLink);
-//   }
-// else{
-//   const a = localStorage.getItem("productArray");
-//    productArray = JSON.parse(a);
-//   for (let i = 0; i < productArray.length; i++) {
-//     if (productArray[i].itemLink == item){
-//      flag=false;
-//     }
-//   }
-// }
-//   if(flag){
-//   productArray.push({
-//     itemLink: item,
-//     itemName: itemName,
-//     description: description,
-//     price: price,
-//   });
-// }
 });
 
-// ===============================Add Bag=======================
-
-// const product = document.querySelector('.item-name');
-
-// product.addEventListener('mouseover', ((e)=>{
-//   console.log('vineet');
-//   e.target.innerHTML=`<div class="add_bag">
-//                                     <i class="fa-regular fa-heart"></i>
-//                                     <p>Add Bag</p>
-//                                   </div>`
-// }))
