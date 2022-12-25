@@ -2,8 +2,8 @@
 const logo = document.querySelector(".logo")
 
 logo.addEventListener('click',(()=>{
-    console.log("vineet")
-    location = '../index.html'
+    location = '../index.html';
+   
 }))
 
 // ================================================
@@ -37,7 +37,7 @@ window.addEventListener('load',()=>{
                     <option value="M">4</option>
                 </select>
             </div>
-           <div class="remove-box"><div class="price">Rs.${product.price}</div><button class="remove-btn">Remove</button></div>
+           <div class="remove-box"><div class="price"><span>Rs.</span><span>${product.price}</span></div><button class="remove-btn">Remove</button></div>
         </div>
     </div>`
     })
@@ -46,21 +46,44 @@ window.addEventListener('load',()=>{
         let p=Number(product.price);
         price += p;
     });
-    // console.log(price);
+    let total=productObj.length;
     totalAmount.innerText=price;               //totalAmount
     totalAmountDiscount.innerText=price;      //totalAmountDiscount
-    totalItem.innerText=productObj.length;      //totalItem
+    totalItem.innerText=total;                 //totalItem
     localStorage.setItem("totalMrp",price);
-    localStorage.setItem("totalProduct",productObj.length);   
+    localStorage.setItem("totalProduct",total);   
+    
 });
 
 // function to remove item
 
 mainBag.addEventListener('click',(e)=>{
-        if(e.target.classList.contains('remove-btn')){
-            console.log(e);
-            e.target.parentNode.parentNode.parentNode.remove();
+    if(e.target.classList.contains('remove-btn')){
+        e.target.parentNode.parentNode.parentNode.remove();
+        let total=localStorage.getItem('totalProduct');       //setting new total product after delete
+        total--;
+        totalItem.innerText=total;   
+        localStorage.setItem("totalProduct",total);
+        let price=localStorage.getItem("totalMrp");
+        let deletProductPrice=Number(e.target.parentNode.children[0].children[1].innerText);
+        price=price-deletProductPrice;
+        totalAmount.innerText=price;               //totalAmount
+        totalAmountDiscount.innerText=price;        //totalAmountDiscount
+        localStorage.setItem("totalMrp",price);
+        let src=e.target.parentNode.parentNode.parentNode.children[0].children[0].src;
+        let a=localStorage.getItem("productArray");
+        let productObj=(JSON.parse(a));
+        productObj.forEach((storeProduct,i)=>{
+            if(src==storeProduct.itemLink){
+                console.log(storeProduct);
+                productObj.splice(i,1);
+            }
+    localStorage.setItem("productArray", JSON.stringify(productObj));
+        })
         }
-})
+       
+        
+         
+});
 
 
