@@ -6,8 +6,8 @@ logo.addEventListener('click',(()=>{
 }));
 
 
-const totalMrp=document.querySelector("#side");
-const totalAmount=document.querySelector('.side-total');
+const totalMrp=document.querySelector("#side"); 
+const totalAmount=document.querySelector('.side-total'); 
 const discount=document.querySelector("#colorc");
 let totalBill=localStorage.getItem("totalMrp");
 const totalProduct=document.querySelector("#total");
