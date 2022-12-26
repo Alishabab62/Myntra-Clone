@@ -5,6 +5,8 @@
     /* margin: auto; */
 }
 .kidimage{
+    justify-content: center;
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
     /* margin: auto; */
@@ -15,7 +17,8 @@
 }
 
 .kidbox{
-
+    justify-content: center;
+    align-items: center;
         max-width: 1400px;
         display: flex;
         flex-direction: column;
@@ -25,53 +28,66 @@
         margin: auto;
 }
 .kidimage1{
+    justify-content: center;
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
     /* margin: auto; */
 }
 .kidimage img{
-    width: 150px;
+    width: 140px;
 }
 .kidimage2{
+    justify-content: center;
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
     /* margin: auto; */
 }
 .kidimage2 img{
-    width: 280px;
+    width: 240px;
+
 }
 .kidimage3{
+    justify-content: center;
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
     /* margin: auto; */
 }
 
 .kidimage3 img{
-    width: 280px;
+    width: 200px;
 }
 .kidimage1 img{
-    width: 120px;
+    width: 110px;
 }
 .kidimage4{
+    justify-content: center;
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
 }
 .kidimage4 img{
-    width:700px;
+    width:600px;
 }
 .kidimage5{
+    justify-content: center;
+    align-items: center;
     display: flex;
     flex-wrap: wrap; 
 }
 .kidimage5 img{
-    width: 700px;
+    width: 600px;
 }
 .kidimage6{
+    justify-content: center;
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
 }
 .kidimage6 img{
-    width: 230px;
+    width: 205px;
 }
 
 h4 {
@@ -86,11 +102,13 @@ h4 {
     text-align: center;
 }
 .kidimage7{
+    justify-content: center;
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
 }
 .kidimage7 img{
-    width:280px;
+    width:250px;
 }
 
 .kidimage{
