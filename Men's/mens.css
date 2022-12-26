@@ -1,6 +1,6 @@
 /* ---------------general css----------- */
 * {
-    margin:0;
+    margin:0 ;
     padding: 0;
     box-sizing: border-box;
 }
@@ -184,7 +184,6 @@ body {
 
 
 .container {
-  margin: auto;
     max-width: 1400px;
     display: flex;
     flex-direction: column;
@@ -196,59 +195,56 @@ body {
 
 
 /* ---------------------css of images----------------- */
-.images1 img, .images3 img, .images4 img {
-    width: 160px;
+.logoimages{
+  display: none;
+}
+.logoimages  img{
+  width: 8%;
+  margin: 2%;
+}
+
+.images1 img, .images3 img, .images4 img,.images6 img,.images7 img {
+  width: 160px;
 }
 
 .images2 img {
-    width: 180px;
+  width: 180px;
 }
 
 .images5 img {
-    width: 320px;
+  width: 320px;
 } 
 
 h4 {
-    text-transform: uppercase;
-    color: #3e4152;
-    letter-spacing: .15em;
-    font-size: 1.8em;
-    margin: 5px 0 10px 30px;
-    max-height: 5em;
-    font-weight: 500;
+  text-transform: uppercase;
+  color: #3e4152;
+  letter-spacing: .15em;
+  font-size: 2.5em;
+  margin: 5px 0 10px 30px;
+  max-height: 5em;
+  font-weight: 500;
+  padding: 5%;
+}
+.slider{
+  margin: 5%;
+  display: none;
 }
 
- .banner1{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    
-} 
-.product1{
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto auto auto auto; 
- grid-template-rows:  auto auto; 
-} 
-.product1 img{
-    height: 100%;
-    width: 100%;
-}
-.product2-1{
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
-}
-.products2 img{
-    height: 100%;
-    width: 100%;
-}
-.product2-2{
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto;
-}
-.text-banner-container{
-    width: 100%;
-    padding: 3%;
-}
+@media only screen and (max-width:600px){
+   h4 {
+      font-size: 1em;  
+  }
+  .logoimages{
+      display:inherit;
+  }
 
+  .images5 img{
+      width: 100%;
+  }
+  .slider{
+      display: inherit;
+  }
+}
 
 
 /* footer */
@@ -269,6 +265,19 @@ footer .footer-container {
   margin-left: -64px;
   margin-bottom: 20px;
 }
+.festive-off {
+  display:flex;
+  flex-wrap: wrap;
+ /* grid-template-columns: auto auto auto auto auto;  */
+  /* width:200px;*/
+}
+.festive-off img{
+  width: 400px;
+  margin: auto;
+}
+
+
+
 footer .shop-container {
   display: none;
   margin-left: 0px;
@@ -438,3 +447,158 @@ footer .container-1 .original-return {
   font-weight: bold;
 }
 
+
+@media only screen and (max-width:600px){
+
+  h4 {
+    font-size: 1em;  
+}
+.logoimages{
+    display:inherit;
+}
+
+.images5 img{
+    width: 100%;
+}
+.slider{
+    display: inherit;
+}
+}
+
+/* =======================================tanya new men's page====================================== */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.menimage{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* margin: auto; */
+}
+
+.text-banner-container{
+  width: 100%;
+
+  /* border: 5px solid red; */
+}
+
+.Menbox{
+      margin:auto;
+      max-width: 1400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+}
+.menimage1{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* margin: auto; */
+}
+.menimage img{
+  width: 150px;
+}
+.menimage2{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  /* margin: auto; */
+}
+.menimage2 img{
+  width: 250px;
+}
+.menimage3{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* margin: auto; */
+}
+
+.menimage3 img{
+  width: 200px;
+}
+.menimage1 img{
+  width: 200px;
+}
+.menimage4{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.menimage4 img{
+  width:280px;
+}
+
+h4 {
+  text-transform: uppercase;
+  color: #3e4152;
+  letter-spacing: .15em;
+  font-size: 2.5em;
+  margin: 5px 0 10px 30px;
+  max-height: 5em;
+  font-weight: 500;
+  padding: 5%;
+  text-align: center;
+}
+
+.menimage{
+  perspective: 250px;
+  }
+  
+  .menimage img {
+    transition: 150ms;
+    box-shadow: 0px 0px 0px rgba(0,0,0,0);
+  }
+  
+  .menimage img:hover {
+    transform: translate3d(5px,0px,10px);  
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+    }
+
+
+
+    .menimage4{
+      perspective: 250px;
+      }
+      
+      .menimage4 img {
+        transition: 100ms;
+        box-shadow: 0px 0px 0px rgba(0,0,0,0);
+      }
+      
+      .menimage4 img:hover {
+        transform: translate3d(5px,0px,10px);  
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+        }
+
+        .menimage2{
+          perspective: 250px;
+          }
+          
+          .menimage2 img {
+            transition: 100ms;
+            box-shadow: 0px 0px 0px rgba(0,0,0,0);
+          }
+          
+          .menimage2 img:hover {
+            transform: translate3d(5px,0px,10px);  
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+            }
+
+
+
+@media only screen and (max-width:600px){
+  h4 {
+     font-size: 1em;  
+ }
+}
