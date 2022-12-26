@@ -120,6 +120,9 @@
 .header_profile_submenu_div p b{
     color: black;
 }
+.header_profile_submenu_hr{
+  margin-top: 7%;
+}
 .login_div{
     border: 1px solid rgb(167, 164, 164);
     color: #ff3f6c;
