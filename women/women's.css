@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin: auto;
+}
+.text-banner-container{
+    width: 100%;
+    /* border: 5px solid red; */
+}
+.womenimage{
+    display: flex;
+    flex-wrap: wrap;
+    /* margin: auto; */
+}
+
+.womenbox{
+
+        max-width: 1400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+}
+.womenimage1{
+    display: flex;
+    flex-wrap: wrap;
+    /* margin: auto; */
+}
+.womenimage img{
+    width: 250px;
+}
+.womenimage2{
+    display: flex;
+    flex-wrap: wrap;
+    /* margin: auto; */
+}
+.womenimage2 img{
+    width: 250px;
+}
+.womenimage3{
+    display: flex;
+    flex-wrap: wrap;
+    /* margin: auto; */
+}
+
+.womenimage3 img{
+    width: 280px;
+}
+.womenimage1 img{
+    width: 200px;
+}
+.womenimage4{
+    display: flex;
+    flex-wrap: wrap;
+}
+.womenimage4 img{
+    width:280px;
+}
+
+h4 {
+    text-transform: uppercase;
+    color: #3e4152;
+    letter-spacing: .15em;
+    font-size: 2em;
+    margin: 5px 0 10px 30px;
+    max-height: 5em;
+    font-weight: 500;
+    padding: 5%;
+    text-align: center;
+}
+
+.womenimage{
+    perspective: 250px;
+    }
+    
+    .womenimage img {
+      transition: 100ms;
+      box-shadow: 0px 0px 0px rgba(0,0,0,0);
+    }
+    
+    .womenimage img:hover {
+      transform: translate3d(5px,0px,10px);  
+      box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+      }
+
+
+
+      .womenimage4{
+        perspective: 250px;
+        }
+        
+        .womenimage4 img {
+          transition: 100ms;
+          box-shadow: 0px 0px 0px rgba(0,0,0,0);
+        }
+        
+        .womenimage4 img:hover {
+          transform: translate3d(5px,0px,10px);  
+          box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+          }
+
+          .womenimage2{
+            perspective: 250px;
+            }
+            
+            .womenimage2 img {
+              transition: 100ms;
+              box-shadow: 0px 0px 0px rgba(0,0,0,0);
+            }
+            
+            .womenimage2 img:hover {
+              transform: translate3d(5px,0px,10px);  
+              box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+              }
+
+
+
+@media only screen and (max-width:600px){
+    h4 {
+       font-size: 1em;  
+   }
+}
