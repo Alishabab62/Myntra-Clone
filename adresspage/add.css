@@ -1,37 +1,21 @@
 .user-address-container {
-    width: 80%;
-    font-size: 30px;
-    border: 1px solid rgb(177, 176, 176);
     display: none;
-}
-.address{
-    display: flex;
-    margin-left:60px ;
-}
-
-.user-address-container input {
-    margin-left: 5%;
-}
-
-.user-address-container p{
-    padding-left: 7%;
-}
-.address p{
-    padding-left: 0%;
+    width: 70%;
+    border: 1px solid rgb(177, 176, 176);
+    margin-right: 5%;
+    margin-left: 3%;
+   
 }
 .user-address-container button{
-    font-weight: bolder;
-    margin-left: 7%;
-    margin-top: 2%;
-    width: 7%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    margin-bottom: 5%;
-}.user-address-container span{
+    padding: 0.6%;
+    font-weight: bold;
+    margin: 1.5%;
+}
+.user-address-container span{
     font-weight: bolder;
 }
 .details{
-    /* display: none;       */
+      
     margin: auto;
     height: 70%;
     width: 35%;
