@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin: auto;
+}
+.kidimage{
+    display: flex;
+    flex-wrap: wrap;
+    /* margin: auto; */
+}
+.text-banner-container{
+    width: 100%;
+    /* border: 5px solid red; */
+}
+
+.kidbox{
+
+        max-width: 1400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+}
+.kidimage1{
+    display: flex;
+    flex-wrap: wrap;
+    /* margin: auto; */
+}
+.kidimage img{
+    width: 150px;
+}
+.kidimage2{
+    display: flex;
+    flex-wrap: wrap;
+    /* margin: auto; */
+}
+.kidimage2 img{
+    width: 280px;
+}
+.kidimage3{
+    display: flex;
+    flex-wrap: wrap;
+    /* margin: auto; */
+}
+
+.kidimage3 img{
+    width: 280px;
+}
+.kidimage1 img{
+    width: 120px;
+}
+.kidimage4{
+    display: flex;
+    flex-wrap: wrap;
+}
+.kidimage4 img{
+    width:700px;
+}
+.kidimage5{
+    display: flex;
+    flex-wrap: wrap; 
+}
+.kidimage5 img{
+    width: 700px;
+}
+.kidimage6{
+    display: flex;
+    flex-wrap: wrap;
+}
+.kidimage6 img{
+    width: 230px;
+}
+
+h4 {
+    text-transform: uppercase;
+    color: #3e4152;
+    letter-spacing: .15em;
+    font-size: 2em;
+    margin: 5px 0 10px 30px;
+    max-height: 5em;
+    font-weight: 500;
+    padding: 5%;
+    text-align: center;
+}
+.kidimage7{
+    display: flex;
+    flex-wrap: wrap;
+}
+.kidimage7 img{
+    width:280px;
+}
+
+.kidimage{
+    perspective: 250px;
+    }
+    
+    .kidimage img {
+      transition: 100ms;
+      box-shadow: 0px 0px 0px rgba(0,0,0,0);
+    }
+    
+    .kidimage img:hover {
+      transform: translate3d(5px,0px,10px);  
+      box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+      }
+
+          .kidimage2{
+            perspective: 250px;
+            }
+            
+            .kidimage2 img {
+              transition: 100ms;
+              box-shadow: 0px 0px 0px rgba(0,0,0,0);
+            }
+            
+            .kidimage2 img:hover {
+              transform: translate3d(5px,0px,10px);  
+              box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+              }
+
+
+
+@media only screen and (max-width:600px){
+    h4 {
+       font-size: 1em;  
+   }
+   .kidimage4 img{
+          width:300px;
+   }
+   .kidimage5 img{
+    width: 300px;
+   }
+}
