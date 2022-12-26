@@ -116,8 +116,7 @@ setInterval(timeupdate, 1000);
 function timeupdate() {
     const min = Math.floor(time/60);
     let sec = time % 60;
-
-    timer.innerHTML = `${min}: ${sec}`;
+    timer.innerHTML = `${'00'}:${min}: ${sec}`;
     time--;
 }
 // =================================vineet's js code end======================
