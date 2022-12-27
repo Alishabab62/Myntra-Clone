@@ -122,13 +122,17 @@
     height: 30%;
     margin-top: -12%;
 }
+.right table{
+    width: 232px;
+}
 #side , #side1, #colorc{
-    padding-left:40%;
+    padding-left:20%;
     padding-bottom: 3%;
 }
 #down{
     padding-bottom: 10%;
 }
+
 #borderb , #side1 {
     /* border-bottom: 1px solid rgb(177, 174, 174); */
     padding-bottom: 5%;
