@@ -240,6 +240,9 @@ h4 {
   .logoimages{
       display:inherit;
   }
+  footer{
+    width: 90%;
+  }
 
   .images5 img{
       width: 100%;

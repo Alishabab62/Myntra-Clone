@@ -132,6 +132,15 @@ h4 {
     h4 {
        font-size: 1em;  
    }
+  footer{
+    width: 90%;
+  }
+  footer .container-1 .original-return{
+    display: none;
+  }
+  .myntra-app-tab{
+    flex-wrap: wrap;
+  }
 }
 
 
