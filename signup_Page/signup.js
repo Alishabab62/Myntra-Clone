@@ -123,3 +123,31 @@ function openSideBar(){
 
 
 burgerIcon.addEventListener('click', openSideBar);
+
+
+const contactNumber=document.querySelector("#contactNumber");
+const contactNumberLocalStorage=localStorage.getItem("number");
+window.addEventListener('load',()=>{
+    contactNumber.innerText=contactNumberLocalStorage;
+});
+
+
+const password=document.querySelector(".password");
+const fullName=document.querySelector(".full-name");
+const email=document.querySelector(".email");
+const gender=document.getElementsByName('gender');
+const alternatePhoneNumber=document.querySelector('.alternate-phone-number');
+const createButton=document.querySelector(".cretae-account-btn");
+let selectedGender;
+
+createButton.addEventListener("click",singUpDetailsSubmission);
+
+
+function singUpDetailsSubmission(){
+    gender.forEach((gen)=>{
+        if(gen.checked){
+            selectedGender=gen;
+        }
+    })
+    console.log(password.value,fullName.value,email.value,alternatePhoneNumber.value,contactNumberLocalStorage,selectedGender.value);
+}

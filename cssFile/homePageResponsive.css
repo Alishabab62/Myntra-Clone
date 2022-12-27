@@ -36,6 +36,7 @@
   }
   footer .sub-container .keep-in-touch-res {
     display: block;
+    margin-left: -41px;
   }
   footer .online-shopping-tab {
     display: flex;
