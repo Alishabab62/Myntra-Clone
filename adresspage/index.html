@@ -34,23 +34,42 @@
             <button>REMOVE</button>
             <BUTTON>EDIT</BUTTON>
         </div>
-        <div class="details">
-            <h5>CONTACT DETAILS</h5>
-            <input type="text" placeholder="Name*">
-            <input type="text" placeholder="Mobile No*">
-            <h5>ADDRESS</h5>
-            <input type="text" placeholder="Pin Code*">
-            <input type="text" placeholder="Address (House No, Building Street, Area)*">
-            <input type="text" placeholder="Locality / town*">
-            <input type="text" id="small" placeholder="City / District*">
-            <input type="text" id="small1" placeholder="State*">
-            <h5>SAVE ADDRESS AS</h5>
-            <button id="b1">Home</button>
-            <button id="b2">Work</button>
-            <div class="outer">
-                <button id="b3">ADD ADDRESS</button>
+
+            <div class="details">
+                <h5 class="nones">CONTACT DETAILS</h5>
+                <input class="name" type="text" placeholder="Name*">
+                <input class="phones" type="text" placeholder="Mobile No*">
+                <h5 class="nones">ADDRESS</h5>
+                <input class="house" type="text" placeholder="Address (House No, Building Street, Area)*">
+                <input class="town" type="text" placeholder="Locality / town*">
+                <input class="city" type="text" id="small" placeholder="City / District*">
+                <input class="state" type="text" id="small1" placeholder="State*">
+                <input class="pin" type="text" placeholder="Pin Code*">
+                <h5 class="nones">SAVE ADDRESS AS</h5>
+                <button class="nones" id="b1">Home</button>
+                <button class="nones" id="b2">Work</button>
+                <div class="outer nones">
+                    <button id="b3">ADD ADDRESS</button>
+                </div>
             </div>
-        </div>
+            <!-- =====================After click show Address div========================================= -->
+            <div class="add_added_div">
+                <p class="myname"><b>Name:</b><p class="name_added pad"></p></p>
+                <p class="myphone"><b>Phone:</b><p class="phone_added pad"></p></p>
+                <p class="myaddress">
+                    <b>Address:</b>
+                    <p class="house_added pad"></p>
+                    <p class="town_added pad"></p>
+                    <p class="city_added pad"></p>
+                    <p class="state_added pad"></p>
+                    <p class="pin_added pad"></p>
+                </p>
+                <button class="go_back">Go to Previous Page</button>
+                <a href="../payment page/index.html"><button class="make_payment">Make Payment</button></a>
+            </div>
+
+        
+
         <div class="right">
             <table>
                 <tr>
