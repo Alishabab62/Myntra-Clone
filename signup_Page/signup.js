@@ -141,13 +141,29 @@ const createButton=document.querySelector(".cretae-account-btn");
 let selectedGender;
 
 createButton.addEventListener("click",singUpDetailsSubmission);
-
-
-function singUpDetailsSubmission(){
+async function singUpDetailsSubmission(){
     gender.forEach((gen)=>{
         if(gen.checked){
             selectedGender=gen;
         }
     })
-    console.log(password.value,fullName.value,email.value,alternatePhoneNumber.value,contactNumberLocalStorage,selectedGender.value);
+    const data={
+            mobileNumber:`${contactNumberLocalStorage}`,
+            Password:`${password}`,
+            full_name:`${fullName}`,
+            email:`${email}`,
+            gender:`${selectedGender.value}`,
+            alternate_phoneNumber:`${alternatePhoneNumber}`
+    }
+    // console.log(password.value,fullName.value,email.value,alternatePhoneNumber.value,contactNumberLocalStorage,selectedGender.value);
+    const signUpResponse = await fetch('https://api-vqd9.onrender.com/users/signup',{
+        method:'POST',
+        headers:{
+            'Content-Type': 'application/json',
+        },
+        body:JSON.stringify(data)
+    }
+)
+// const dataRes= await signUpResponse.json();
+console.log(signUpResponse.status);
 }
