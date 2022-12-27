@@ -178,13 +178,37 @@
     margin-top: 3%;
     left: 0;
     width: 50%;
-    background-color: rgb(165, 165, 165);
+    background-color: rgb(250, 224, 224);
     display: none;
   }
   
   .header_profile_submenu_div p{
     margin-bottom: 10px;
   }
+
+  /* ==============================Vineet's Responsive Code start===================== */
+
+@media only screen and (max-width: 1200px) {
+  .header_menu,
+  .logo,
+  .header_input_div,
+  .header_icon_text,
+  .new_pink {
+    display: none;
+  }
+  .burger_div {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .burger_div {
+    display: none;
+  }
+}
+
+/* ========================Vineet Responsive code end ============== */
   
   /* =========================vineet's header code end======================= */
 
@@ -332,19 +356,6 @@ main .product .price{
     text-decoration: none;
     margin-left: 5px;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -544,36 +555,6 @@ main .product .price{
     
 }
 
-  @media only screen and (max-width:1300px) {
-    .header_menu, .logo, .header_input_div, .header_icon_text, .new_pink{
-        display: none;
-    }
-    .header{
-        display: block;
-    }
-    .header_text{
-        margin-left: 5%;
-        margin-top: -2.5%;
-        font-size: 1.5em;
-    }
-    .header i{
-        font-size: 4vh;
-    }
-    .header_icon_div i{
-        float: right;
-        margin-left: 3%;
-        margin-top: -2.2%;
-    }
-    
-}
-
-
-@media only screen and (min-width:1299px) {
-    .burger_div{
-        display: none;
-    }
-   
-}
 
 @media only screen and (max-width:1150px) {
  .main-products-container .filter{
@@ -581,19 +562,6 @@ main .product .price{
  }
  
 }
-
-@media only screen and (max-width:550px){
-    .header_text{
-        margin-top: -6%;
-        margin-left: 10%;
-    }
-    .header_icon_div i{
-        margin-top: -6%;
-    }
-
-}
-
-
 
 
 
@@ -646,9 +614,6 @@ main .product .price{
 }
 
 @media only screen and (max-width:821px){
-    .burger_div{
-        height: 150%;
-    }
     footer .container .sub-container .online-shopping-tab,.useful-link-tab,.customer-policies-tab,.myntra-app-tab,.logos,.shop-container{
        flex-wrap: wrap;
      }
@@ -667,9 +632,6 @@ main .product .price{
 
 
 @media only screen and (max-width:1000px){
-  .header_text{
-      margin-top: -4%;
-  }
   footer .container{
       width: 95%;
       margin: auto;
