@@ -214,15 +214,15 @@ body {
   /* background-color: rgb(247, 247, 196); */
   background-image: linear-gradient(to bottom right, #fcecf3, #f6eade);
 }
-.main {
-  /* border: 1px solid; */
-  width: 25%;
-  margin: auto;
-  margin-top: 1%;
-  padding: 1%;
-  background-color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: small;
+.main{
+    /* border: 1px solid; */
+    width: 25%;
+    margin: auto;
+    margin-top: 1%;
+    padding: 1%;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
 }
 .main div {
   padding: 2.5%;
@@ -283,7 +283,7 @@ body {
 }
 .create_acc_btn_div button {
   width: 100%;
-  padding: 2.5%;
+  padding: 3%;
   background-color: rgb(255, 33, 96);
   color: white;
   border: none;

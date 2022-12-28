@@ -142,19 +142,45 @@
   }
 }
 /* //for phone */
-@media only screen and (max-width: 588px) {
-  html,
-  body {
-    font-size: 20px;
-  }
-  .footerr {
+@media only screen and (max-width:588px){
+    html,body{
+        font-size: 20px;
+    }
+      .footerr{
+       display: none;
+      }
+      .right{
+        display: none;
+    } 
+    .details{
+        width: 80%;
+        margin-left: 1.5%;
+    }
+ }
+ 
+ /* ======================Add Address Div Vineet=================================== */
+
+.add_added_div{
     display: none;
-  }
-  .right {
+    border: 1px solid rgb(180, 178, 178);
+    width: 30%;
+    margin: auto;
+    padding: 2%;
+    /* display: block; */
+}
+/* .details{
     display: none;
-  }
-  .details {
-    width: 80%;
-    margin-left: 1.5%;
-  }
+} */
+.myname{
+    display: flex;
+}
+.go_back, .make_payment{
+    border: none;
+    padding: 1.5%;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: red;
+}
+.pad{
+    margin-left: 5%;
 }

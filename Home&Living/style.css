@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 :root {
   --gray: #696969;
   --lightgray: #a9a7a7;
@@ -295,6 +296,7 @@ p {
 /* Footer */
 
 footer {
+  margin-left: 21%;
   background-color: #fafbfc;
   font-family: Arial, Helvetica, sans-serif;
 }
