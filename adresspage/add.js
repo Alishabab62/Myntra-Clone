@@ -1,4 +1,3 @@
-const logo = document.querySelector(".logo");
 // ======================Go to Home Page================================================
 const logo = document.querySelector(".logo")
 
