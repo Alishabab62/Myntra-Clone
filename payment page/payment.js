@@ -10,7 +10,7 @@ let totalMrp = localStorage.getItem("totalMrp");
 let totalProduct = localStorage.getItem("totalProduct");
 document.querySelector("#totalProduct").innerText = totalProduct;
 document.querySelector("#side").innerText = totalMrp;
-let updatedPrice = totalMrp - Math.floor((totalMrp * 40) / 100);
-document.querySelector("#colorc").innerText = `-${updatedPrice}`;
-document.querySelector(".totalPriceAfterDiscount").innerText =
-  totalMrp - updatedPrice;
+let discountedProce= Math.floor((totalMrp * 40) / 100);
+let updatedPrice = totalMrp - discountedProce;
+document.querySelector("#colorc").innerText = `-${discountedProce}`;
+document.querySelector(".totalPriceAfterDiscount").innerText = updatedPrice;
