@@ -118,7 +118,7 @@
   padding: 1%;
   font-size: medium;
 }
-.header_profile_submenu_hr{
+.header_profile_submenu_hr {
   margin-top: 7%;
 }
 .header_profile_submenu_div p b {
@@ -269,7 +269,7 @@ p {
   background-color: lightgray;
   text-align: center;
 }
-.brands_text_div img{
+.brands_text_div img {
   width: 95%;
   margin-left: 5%;
 }
@@ -282,22 +282,16 @@ p {
   cursor: pointer;
 }
 
-@media only screen and (max-width:1300px) {
-  .right_sidebar_text{
+@media only screen and (max-width: 1300px) {
+  .right_sidebar_text {
     display: none;
   }
 }
-@media only screen and (max-width:600px) {
-  .text_below_big_img{
+@media only screen and (max-width: 600px) {
+  .text_below_big_img {
     display: none;
   }
 }
-
-
-
-
-
-
 
 /* Footer */
 

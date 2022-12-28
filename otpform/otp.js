@@ -37,7 +37,6 @@ const otp4 = document.getElementById("otp4");
 const wrong = document.getElementById("wrong");
 const btn = document.getElementById("btn");
 
-
 // function to verify otp and also check that user is already have account or not
 
 btn.addEventListener("click", async () => {

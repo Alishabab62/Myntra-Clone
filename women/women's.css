@@ -1,130 +1,128 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* margin: auto; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* margin: auto; */
 }
-.text-banner-container{
-    width: 100%;
-    /* border: 5px solid red; */
+.text-banner-container {
+  width: 100%;
+  /* border: 5px solid red; */
 }
-.womenimage{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    /* margin: auto; */
-}
-
-.womenbox{
-    justify-content: center;
-    align-items: center;
-        max-width: 1400px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-}
-.womenimage1{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    /* margin: auto; */
-}
-.womenimage img{
-    width: 250px;
-}
-.womenimage2{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    /* margin: auto; */
-}
-.womenimage2 img{
-    width: 240px;
-}
-.womenimage3{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    /* margin: auto; */
+.womenimage {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  /* margin: auto; */
 }
 
-.womenimage3 img{
-    width: 220px;
+.womenbox {
+  justify-content: center;
+  align-items: center;
+  max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-.womenimage1 img{
-    width: 200px;
+.womenimage1 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  /* margin: auto; */
 }
-.womenimage4{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
+.womenimage img {
+  width: 250px;
 }
-.womenimage4 img{
-    width:220px;
+.womenimage2 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  /* margin: auto; */
+}
+.womenimage2 img {
+  width: 240px;
+}
+.womenimage3 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  /* margin: auto; */
+}
+
+.womenimage3 img {
+  width: 220px;
+}
+.womenimage1 img {
+  width: 200px;
+}
+.womenimage4 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.womenimage4 img {
+  width: 220px;
 }
 
 h4 {
-    text-transform: uppercase;
-    color: #3e4152;
-    letter-spacing: .15em;
-    font-size: 2em;
-    margin: 5px 0 10px 30px;
-    max-height: 5em;
-    font-weight: 500;
-    padding: 5%;
-    text-align: center;
+  text-transform: uppercase;
+  color: #3e4152;
+  letter-spacing: 0.15em;
+  font-size: 2em;
+  margin: 5px 0 10px 30px;
+  max-height: 5em;
+  font-weight: 500;
+  padding: 5%;
+  text-align: center;
 }
 
-.womenimage{
-    perspective: 250px;
-    }
-    
-    .womenimage img {
-      transition: 100ms;
-      box-shadow: 0px 0px 0px rgba(0,0,0,0);
-    }
-    
-    .womenimage img:hover {
-      transform: translate3d(5px,0px,10px);  
-      box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
-      }
+.womenimage {
+  perspective: 250px;
+}
 
+.womenimage img {
+  transition: 100ms;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+}
 
+.womenimage img:hover {
+  transform: translate3d(5px, 0px, 10px);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+}
 
-      .womenimage4{
-        perspective: 250px;
-        }
-        
-        .womenimage4 img {
-          transition: 100ms;
-          box-shadow: 0px 0px 0px rgba(0,0,0,0);
-        }
-        
-        .womenimage4 img:hover {
-          transform: translate3d(5px,0px,10px);  
-          box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
-          }
+.womenimage4 {
+  perspective: 250px;
+}
 
-          .womenimage2{
-            perspective: 250px;
-            }
-            
-            .womenimage2 img {
-              transition: 100ms;
-              box-shadow: 0px 0px 0px rgba(0,0,0,0);
-            }
-            
-            .womenimage2 img:hover {
-              transform: translate3d(5px,0px,10px);  
-              box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
-              }
+.womenimage4 img {
+  transition: 100ms;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+}
+
+.womenimage4 img:hover {
+  transform: translate3d(5px, 0px, 10px);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+}
+
+.womenimage2 {
+  perspective: 250px;
+}
+
+.womenimage2 img {
+  transition: 100ms;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+}
+
+.womenimage2 img:hover {
+  transform: translate3d(5px, 0px, 10px);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+}
 
 
 
@@ -132,203 +130,189 @@ h4 {
     h4 {
        font-size: 1em;  
    }
-  footer{
-    width: 90%;
-  }
-  footer .container-1 .original-return{
-    display: none;
-  }
-  .myntra-app-tab{
-    flex-wrap: wrap;
-  }
 }
 
-
-
-
-
 footer {
-    background-color: #fafbfc;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  footer .footer-container {
-    /* display: flex; */
-    width: 72%;
-    /* padding: 50px 0px 0px 0px; */
-    margin-left: 10%;
-  }
-  .container-1 {
-    display: flex;
-    width: 100%;
-    margin-left: -64px;
-    margin-bottom: 20px;
-  }
-  footer .shop-container {
-    display: none;
-    margin-left: 0px;
-  }
-  .shop-container .shop-container-tab {
-    display: flex;
-    margin: 56px 0px 0px -64px;
-  }
-  footer a {
-    text-decoration: none;
-    color: gray;
-  }
-  footer .container-1 .sub-container {
-    margin: 0px 15px 0px 12px;
-  }
-  footer .sub-container .btn {
-    margin: 10px 0px 0px 0px;
-    font-size: 0.8em;
-  }
-  .container .container-1 .sub-container .online-shopping-tab,
-  .useful-link-tab,
-  .customer-policies-tab,
-  .myntra-app-tab,
-  .logos,
-  .shop-container {
-    margin-top: 20px;
-  }
-  footer .container-1 .sub-container .heading {
-    margin: 30px 0px 30px 0px;
-    font-size: 0.8em;
-    font-weight: bold;
-  }
-  .container-1 .sub-container .myntra-app .myntra-app-tab {
-    display: flex;
-    width: 150px;
-    height: 50px;
-    object-fit: cover;
-  }
-  footer .sub-container .keep-in-touch-res {
-    display: none;
-  }
-  .sub-container .myntra-app .myntra-app-tab img {
-    height: 100%;
-    width: 100%;
-    margin: 0px 10px 0px 0px;
-  }
-  .sub-container .keep-in-touch .logos {
-    width: 150px;
-    display: flex;
-    justify-content: space-between;
-  }
-  .sub-container .keep-in-touch .logos svg {
-    height: 20px;
-    width: 20px;
-  }
-  .sub-container .original {
-    display: flex;
-  }
-  footer .container-1 .original-return {
-    margin: 30px 0px 0px 150px;
-  }
-  .sub-container .original img {
-    height: 50px;
-    width: 50px;
-    margin: 0px 20px 0px 0px;
-  }
-  .sub-container .original .text span {
-    color: black;
-    font-weight: bold;
-  }
-  .container-2 {
-    width: 100%;
-    margin-top: 25px;
-    border-top: 1px solid gray;
-    border-bottom: 1px solid gray;
-  }
-  .container-2 .heading {
-    margin: 20px 0px 20px 0px;
-    font-size: 0.8em;
-    font-weight: bold;
-  }
-  .container-2 .item-container {
-    width: 100%;
-    margin: 0px 0px 0px 0px;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .container-2 .item-container a {
-    font-size: 0.8em;
-  }
-  .container-2 .item-container .item {
-    margin: 0px 10px 0px 0px;
-  }
-  .container-2 .contact-div {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  .container-2 .contact-div .contact a {
-    color: blue;
-  }
-  .container-2 .contact-div .all-right {
-    color: gray;
-  }
-  .container-3 {
-    width: 100%;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    border-bottom: 1px solid gray;
-    display: flex;
-    justify-content: space-between;
-  }
-  .container-3 .heading {
-    font-size: 1.1em;
-    color: black;
-    font-weight: bold;
-  }
-  .container-3 .cont-1,
-  .cont-2 {
-    font-size: 0.8em;
-    color: gray;
-    margin-bottom: 16px;
-  }
-  .container-3 p {
-    margin-top: 20px;
-  }
-  .container-3 .cont-2 p {
-    margin-top: 90px;
-  }
-  .container-4 {
-    width: 100%;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    border-bottom: 1px solid gray;
-  }
-  .container-4 .heading {
-    color: black;
-    font-size: 0.9em;
-    font-weight: bold;
-  }
-  .container-4 .text {
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 30px;
-    color: gray;
-    font-size: 0.8em;
-    margin-bottom: 25px;
-  }
-  .container-5 .text {
-    font-size: 0.8em;
-    color: gray;
-    margin-top: 20px;
-  }
-  .container-5 .cont-2 {
-    margin-left: 50px;
-    margin-top: 20px;
-  }
-  .container-5 .cont-2 span {
-    color: black;
-    font-size: bold;
-    font-size: 1.2em;
-  }
-  .container-5 .cont-2 .heading {
-    color: black;
-    font-size: 1em;
-    font-weight: bold;
-  }
-  
+  background-color: #fafbfc;
+  font-family: Arial, Helvetica, sans-serif;
+}
+footer .footer-container {
+  /* display: flex; */
+  width: 72%;
+  /* padding: 50px 0px 0px 0px; */
+  margin-left: 10%;
+}
+.container-1 {
+  display: flex;
+  width: 100%;
+  margin-left: -64px;
+  margin-bottom: 20px;
+}
+footer .shop-container {
+  display: none;
+  margin-left: 0px;
+}
+.shop-container .shop-container-tab {
+  display: flex;
+  margin: 56px 0px 0px -64px;
+}
+footer a {
+  text-decoration: none;
+  color: gray;
+}
+footer .container-1 .sub-container {
+  margin: 0px 15px 0px 12px;
+}
+footer .sub-container .btn {
+  margin: 10px 0px 0px 0px;
+  font-size: 0.8em;
+}
+.container .container-1 .sub-container .online-shopping-tab,
+.useful-link-tab,
+.customer-policies-tab,
+.myntra-app-tab,
+.logos,
+.shop-container {
+  margin-top: 20px;
+}
+footer .container-1 .sub-container .heading {
+  margin: 30px 0px 30px 0px;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+.container-1 .sub-container .myntra-app .myntra-app-tab {
+  display: flex;
+  width: 150px;
+  height: 50px;
+  object-fit: cover;
+}
+footer .sub-container .keep-in-touch-res {
+  display: none;
+}
+.sub-container .myntra-app .myntra-app-tab img {
+  height: 100%;
+  width: 100%;
+  margin: 0px 10px 0px 0px;
+}
+.sub-container .keep-in-touch .logos {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+.sub-container .keep-in-touch .logos svg {
+  height: 20px;
+  width: 20px;
+}
+.sub-container .original {
+  display: flex;
+}
+footer .container-1 .original-return {
+  margin: 30px 0px 0px 150px;
+}
+.sub-container .original img {
+  height: 50px;
+  width: 50px;
+  margin: 0px 20px 0px 0px;
+}
+.sub-container .original .text span {
+  color: black;
+  font-weight: bold;
+}
+.container-2 {
+  width: 100%;
+  margin-top: 25px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+.container-2 .heading {
+  margin: 20px 0px 20px 0px;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+.container-2 .item-container {
+  width: 100%;
+  margin: 0px 0px 0px 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container-2 .item-container a {
+  font-size: 0.8em;
+}
+.container-2 .item-container .item {
+  margin: 0px 10px 0px 0px;
+}
+.container-2 .contact-div {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.container-2 .contact-div .contact a {
+  color: blue;
+}
+.container-2 .contact-div .all-right {
+  color: gray;
+}
+.container-3 {
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid gray;
+  display: flex;
+  justify-content: space-between;
+}
+.container-3 .heading {
+  font-size: 1.1em;
+  color: black;
+  font-weight: bold;
+}
+.container-3 .cont-1,
+.cont-2 {
+  font-size: 0.8em;
+  color: gray;
+  margin-bottom: 16px;
+}
+.container-3 p {
+  margin-top: 20px;
+}
+.container-3 .cont-2 p {
+  margin-top: 90px;
+}
+.container-4 {
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid gray;
+}
+.container-4 .heading {
+  color: black;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+.container-4 .text {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 30px;
+  color: gray;
+  font-size: 0.8em;
+  margin-bottom: 25px;
+}
+.container-5 .text {
+  font-size: 0.8em;
+  color: gray;
+  margin-top: 20px;
+}
+.container-5 .cont-2 {
+  margin-left: 50px;
+  margin-top: 20px;
+}
+.container-5 .cont-2 span {
+  color: black;
+  font-size: bold;
+  font-size: 1.2em;
+}
+.container-5 .cont-2 .heading {
+  color: black;
+  font-size: 1em;
+  font-weight: bold;
+}

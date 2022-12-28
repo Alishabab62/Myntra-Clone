@@ -100,7 +100,7 @@ burgerIcon.addEventListener("click", openSideBar);
 let addProduct = document.getElementById("add-product");
 let productDiv = "";
 
- fetch("https://fakestoreapi.com/products")
+fetch("https://fakestoreapi.com/products")
   .then((data) => {
     return data.json();
   })
@@ -113,14 +113,15 @@ let productDiv = "";
         <div class="description">${item.description}</div>
        <div class="add-to-wishlist-btn"><button id="wishlist-btn">WISHLIST</button></div>
       <div class="price">Rs.<span>${
-          item.price
-        }</span><span id="discount-price">${
+        item.price
+      }</span><span id="discount-price">${
         item.price * 2
       }</span><span id="discount-percentage">(50% OFF)</span></span></div>`;
       addProduct.appendChild(product);
     }
-  }).catch((error)=>{
-    console.log("Error:",error);
+  })
+  .catch((error) => {
+    console.log("Error:", error);
   });
 
 addProduct = document.getElementById("add-product");
@@ -130,7 +131,7 @@ addProduct.addEventListener("click", (e) => {
   let itemName = e.target.parentElement.children[1].innerText;
   let description = e.target.parentElement.children[2].innerText;
   let price = e.target.parentElement.children[4].firstElementChild.innerText;
-console.log(price)
+  console.log(price);
   if (productArray.length == 0) {
     productArray.push({
       itemLink: item,
@@ -161,14 +162,14 @@ console.log(price)
 });
 
 //wishlist button event
-addProduct.addEventListener("mouseover",(e)=>{
-  if(e.target.classList.contains("product")){
-    console.log(e.target.parentElement.childElement)
-    e.target.childNodes[6].style.display="block";
+addProduct.addEventListener("mouseover", (e) => {
+  if (e.target.classList.contains("product")) {
+    console.log(e.target.parentElement.childElement);
+    e.target.childNodes[6].style.display = "block";
   }
-})
-addProduct.addEventListener("mouseout",(e)=>{
-  if(e.target.parentElement.children){
-    e.target.childNodes[6].style.display="none";
+});
+addProduct.addEventListener("mouseout", (e) => {
+  if (e.target.parentElement.children) {
+    e.target.childNodes[6].style.display = "none";
   }
-})
+});

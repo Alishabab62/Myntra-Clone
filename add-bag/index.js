@@ -60,7 +60,7 @@ mainBag.addEventListener("click", (e) => {
     let total = localStorage.getItem("totalProduct"); //setting new total product after delete
     total--;
     totalItem.innerText = total;
-    localStorage.setItem("totalProduct", total);    //set totalItem in localstorage after removing item
+    localStorage.setItem("totalProduct", total); //set totalItem in localstorage after removing item
     let src =
       e.target.parentNode.parentNode.parentNode.children[0].children[0].src;
     let a = localStorage.getItem("productArray") || "[]";
@@ -78,7 +78,7 @@ mainBag.addEventListener("click", (e) => {
       price += p;
       console.log(p);
     });
-    totalAmount.innerText =  price;
+    totalAmount.innerText = price;
     totalAmountDiscount.innerText = price; //totalAmountDiscount
   }
 });
