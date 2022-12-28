@@ -150,7 +150,6 @@ async function singUpDetailsSubmission() {
     gender: `${selectedGender.value}`,
     alternate_phoneNumber: `${alternatePhoneNumber.value}`,
   };
-  console.log(data);
   // console.log(password.value,fullName.value,email.value,alternatePhoneNumber.value,contactNumberLocalStorage,selectedGender.value);
   const signUpResponse = await fetch(
     "https://api-vqd9.onrender.com/users/signup",
@@ -162,5 +161,19 @@ async function singUpDetailsSubmission() {
       body: JSON.stringify(data),
     }
   );
-  console.log(signUpResponse);
+  let res=await signUpResponse.json();
+  if(res=="User already Registered!"){
+    document.querySelector("#user-alreay-exist").style.display="block";
+    document.querySelector("#text").innerText="User already existing";
+    setTimeout(()=>{
+      location="../index.html";
+    },1000);
+}
+else{
+  document.querySelector("#user-alreay-exist").style.display="block";
+    document.querySelector("#text").innerText="Account created sucessfully";
+    setTimeout(()=>{
+      location="../index.html";
+    },1000);
+}
 }

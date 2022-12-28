@@ -82,3 +82,15 @@ mainBag.addEventListener("click", (e) => {
     totalAmountDiscount.innerText = price; //totalAmountDiscount
   }
 });
+const placeOrderBtn = document.querySelector(".place_order_btn");
+placeOrderBtn.addEventListener("click", () => {
+  let total = localStorage.getItem("totalProduct");
+  if (total != 0) {
+    location = "../adresspage/index.html";
+  } else {
+    document.querySelector(".error-product").style.display = "block";
+    setInterval(() => {
+      document.querySelector(".error-product").style.display = "none";
+    }, 1000);
+  }
+});

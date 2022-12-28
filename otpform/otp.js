@@ -64,14 +64,14 @@ btn.addEventListener("click", async () => {
         },
         body:JSON.stringify(data)
       });
-    console.log(response);
-    if ((response.status == 404)) {
+    let res = await response.json();
+    if ((res == "User not exists!")) {
       wrong.innerText = "User not exists!! Create account";
       setTimeout(() => {
-        // location = "../signup_Page/index.html";
+        location = "../signup_Page/index.html";
       }, 1000);
     } else {
-      // location = "../index.html";
+      location = "../index.html";
     }
   }
 });
