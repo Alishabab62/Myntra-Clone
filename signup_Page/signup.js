@@ -143,7 +143,7 @@ async function singUpDetailsSubmission() {
     }
   });
   const data = {
-    mobileNumber: `${contactNumberLocalStorage}`,
+    mobileNumber: `${alternatePhoneNumber.value}`,
     Password: `${password.value}`,
     full_name: `${fullName.value}`,
     email: `${email.value}`,
@@ -162,6 +162,5 @@ async function singUpDetailsSubmission() {
       body: JSON.stringify(data),
     }
   );
-  // const dataRes= await signUpResponse.json();
   console.log(signUpResponse);
 }

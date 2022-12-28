@@ -40,7 +40,7 @@ const btn = document.getElementById("btn");
 // function to verify otp and also check that user is already have account or not
 
 btn.addEventListener("click", async () => {
-  let num = localStorage.getItem("number");
+  let num = (localStorage.getItem("number"));
   if (
     num1 != otp1.value ||
     num2 != otp2.value ||
@@ -53,19 +53,25 @@ btn.addEventListener("click", async () => {
     }, 1000);
   } else {
     const data = {
-      mobileNumber: num,
-    };
+      mobileNumber: num
+    }
+    console.log(data);
     const response = await fetch(
-      `https://api-vqd9.onrender.com/users/login?mobileNumber=${num}`
-    );
-    let res = await response.json();
-    if ((res = "User not exists!")) {
+      `https://api-vqd9.onrender.com/users/login`,{
+        method:"POST",
+        headers:{
+          "Content-Type": "application/json",
+        },
+        body:JSON.stringify(data)
+      });
+    console.log(response);
+    if ((response.status == 404)) {
       wrong.innerText = "User not exists!! Create account";
       setTimeout(() => {
-        location = "../signup_Page/index.html";
+        // location = "../signup_Page/index.html";
       }, 1000);
     } else {
-      location = "../index.html";
+      // location = "../index.html";
     }
   }
 });
