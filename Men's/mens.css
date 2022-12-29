@@ -14,12 +14,13 @@ body {
   display: flex;
   justify-content: space-evenly;
   position: sticky;
-  /* align-items: center; */
-  /* top: 0; */
+  align-items: center;
+  top: 0;
   z-index: 20;
+  font-weight: 500;
 }
 .header_menu {
-  font-size: 1em;
+  font-size: 2vh;
   margin-top: 0.5%;
   cursor: pointer;
   font-family: Helvetica, Arial, sans-serif;
@@ -30,7 +31,7 @@ body {
 }
 .new_pink {
   color: #ff3f6c;
-  margin-left: -2%;
+  margin-left: -3%;
   font-size: small;
 }
 #lensIcon {
@@ -59,7 +60,8 @@ body {
 }
 .logo {
   cursor: pointer;
-  width: 4%;
+  width: 3.8%;
+  margin-right: 2%;
 }
 
 /* ================================Header Sub menu================ */
