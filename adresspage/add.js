@@ -34,6 +34,7 @@ const namehere = document.querySelector("#_name");
 const addresshere = document.querySelector("#_address");
 const mobilehere = document.querySelector("#_mobile");
 const continuebtn = document.querySelector("#continuebtn")
+const upper = document.querySelector(".hide")
 
 add_btn.addEventListener("click", () => {
   details.style.display = "none";
@@ -54,6 +55,7 @@ add_btn.addEventListener("click", () => {
   // pin_added.innerText = pin.value;
   addresshere.innerText = `${house.value} ${town.value} ${city.value} ${state.value} - ${pin.value}`;
   // console.log(add);
+  upper.style.display= "block";
 });
 
 const newaddress = document.querySelector(".add-new-address")
