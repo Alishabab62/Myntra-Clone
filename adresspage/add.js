@@ -29,24 +29,34 @@ const town_added = document.querySelector(".town_added");
 const city_added = document.querySelector(".city_added");
 const state_added = document.querySelector(".state_added");
 const pin_added = document.querySelector(".pin_added");
+const addressconst = document.querySelector(".user-address-container")
+const namehere = document.querySelector("#_name");
+const addresshere = document.querySelector("#_address");
+const mobilehere = document.querySelector("#_mobile");
+const continuebtn = document.querySelector("#continuebtn")
 
 add_btn.addEventListener("click", () => {
   details.style.display = "none";
+  continuebtn.style.display = "block";
   console.log(details);
-  address_div.style.display = "block";
+  // document.querySelector("..add-new-address").style.display="block";
+  // address_div.style.display = "block";
+  addressconst.style.display = "block";
   console.log(names.value);
-  name_added.innerText = names.value;
-
-  phone_added.innerText = phone.value;
-
-  house_added.innerText = house.value;
-  town_added.innerText = town.value;
-  city_added.innerText = city.value;
-  state_added.innerText = state.value;
-  pin_added.innerText = pin.value;
+  // name_added.innerText = names.value;
+  namehere.innerText = names.value;
+  // phone_added.innerText = phone.value;
+  mobilehere.innerText = `Mobile -${phone.value}`;
+  // house_added.innerText = house.value;
+  // town_added.innerText = town.value;
+  // city_added.innerText = city.value;
+  // state_added.innerText = state.value;
+  // pin_added.innerText = pin.value;
+  addresshere.innerText = `${house.value} ${town.value} ${city.value} ${state.value} - ${pin.value}`;
   // console.log(add);
 });
 
+const newaddress = document.querySelector(".add-new-address")
 // ============Go back Address Page======================
 
 const back = document.querySelector(".go_back");
@@ -55,6 +65,8 @@ back.addEventListener("click", () => {
   // location = 'index.html'
   details.style.display = "block";
   address_div.style.display = "none";
+  newaddress.style.display ="block"
+  
   // console.log('back')
 });
 
