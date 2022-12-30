@@ -60,20 +60,20 @@ back.addEventListener("click", () => {
 
 // ================================================= End ===================================================
 
-// const totalMrp=document.querySelector("#side");
-// const totalAmount=document.querySelector('.side-total');
-// const discount=document.querySelector("#colorc");
-// let totalBill=localStorage.getItem("totalMrp");
-// const totalProduct=document.querySelector("#total");
-// let discountPrice=Math.floor((totalBill*40)/100);
-// discount.innerText=discountPrice;
-// totalMrp.innerText=totalBill;
-// totalAmount.innerText=totalBill-discountPrice;
-// let total=localStorage.getItem("totalProduct");
-// totalProduct.innerText=total;
-// //addresscode
-// const totalDetails = document.querySelector(".details");
-// const button = document.querySelector("#b3")
+const totalMrp=document.querySelector("#side");
+const totalAmount=document.querySelector('.side-total');
+const discount=document.querySelector("#colorc");
+let totalBill=localStorage.getItem("totalMrp");
+const totalProduct=document.querySelector("#total");
+let discountPrice=Math.floor((totalBill*40)/100);
+discount.innerText=discountPrice;
+totalMrp.innerText=totalBill;
+totalAmount.innerText=totalBill-discountPrice;
+let total=localStorage.getItem("totalProduct");
+totalProduct.innerText=total;
+//addresscode
+const totalDetails = document.querySelector(".details");
+const button = document.querySelector("#b3")
 
 const userAddres = document.querySelector(".user-address-container");
 window.addEventListener("load", () => {

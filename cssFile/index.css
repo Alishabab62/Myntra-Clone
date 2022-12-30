@@ -20,7 +20,7 @@ body {
   z-index: 20;
 }
 .header_menu {
-  font-size: 1em;
+  font-size: 2vh;
   margin-top: 0.5%;
   cursor: pointer;
   font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
@@ -32,11 +32,12 @@ body {
 }
 .new_pink {
   color: #ff3f6c;
-  margin-left: -2%;
+  margin-left: -3%;
   font-size: small;
 }
 #lensIcon {
   color: rgb(156, 154, 154);
+  margin-left: 1%;
 }
 .header_input_div {
   /* border: 1px solid; */
@@ -50,6 +51,7 @@ body {
 .header_input {
   border: none;
   width: 92%;
+  padding-left: 6%;
   /* height: 100%; */
   background-color: rgb(244, 242, 242);
 }
@@ -63,7 +65,8 @@ body {
 }
 .logo {
   cursor: pointer;
-  width: 4%;
+  width: 3.8%;
+  margin-right: 2%;
 }
 
 /* ================================Header Sub menu================ */
