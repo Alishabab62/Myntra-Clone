@@ -199,7 +199,7 @@ a {
   cursor: pointer;
 }
 
-button:hover {
+.btn:hover {
   background-color: rgb(250, 144, 161);
   color: white;
 }

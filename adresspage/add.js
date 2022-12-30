@@ -29,12 +29,12 @@ const town_added = document.querySelector(".town_added");
 const city_added = document.querySelector(".city_added");
 const state_added = document.querySelector(".state_added");
 const pin_added = document.querySelector(".pin_added");
-const addressconst = document.querySelector(".user-address-container")
+const addressconst = document.querySelector(".user-address-container");
 const namehere = document.querySelector("#_name");
 const addresshere = document.querySelector("#_address");
 const mobilehere = document.querySelector("#_mobile");
-const continuebtn = document.querySelector("#continuebtn")
-const upper = document.querySelector(".hide")
+const continuebtn = document.querySelector("#continuebtn");
+const upper = document.querySelector(".hide");
 
 add_btn.addEventListener("click", () => {
   details.style.display = "none";
@@ -55,39 +55,39 @@ add_btn.addEventListener("click", () => {
   // pin_added.innerText = pin.value;
   addresshere.innerText = `${house.value} ${town.value} ${city.value} ${state.value} - ${pin.value}`;
   // console.log(add);
-  upper.style.display= "block";
+  upper.style.display = "block";
 });
 
-const newaddress = document.querySelector(".add-new-address")
+const newaddress = document.querySelector(".add-new-address");
 // ============Go back Address Page======================
 
-const back = document.querySelector(".go_back");
+// const back = document.querySelector(".go_back");
 
-back.addEventListener("click", () => {
-  // location = 'index.html'
-  details.style.display = "block";
-  address_div.style.display = "none";
-  newaddress.style.display ="block"
-  
-  // console.log('back')
-});
+// back.addEventListener("click", () => {
+//   // location = 'index.html'
+//   details.style.display = "block";
+//   address_div.style.display = "none";
+//   newaddress.style.display = "block";
+
+//   // console.log('back')
+// });
 
 // ================================================= End ===================================================
 
-const totalMrp=document.querySelector("#side");
-const totalAmount=document.querySelector('.side-total');
-const discount=document.querySelector("#colorc");
-let totalBill=localStorage.getItem("totalMrp");
-const totalProduct=document.querySelector("#total");
-let discountPrice=Math.floor((totalBill*40)/100);
-discount.innerText=discountPrice;
-totalMrp.innerText=totalBill;
-totalAmount.innerText=totalBill-discountPrice;
-let total=localStorage.getItem("totalProduct");
-totalProduct.innerText=total;
+const totalMrp = document.querySelector("#side");
+const totalAmount = document.querySelector(".side-total");
+const discount = document.querySelector("#colorc");
+let totalBill = localStorage.getItem("totalMrp");
+const totalProduct = document.querySelector("#total");
+let discountPrice = Math.floor((totalBill * 40) / 100);
+discount.innerText = discountPrice;
+totalMrp.innerText = totalBill;
+totalAmount.innerText = totalBill - discountPrice;
+let total = localStorage.getItem("totalProduct");
+totalProduct.innerText = total;
 //addresscode
 const totalDetails = document.querySelector(".details");
-const button = document.querySelector("#b3")
+const button = document.querySelector("#b3");
 
 const userAddres = document.querySelector(".user-address-container");
 window.addEventListener("load", () => {
@@ -126,8 +126,6 @@ window.addEventListener("load", () => {
                 <p>Pay on delivery</p>
                 <button>Remove</button>
                 <button>Edit</button>`;
-        // userAddres.style.display="block";
-        // totalDetails.style.display="none";
       }
     });
   }
@@ -137,9 +135,16 @@ window.addEventListener("load", () => {
   const totalMRP = localStorage.getItem("totalMrp");
   document.querySelector("#side").innerText = totalMRP;
   let discountedPrice = Math.floor((totalMRP * 40) / 100);
-  document.querySelector('#colorc').innerText=`-${discountedPrice}`;
-  let updatedPrice=totalMRP-discountedPrice;
+  document.querySelector("#colorc").innerText = `-${discountedPrice}`;
+  let updatedPrice = totalMRP - discountedPrice;
   document.querySelector(".side-total").innerText = updatedPrice;
-  let totalProduct=localStorage.getItem("totalProduct");
-  document.querySelector('#total').innerText=totalProduct;
+  let totalProduct = localStorage.getItem("totalProduct");
+  document.querySelector("#total").innerText = totalProduct;
 });
+
+window.addEventListener('load',()=>{
+  let date=new Date();
+  const month = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+  document.querySelector('.delieveryTime').innerText=`Estimated delivery by ${date.getDate()}  ${month[date.getMonth()]}  ${date.getFullYear()}`;
+  console.log(date.getDate());
+})
