@@ -108,15 +108,16 @@ fetch("https://fakestoreapi.com/products")
     for (let item of data2) {
       let product = document.createElement("div");
       product.classList = "product";
-      product.innerHTML = `<img src="${item.image}" alt="">
+      product.innerHTML=`
+      <img src="${item.image}" alt="">
+      <div class="info-container">
         <div class="item-name">${item.title}</div>
         <div class="description">${item.description}</div>
        <div class="add-to-wishlist-btn"><button id="wishlist-btn">WISHLIST</button></div>
-      <div class="price">Rs.<span>${
-        item.price
-      }</span><span id="discount-price">${
-        item.price * 2
-      }</span><span id="discount-percentage">(50% OFF)</span></span></div>`;
+      <div class="price">Rs.${item.price}
+      </span><span id="discount-price">${item.price*2}
+      </span><span id="discount-percentage">(50% OFF)</span></span></div>
+  </div>`
       addProduct.appendChild(product);
     }
   })
@@ -128,10 +129,10 @@ addProduct = document.getElementById("add-product");
 let productArray = [];
 addProduct.addEventListener("click", (e) => {
   let item = e.target.parentElement.children[0].src;
-  let itemName = e.target.parentElement.children[1].innerText;
-  let description = e.target.parentElement.children[2].innerText;
-  let price = e.target.parentElement.children[4].firstElementChild.innerText;
-  console.log(price);
+  let itemName = e.target.parentElement.children[1].children[0].innerText;
+  let description = e.target.parentElement.children[1].children[1].innerText;
+  let price =e.target.parentElement.children[1].children[3].firstElementChild.innerText;
+  console.log(item,itemName,description,price);
   if (productArray.length == 0) {
     productArray.push({
       itemLink: item,
@@ -161,15 +162,4 @@ addProduct.addEventListener("click", (e) => {
   }
 });
 
-//wishlist button event
-addProduct.addEventListener("mouseover", (e) => {
-  if (e.target.classList.contains("product")) {
-    console.log(e.target.parentElement.childElement);
-    e.target.childNodes[6].style.display = "block";
-  }
-});
-addProduct.addEventListener("mouseout", (e) => {
-  if (e.target.parentElement.children) {
-    e.target.childNodes[6].style.display = "none";
-  }
-});
+

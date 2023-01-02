@@ -314,6 +314,7 @@ main .main-container .box {
   min-height: 17px;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-weight: 100;
 }
 main .main-container .box input{
   margin: 0px 16px 0px 0px;
@@ -340,9 +341,10 @@ main .main-container h3 i{
 }
 
 
+
 .main-products-container .product-container{
   width: 83.5%;
-  background-color: #ffffff;
+  background-color:white;
 }
 .main-products-container .product-container .main-upper-div{
   height: 101px;
@@ -420,41 +422,60 @@ main .products {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  background-color: white;
+  padding: 24px 20px 0px 15px;
 }
 main .product {
-  height: auto;
+  height: 360px;
   width: 210px;
-  margin: 15px 15px 15px 15px;
-  box-shadow: 0px 0px 5px #9b9ba7;
-  padding: 5px;
+  text-align: left;
+  position: relative;
+  margin: 0px 18px 30px 18px;
 }
 .products .product img {
-  height: 249px;
+  height: 260px;
   width: 100%;
   margin-bottom: 10px;
 }
-.products .product .item-name {
-  text-align: left;
-  font-weight: bold;
-  height: 20px;
-  overflow: hidden;
-  margin: 5px 0px;
+.products .product .info-container{
+  padding: 0px 10px;
+  background-color: white;
+  margin-top: 12px;
+  position: relative;
 }
-
-.products .product .description {
-  color: gray;
+.products .product .item-name {
   height: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #282c3f;
+  margin-bottom: 6px;
+  font-weight: bold;
   overflow: hidden;
-  margin: 5px 0px;
+}
+.products .product .description {
+  color: #535766;
+  font-size: 14px;
+  margin: 0px 0px;
+  font-weight: 400;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding-left: 0px;
 }
 main .product .price {
-  padding-bottom: 0px;
+  font-size: 14px;
+  line-height: 15px;
+  color: #282c3f;
+  white-space: nowrap;
+  font-weight: 500;
+  margin: 10px 0px 6px 0px;
 }
 .product #discount-price {
-  color: rgb(225, 215, 215);
+  color:#7e818c;
   margin: 0px 0px 0px 5px;
   text-decoration: line-through;
-  font-size: 0.9em;
+  font-weight: 400;
+  font-size: 12px;
 }
 .product .add-to-wishlist-btn {
   width: 95%;
@@ -471,7 +492,9 @@ main .product .price {
   font-family: Arial, Helvetica, sans-serif;
 }
 .product #discount-percentage {
-  color: #ff3f6c;
+  color: #ff905a;
+  font-weight: 400;
+  font-size: 12px;
   text-decoration: none;
   margin-left: 5px;
 }
@@ -697,6 +720,14 @@ footer .container-1 .original-return {
 /* ========================Vineet Responsive code end ============== */
 
 @media only screen and (max-width: 600px) {
+  .main-products-container .product-container{
+    width: 100%;
+  }
+ 
+ .filter-product-container .product-container .main-upper-div{
+    display: none;
+  }
+
   footer .container-3 {
     flex-direction: column;
     margin-left: 8px;
@@ -729,14 +760,15 @@ footer .container-1 .original-return {
   footer .sub-container .btn {
     margin: 5px 10px 5px 0px;
   }
-  .main-products-container .products {
-    width: 60%;
-  }
   .main-products-container .filter {
     width: 40%;
   }
 }
-
+@media only screen and(max-width:769px){
+    .main-upper-div .upper-right-div{
+    display: none;
+  }
+}
 @media only screen and (max-width: 1000px) {
   footer .container {
     width: 95%;
