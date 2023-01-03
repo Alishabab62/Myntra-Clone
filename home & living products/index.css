@@ -180,24 +180,12 @@ p {
   margin-top: 3%;
   left: 0;
   width: 50%;
-  background-color: rgb(165, 165, 165);
+  background-color: rgb(250, 224, 224);
   display: none;
 }
 
 .header_profile_submenu_div p {
   margin-bottom: 10px;
-}
-.counter {
-  /* border: 1px solid; */
-  background-image: linear-gradient(90deg, #f9f9ff, #dee8ff);
-  display: flex;
-  justify-content: center;
-  font-size: x-large;
-  color: #9d9ea2;
-  padding: 1%;
-}
-.timer {
-  color: #ff3f6c;
 }
 
 /* ==============================Vineet's Responsive Code start===================== */
@@ -226,120 +214,268 @@ p {
 
 /* =========================vineet's header code end======================= */
 
+
+
+
+
+
+
+
+
 .main-products-container {
   display: flex;
+  flex-direction: column;
+  background-color: white;
+  font-family: Whitney,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
 }
+
+.main-products-container .path-div{
+  height: 38.4px;
+  display: flex;
+  align-items: flex-end;
+  margin-left: 25px;
+}
+.main-products-container .path-div span{
+  font-size: 14px;
+  line-height: 1;
+  margin-right: 5px;
+  text-transform: capitalize;
+  color: #282c3f;
+}
+.main-products-container .path-div .myntra-fashion-store{
+  font-weight: 500;
+}
+
+.main-products-container .total-item{
+  height: 33.4px;
+  display: flex;
+  align-items: center;
+  margin: 10px 0px 5px 25px;
+}
+.main-products-container .total-item h1{
+  font-size: 16px;
+  color: #282c3f;
+  font-weight: 500;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-transform: capitalize;
+}
+.main-products-container .total-item .products-count{
+  color: #878b94;
+}
+ 
+
+
 
 /* filter */
 
+.filter-product-container{
+  display: flex;
+  flex-direction: row;
+}
 main .filter {
-  width: 20%;
-  background-color: white;
-  font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
+  width: 16.5%;
   position: sticky;
   bottom: 0px;
-}
-.filter .filter-clear {
-  color: black;
-  margin: 0px 0px 10px 40px;
-}
-.filter .filter-clear #clear {
-  color: #ff3f6c;
-  font-size: 0.8em;
-  float: right;
-  margin-right: 20px;
+  padding-top: 23px;
 }
 main .filter .main-container {
-  width: 100%;
-  border: 1px solid #f5f5f6;
+  padding: 20px 0px 15px 25px;
+  border-bottom: 1px solid #e9e9ed;
+  border-right: 1px solid #e9e9ed;
 }
-main .filter-container {
-  width: 80%;
-  margin-left: 10%;
-}
-main .filter-container .box {
-  color: black;
-  padding: 5px;
-  font-weight: 100;
-  font-size: 12px;
-}
-main .box input {
-  margin-right: 10px;
-  color: black;
+main .main-container .filter-header{
+  position: relative;
+  
 }
 
-.filter .filter-container {
-  margin-top: 30px;
+main .filter #filter{
+  font-weight: 700;
+}
+main .filter .filter-header #clear{
+  position: absolute;
+  right: 10px;
+  color: #ff3f6c;
+  font-size: 13px;
+  cursor: pointer;
+  font-weight: 500;
+}
+main .filter .gender-container div{
+  color: black;
+  font-weight: bold;
+}
+main .main-container .box {
   color: #282c3f;
-  font-weight: 100;
-  margin-bottom: 30px;
-  min-width: 282px;
-}
-.filter .gender .box {
-  font-weight: bold;
-  color: black;
+  margin-bottom: 7px;
+  width: 95%;
   font-size: 14px;
+  cursor: pointer;
+  vertical-align: middle;
+  min-height: 17px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 100;
 }
-.filter .filter-container h3 {
-  margin: 10px 0px 10px 10px;
-  color: black;
-  font-weight: bold;
-  font-size: 0.9em;
+main .main-container .box input{
+  margin: 0px 16px 0px 0px;
 }
-.filter .filter-container .box input {
-  margin-right: 10px;
+main .main-container .box span{
+  color: #94969f;
+  font-size: 10px;
+  margin-left: 4px;
+  font-weight:400;
 }
-.filter .filter-container i {
-  padding: 10px;
+main .main-container h3{
+font-size: 14px;
+color: #282c3f;
+margin-bottom: 18px;
+font-weight: 500;
+position: relative;
+}
+main .main-container h3 i{
   border-radius: 50%;
   background-color: #f5f5f6;
+  font-size: 0.9em;
+  position: absolute;
+  right: 14px;
 }
+
+
+
+.main-products-container .product-container{
+  width: 83.5%;
+  background-color:white;
+}
+.main-products-container .product-container .main-upper-div{
+  height: 101px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.main-products-container .product-container .main-upper-div i{
+  color: #7c7d82;
+}
+.main-products-container .product-container .products-upper-div{
+  display: flex;
+  justify-content: space-between;
+align-items: center;
+  margin-left: 16px;
+}
+.main-products-container .product-container .products-upper-div .div-upper{
+  margin: 0px 0px 0px 4px;
+  padding: 3px 20px;
+  font-size: 14px;
+  font-weight: 100;
+  color: #282c3f;
+  cursor: pointer;
+  border-radius: 15px;
+}
+.main-products-container .product-container .products-upper-div .div-upper:hover{
+  background-color: #ced1d751;
+}
+.main-upper-div .upper-right-div{
+  margin-right: 30px;
+  border: 1px solid #d4d5d9;
+  border-radius: 2px;
+  padding: 0px 15px;
+  background-color: #ffffff;
+}
+.main-upper-div .upper-right-div .recommended{
+  color: #282c3f;
+  font-weight: 500;
+  font-size: 14px;
+}
+.main-upper-div .upper-right-div .parent-div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 255px;
+  height: 37px;
+  cursor: pointer;
+}
+.main-products-container .product-container .upper-left-div{
+  display: flex;
+}
+.main-products-container .product-container .main-upper-div .products-lower-div{
+  display: flex;
+}
+.product-container .main-upper-div .products-lower-div .div-lower{
+  padding: 3px 20px;
+  border: 1px solid #f5f5f6;
+  border-radius: 20px;
+  margin-left: 8px;
+  font-size: 12px;
+  color: #3e4152;
+  cursor: default;
+}
+.product-container .main-upper-div .products-lower-div .div-lower:hover{
+  border: 1px solid #bdbdc2;
+}
+
+
+
+
 
 /* .products */
 
 main .products {
-  width: calc(100% 282px);
-  background-color: white;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  padding: 24px 20px 0px 15px;
 }
 main .product {
-  height: auto;
+  height: 360px;
   width: 210px;
-  margin: 15px 15px 15px 15px;
-  box-shadow: 0px 0px 5px #9b9ba7;
-  padding: 5px;
+  text-align: left;
+  position: relative;
+  margin: 0px 18px 30px 18px;
 }
 .products .product img {
-  height: 249px;
+  height: 260px;
   width: 100%;
   margin-bottom: 10px;
 }
-.products .product .item-name {
-  text-align: left;
-  font-weight: bold;
-  height: 20px;
-  overflow: hidden;
-  margin: 5px 0px;
+.products .product .info-container{
+  padding: 0px 10px;
+  background-color: white;
+  margin-top: 12px;
+  position: relative;
 }
-
-.products .product .description {
-  color: gray;
+.products .product .item-name {
   height: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #282c3f;
+  margin-bottom: 6px;
+  font-weight: bold;
   overflow: hidden;
-  margin: 5px 0px;
+}
+.products .product .description {
+  color: #535766;
+  font-size: 14px;
+  margin: 0px 0px;
+  font-weight: 400;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding-left: 0px;
 }
 main .product .price {
-  padding-bottom: 0px;
+  font-size: 14px;
+  line-height: 15px;
+  color: #282c3f;
+  white-space: nowrap;
+  font-weight: 500;
+  margin: 10px 0px 6px 0px;
 }
 .product #discount-price {
-  color: rgb(225, 215, 215);
+  color:#7e818c;
   margin: 0px 0px 0px 5px;
   text-decoration: line-through;
-  font-size: 0.9em;
+  font-weight: 400;
+  font-size: 12px;
 }
 .product .add-to-wishlist-btn {
   width: 95%;
@@ -356,10 +492,17 @@ main .product .price {
   font-family: Arial, Helvetica, sans-serif;
 }
 .product #discount-percentage {
-  color: #ff3f6c;
+  color: #ff905a;
+  font-weight: 400;
+  font-size: 12px;
   text-decoration: none;
   margin-left: 5px;
 }
+
+
+
+
+
 
 footer {
   background-color: #fafbfc;
@@ -577,6 +720,14 @@ footer .container-1 .original-return {
 /* ========================Vineet Responsive code end ============== */
 
 @media only screen and (max-width: 600px) {
+  .main-products-container .product-container{
+    width: 100%;
+  }
+ 
+ .filter-product-container .product-container .main-upper-div{
+    display: none;
+  }
+
   footer .container-3 {
     flex-direction: column;
     margin-left: 8px;
@@ -598,9 +749,6 @@ footer .container-1 .original-return {
 }
 
 @media only screen and (max-width: 821px) {
-  .burger_div {
-    height: 150%;
-  }
   footer .container .sub-container .online-shopping-tab,
   .useful-link-tab,
   .customer-policies-tab,
@@ -612,18 +760,16 @@ footer .container-1 .original-return {
   footer .sub-container .btn {
     margin: 5px 10px 5px 0px;
   }
-  .main-products-container .products {
-    width: 60%;
-  }
   .main-products-container .filter {
     width: 40%;
   }
 }
-
-@media only screen and (max-width: 1000px) {
-  .header_text {
-    margin-top: -4%;
+@media only screen and(max-width:769px){
+    .main-upper-div .upper-right-div{
+    display: none;
   }
+}
+@media only screen and (max-width: 1000px) {
   footer .container {
     width: 95%;
     margin: auto;
