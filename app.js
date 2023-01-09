@@ -20,6 +20,64 @@ const studio = document.querySelector(".studio");
 const profile = document.querySelector(".profile");
 const profileMouseOut = document.querySelector(".header_profile_submenu_div");
 
+men.addEventListener('mouseover',()=>{
+  men.style.display="flex"
+})
+men.addEventListener('mouseout',()=>{
+  men.style.display="none"
+})
+
+women.addEventListener('mouseover',()=>{
+  women.style.display="flex"
+})
+women.addEventListener('mouseout',()=>{
+  women.style.display="none"
+})
+
+kids.addEventListener('mouseover',()=>{
+  kids.style.display="flex"
+})
+kids.addEventListener('mouseout',()=>{
+  kids.style.display="none"
+})
+
+home.addEventListener('mouseover',()=>{
+  home.style.display="flex"
+})
+home.addEventListener('mouseout',()=>{
+  home.style.display="none"
+})
+
+beauty.addEventListener('mouseover',()=>{
+  beauty.style.display="flex"
+})
+beauty.addEventListener('mouseout',()=>{
+  beauty.style.display="none"
+})
+
+studio.addEventListener('mouseover',()=>{
+  studio.style.display="flex"
+})
+studio.addEventListener('mouseout',()=>{
+  studio.style.display="none"
+})
+
+
+
+document.querySelector(".profile-menu").addEventListener('mouseover',()=>{
+  profile.style.display="block"
+})
+document.querySelector(".profile-menu").addEventListener('mouseout',()=>{
+  profile.style.display="none"
+})
+profile.addEventListener('mouseover',()=>{
+  profile.style.display="block"
+})
+profile.addEventListener('mouseout',()=>{
+  profile.style.display="none"
+})
+
+
 function openSubmenuMen() {
   // console.log("vineet");
   men.style.display = "flex";
@@ -77,8 +135,6 @@ header_beauty.addEventListener("mouseover", openSubmenuBeauty);
 header_beauty.addEventListener("mouseout", closeSubmenuBeauty);
 header_studio.addEventListener("mouseover", openSubmenuStudio);
 header_studio.addEventListener("mouseout", closeSubmenuStudio);
-header_profile.addEventListener("mouseover", openSubmenuProfile);
-profileMouseOut.addEventListener("mouseout", closeSubmenuProfile);
 logo.addEventListener("click", () => {
   location = "index.html";
 });
