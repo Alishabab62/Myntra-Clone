@@ -35,25 +35,60 @@ const otp3 = document.getElementById("otp3");
 const otp4 = document.getElementById("otp4");
 
 const wrong = document.getElementById("wrong");
-const btn = document.getElementById("btn");
-
 // function to verify otp and also check that user is already have account or not
 
-btn.addEventListener("click", async () => {
-  let num = (localStorage.getItem("number"));
-  if (
-    num1 != otp1.value ||
-    num2 != otp2.value ||
-    num3 != otp3.value ||
-    num4 != otp4.value
-  ) {
-    wrong.innerText = "Wrong OTP";
-    setTimeout(() => {
-      wrong.innerText = "";
-    }, 1000);
-  } else {
+ const inputs = document.querySelectorAll("input");
+// iterate over all inputs
+inputs.forEach( async (input, index1) => {
+  console.log(input)
+  input.addEventListener("keyup", (e) => {
+    const currentInput = input,
+      nextInput = input.nextElementSibling,
+      prevInput = input.previousElementSibling;
+    if (currentInput.value.length > 1) {
+      currentInput.value = "";
+      return;
+    }
+    if (nextInput && nextInput.hasAttribute("disabled") && currentInput.value !== "") {
+      nextInput.removeAttribute("disabled");
+      nextInput.focus();
+    }
+
+    if (e.key === "Backspace") {
+      inputs.forEach((input, index2) => {
+        if (index1 <= index2 && prevInput) {
+          input.setAttribute("disabled", true);
+          input.value = "";
+          prevInput.focus();
+        }
+      });
+    }
+    if (!inputs[3].disabled && inputs[3].value !== "") {
+      let num = (localStorage.getItem("number"));
+      if (
+        num1 != otp1.value ||
+        num2 != otp2.value ||
+        num3 != otp3.value ||
+        num4 != otp4.value
+      ) {
+        wrong.innerText = "Wrong OTP";
+        setTimeout(() => {
+          wrong.innerText = "";
+        }, 1000);
+      } else 
+      otpValidation();
+    }
+  });
+});
+
+//focus the first input which index is 0 on window load
+window.addEventListener("load", () => inputs[0].focus());
+
+
+async function  otpValidation(){
+  {
     const data = {
-      mobileNumber: num
+      mobileNumber: 6
     }
     console.log(data);
     const response = await fetch(
@@ -72,6 +107,19 @@ btn.addEventListener("click", async () => {
       }, 1000);
     } else {
       location = "../index.html";
+      console.log(response)
     }
   }
-});
+}
+
+
+
+
+
+
+
+
+
+// btn.addEventListener("click", async () => {
+ 
+// });
