@@ -128,8 +128,6 @@ const burgerIcon = document.querySelector("#burgerIcon");
 const sidebar = document.querySelector(".sidebarMenu");
 
 function openSideBar() {
-  // console.log("vineet");
-  // sidebar.style.display="block"
   if (sidebar.style.display !== "block") {
     sidebar.style.display = "block";
   } else {

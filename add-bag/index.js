@@ -8,10 +8,11 @@ const totalAmount = document.querySelector("#total-amount");
 const totalAmountDiscount = document.querySelector("#total-amount-discount");
 const totalItem = document.querySelector("#total-item");
 const mainBag = document.querySelector(".product-bag");
+let num = (localStorage.getItem("number"));
 window.addEventListener("load", async () => {
   let price = 0;
   const response = await fetch(
-    `https://myntraapi-5zfq.onrender.com/myntra/addtobag/get/1234`
+    `https://myntraapi-5zfq.onrender.com/myntra/addtobag/get/${num}`
   );
   let b = await response.json();
   let productObj = b.message;
@@ -53,8 +54,9 @@ mainBag.addEventListener("click", async (e) => {
   if (e.target.classList.contains("remove-btn")) {
     e.target.parentNode.parentNode.parentNode.remove();
     let productId = e.target.getAttribute("data-id");
+  let num = (localStorage.getItem("number"));
     let data = {
-      user: 1234,
+      user: num,
       product: `${productId}`,
     };
     const response = await fetch(
@@ -69,7 +71,7 @@ mainBag.addEventListener("click", async (e) => {
     );
 
     const responseAfterDelete = await fetch(
-      `https://myntraapi-5zfq.onrender.com/myntra/addtobag/get/1234`
+      `https://myntraapi-5zfq.onrender.com/myntra/addtobag/get/${num}`
     );
     let b = await responseAfterDelete.json();
     let productObj = b.message;

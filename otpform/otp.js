@@ -64,7 +64,7 @@ inputs.forEach( async (input, index1) => {
       });
     }
     if (!inputs[3].disabled && inputs[3].value !== "") {
-      let num = (localStorage.getItem("number"));
+      
       if (
         num1 != otp1.value ||
         num2 != otp2.value ||
@@ -86,9 +86,10 @@ window.addEventListener("load", () => inputs[0].focus());
 
 
 async function  otpValidation(){
+  let num = (localStorage.getItem("number"));
   {
     const data = {
-      mobileNumber: 6
+      mobileNumber: num
     }
     console.log(data);
     const response = await fetch(

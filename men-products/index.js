@@ -134,8 +134,10 @@ addProduct.addEventListener("click", async (e) => {
   let itemName = e.target.parentElement.children[1].children[1].innerText;
   let price =e.target.parentElement.children[1].children[3].children[0].innerText;
   console.log(e.target.parentElement.children[1].children[3].children[0].innerText);
+  let userId=localStorage.getItem('number');
+  console.log(userId)
   const data = {
-    "user":1234,
+    "user":userId,
     "imageLink":`${item}`,
     "brand": `${brand}`,
     "productName": `${itemName}`,
