@@ -16,18 +16,15 @@ const profile = document.querySelector(".profile");
 const profileMouseOut = document.querySelector(".header_profile_submenu_div");
 
 function openSubmenuMen() {
-  // console.log("vineet");
   men.style.display = "flex";
 }
 function closeSubmenuMen() {
   men.style.display = "none";
 }
 function openSubmenuWomen() {
-  console.log(women);
   men.style.display = "flex";
 }
 function closeSubmenuWomen() {
-  console.log(women);
   men.style.display = "none";
 }
 function openSubmenuKids() {
@@ -78,7 +75,6 @@ profileMouseOut.addEventListener("mouseout", closeSubmenuProfile);
 const logo = document.querySelector(".logo");
 
 logo.addEventListener("click", () => {
-  console.log("vineet");
   location = "../index.html";
 });
 
@@ -97,24 +93,28 @@ function openSideBar() {
 
 burgerIcon.addEventListener("click", openSideBar);
 
-let addProduct = document.getElementById("add-product");
-let productDiv = "";
 
-fetch("https://fakestoreapi.com/products")
+
+window.addEventListener('load', renderProduct)
+
+
+let addProduct = document.getElementById("add-product");
+function renderProduct(){
+fetch("https://myntraapi-5zfq.onrender.com/myntra/get")
   .then((data) => {
     return data.json();
   })
   .then((data2) => {
-    for (let item of data2) {
+    for (let item of data2.products) {
       let product = document.createElement("div");
       product.classList = "product";
       product.innerHTML=`
-      <img src="${item.image}" alt="">
+      <img src="${item.imageLink}" alt="">
       <div class="info-container">
-        <div class="item-name">${item.title}</div>
-        <div class="description">${item.description}</div>
+        <div class="item-name">${item.brand}</div>
+        <div class="description">${item.name}</div>
        <div class="add-to-wishlist-btn"><button id="wishlist-btn">WISHLIST</button></div>
-      <div class="price">Rs.${item.price}
+      <div class="price">Rs.<span>${item.price}
       </span><span id="discount-price">${item.price*2}
       </span><span id="discount-percentage">(50% OFF)</span></span></div>
   </div>`
@@ -124,42 +124,82 @@ fetch("https://fakestoreapi.com/products")
   .catch((error) => {
     console.log("Error:", error);
   });
+}
+
 
 addProduct = document.getElementById("add-product");
-let productArray = [];
-addProduct.addEventListener("click", (e) => {
+addProduct.addEventListener("click", async (e) => {
   let item = e.target.parentElement.children[0].src;
-  let itemName = e.target.parentElement.children[1].children[0].innerText;
-  let description = e.target.parentElement.children[1].children[1].innerText;
-  let price =e.target.parentElement.children[1].children[3].firstElementChild.innerText;
-  console.log(item,itemName,description,price);
-  if (productArray.length == 0) {
-    productArray.push({
-      itemLink: item,
-      itemName: itemName,
-      description: description,
-      price: price,
-    });
-    localStorage.setItem("productArray", JSON.stringify(productArray));
-  } else {
-    let flag = true;
-    let a = localStorage.getItem("productArray");
-    let productArrayy = JSON.parse(a);
-    productArrayy.forEach((value, i) => {
-      if (value.itemLink == item) {
-        flag = false;
-      }
-    });
-    if (flag) {
-      productArray.push({
-        itemLink: item,
-        itemName: itemName,
-        description: description,
-        price: price,
-      });
-    }
-    localStorage.setItem("productArray", JSON.stringify(productArray));
+  let brand = e.target.parentElement.children[1].children[0].innerText;
+  let itemName = e.target.parentElement.children[1].children[1].innerText;
+  let price =e.target.parentElement.children[1].children[3].children[0].innerText;
+  console.log(e.target.parentElement.children[1].children[3].children[0].innerText);
+  let userId=localStorage.getItem('number');
+  console.log(userId)
+  const data = {
+    "user":userId,
+    "imageLink":`${item}`,
+    "brand": `${brand}`,
+    "productName": `${itemName}`,
+    "price": Number(price)
   }
+  console.log(data)
+const response = await fetch('https://myntraapi-5zfq.onrender.com/myntra/addtobag', {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(data)
+})
+const res = await response.json();
+console.log(res)
 });
+
+
+
+
+
+
+
+
+
+
+
+// addProduct = document.getElementById("add-product");
+// let productArray = [];
+// addProduct.addEventListener("click", (e) => {
+//   let item = e.target.parentElement.children[0].src;
+//   let itemName = e.target.parentElement.children[1].children[0].innerText;
+//   let description = e.target.parentElement.children[1].children[1].innerText;
+//   let price =e.target.parentElement.children[1].children[3].firstElementChild.innerText;
+//   console.log(item,itemName,description,price);
+//   if (productArray.length == 0) {
+//     productArray.push({
+//       itemLink: item,
+//       itemName: itemName,
+//       description: description,
+//       price: price,
+//     });
+//     localStorage.setItem("productArray", JSON.stringify(productArray));
+//   } else {
+//     let flag = true;
+//     let a = localStorage.getItem("productArray");
+//     let productArrayy = JSON.parse(a);
+//     productArrayy.forEach((value, i) => {
+//       if (value.itemLink == item) {
+//         flag = false;
+//       }
+//     });
+//     if (flag) {
+//       productArray.push({
+//         itemLink: item,
+//         itemName: itemName,
+//         description: description,
+//         price: price,
+//       });
+//     }
+//     localStorage.setItem("productArray", JSON.stringify(productArray));
+//   }
+// });
 
 

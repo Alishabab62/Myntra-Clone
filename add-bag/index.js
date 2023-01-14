@@ -4,20 +4,24 @@ logo.addEventListener("click", () => {
 });
 
 // ================================================
-
-const mainBag = document.querySelector(".product-bag");
 const totalAmount = document.querySelector("#total-amount");
 const totalAmountDiscount = document.querySelector("#total-amount-discount");
 const totalItem = document.querySelector("#total-item");
-window.addEventListener("load", () => {
-  let a = localStorage.getItem("productArray");
-  let productObj = JSON.parse(a);
+const mainBag = document.querySelector(".product-bag");
+let num = (localStorage.getItem("number"));
+window.addEventListener("load", async () => {
+  let price = 0;
+  const response = await fetch(
+    `https://myntraapi-5zfq.onrender.com/myntra/addtobag/get/${num}`
+  );
+  let b = await response.json();
+  let productObj = b.message;
   productObj.forEach((product) => {
     mainBag.innerHTML += ` <div class="product">
-        <div class="image"><img src="${product.itemLink}" alt=""></div>
+        <div class="image"><img src="${product.imageLink}" alt=""></div>
         <div class="description">
-            <div class="item-name">${product.itemName}</div>
-            <div class="item-description">${product.description}</div>
+            <div class="item-name">${product.brand}</div>
+            <div class="item-description">${product.productName}</div>
             <div class="size">Size:
                 <select name="size" id="quantity">
                     <option value="M">S</option>
@@ -34,57 +38,54 @@ window.addEventListener("load", () => {
                     <option value="M">4</option>
                 </select>
             </div>
-           <div class="remove-box"><div class="price"><span>Rs.</span><span>${product.price}</span></div><button class="remove-btn">Remove</button></div>
+           <div class="remove-box"><div class="price"><span>Rs.</span><span>${product.price}</span></div><button class="remove-btn" data-id=${product._id}>Remove</button></div>
         </div>
     </div>`;
+    price += product.price;
   });
-  let price = 0;
-  productObj.forEach((product) => {
-    let p = Number(product.price);
-    price += p;
-    console.log(p);
-  });
-  let total = productObj.length;
-  totalAmount.innerText = price; //totalAmount
-  totalAmountDiscount.innerText = price; //totalAmountDiscount
-  totalItem.innerText = total; //totalItem
-  localStorage.setItem("totalMrp", price);
-  localStorage.setItem("totalProduct", total);
+  totalAmount.innerText = price;
+  totalItem.innerText = productObj.length;
+  totalAmountDiscount.innerText = price;
 });
 
 // function to remove item
 
-mainBag.addEventListener("click", (e) => {
+mainBag.addEventListener("click", async (e) => {
   if (e.target.classList.contains("remove-btn")) {
     e.target.parentNode.parentNode.parentNode.remove();
-    let total = localStorage.getItem("totalProduct"); //setting new total product after delete
-    total--;
-    totalItem.innerText = total;
-    localStorage.setItem("totalProduct", total); //set totalItem in localstorage after removing item
-    let src =
-      e.target.parentNode.parentNode.parentNode.children[0].children[0].src;
-    let a = localStorage.getItem("productArray") || "[]";
-    let productObj = JSON.parse(a);
-    productObj.forEach((storeProduct, i) => {
-      if (src == storeProduct.itemLink) {
-        console.log(storeProduct);
-        productObj.splice(i, 1);
+    let productId = e.target.getAttribute("data-id");
+  let num = (localStorage.getItem("number"));
+    let data = {
+      user: num,
+      product: `${productId}`,
+    };
+    const response = await fetch(
+      "https://myntraapi-5zfq.onrender.com/myntra/addtobag/delete",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
       }
-    });
-    localStorage.setItem("productArray", JSON.stringify(productObj));
+    );
+
+    const responseAfterDelete = await fetch(
+      `https://myntraapi-5zfq.onrender.com/myntra/addtobag/get/${num}`
+    );
+    let b = await responseAfterDelete.json();
+    let productObj = b.message;
     let price = 0;
     productObj.forEach((product) => {
-      let p = Number(product.price);
-      price += p;
-      console.log(p);
+      price += product.price;
     });
     totalAmount.innerText = price;
-    totalAmountDiscount.innerText = price; //totalAmountDiscount
+    totalAmountDiscount.innerText = price;
   }
 });
+
 const placeOrderBtn = document.querySelector(".place_order_btn");
 placeOrderBtn.addEventListener("click", () => {
-  let total = localStorage.getItem("totalProduct");
   if (total != 0) {
     location = "../adresspage/index.html";
   } else {
