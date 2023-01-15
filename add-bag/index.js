@@ -14,7 +14,7 @@ window.addEventListener("load", async () => {
   const response = await fetch( `https://myntraapi-5zfq.onrender.com/myntra/addtobag/get/${num}`
   );
   let b = await response.json(); 
-  let productObj = b.message;
+  let productObj = b.message; 
   productObj.forEach((product) => {
     mainBag.innerHTML += ` <div class="product">
         <div class="image"><img src="${product.imageLink}" alt=""></div>
