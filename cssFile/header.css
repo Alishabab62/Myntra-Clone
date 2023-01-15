@@ -138,10 +138,13 @@
   color: #3e4152;
   cursor: pointer;
   position: absolute;
-  margin-top: 32.8%;
+  margin-top: 31.8%;
   right: 50px;
   padding: 1%;
   font-size: 14px;
+}
+.profile-menu{
+  padding-top: 38px;
 }
 .header_profile_submenu_div p{
   margin: 10px 0px;
