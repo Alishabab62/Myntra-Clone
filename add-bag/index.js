@@ -8,14 +8,13 @@ const totalAmount = document.querySelector("#total-amount");
 const totalAmountDiscount = document.querySelector("#total-amount-discount");
 const totalItem = document.querySelector("#total-item");
 const mainBag = document.querySelector(".product-bag");
-let num = (localStorage.getItem("number"));
+let num = localStorage.getItem("number");
 window.addEventListener("load", async () => {
   let price = 0;
-  const response = await fetch(
-    `https://myntraapi-5zfq.onrender.com/myntra/addtobag/get/${num}`
+  const response = await fetch( `https://myntraapi-5zfq.onrender.com/myntra/addtobag/get/${num}`
   );
-  let b = await response.json();
-  let productObj = b.message;
+  let b = await response.json(); 
+  let productObj = b.message; 
   productObj.forEach((product) => {
     mainBag.innerHTML += ` <div class="product">
         <div class="image"><img src="${product.imageLink}" alt=""></div>
