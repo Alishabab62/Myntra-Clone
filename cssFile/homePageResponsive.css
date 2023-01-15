@@ -1,24 +1,5 @@
 /* ==============================Vineet's Responsive Code start===================== */
 
-@media only screen and (max-width: 1200px) {
-  .header_menu,
-  .logo,
-  .header_input_div,
-  .header_icon_text,
-  .new_pink {
-    display: none;
-  }
-  .burger_div {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .burger_div {
-    display: none;
-  }
-}
 
 /* ========================Vineet Responsive code end ============== */
 
