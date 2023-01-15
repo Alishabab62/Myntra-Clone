@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="../cssFile/index.css">
+    <!-- <link rel="stylesheet" href="../cssFile/index.css"> -->
+    <link rel="stylesheet" href="../cssFile/header.css">
     <title>Myntra</title>
     <link rel="icon" type="image/x-icon" href="../images/myntra-logo-freelogovectors.net.svg">
 </head>
 <body>
+
     <header class="header">
         <!-- vineet -->
         <!-- ======================For Mobile view=================== -->
@@ -21,13 +23,13 @@
             </div>
             <div class="sidebarMenu">
                 <ul class="menu">
-                    <li><a href="../Men's/index.html">Men</a><i class="fa-duotone fa-greater-than"></i></li>
-                    <li><a href="../women/women's.html">Women</a><i class="fa-duotone fa-greater-than"></i></li>
-                    <li><a href="../kids/kids.html">Kids</a><i class="fa-duotone fa-greater-than"></i></li>
-                    <li><a href="../Home&Living/index.html">Home & Living</a><i class="fa-duotone fa-greater-than"></i></li>
-                    <li><a href="../index.html">Beauty</a><i class="fa-duotone fa-greater-than"></i></li>
-                    <li><a href="../index.html">Myntra Studio</a><i class="fa-duotone fa-greater-than"></i></li>
-                   
+                    <li><a href="/Men's/index.html">Men</a><i class="fa-duotone fa-greater-than"></i></li>
+                    <li><a href="/women/women's.html">Women</a><i class="fa-duotone fa-greater-than"></i></li>
+                    <li><a href="./kids/kids.html">Kids</a><i class="fa-duotone fa-greater-than"></i></li>
+                    <li><a href="./Home&Living/index.html">Home & Living</a><i class="fa-duotone fa-greater-than"></i></li>
+                    <li><a href="./index.html">Beauty</a><i class="fa-duotone fa-greater-than"></i></li>
+                    <li><a href="./index.html">Myntra Studio</a><i class="fa-duotone fa-greater-than"></i></li>
+                    
                 </ul>
             </div>
         </div>
@@ -35,9 +37,9 @@
         
         <!-- =======================For Laptop view====================== -->
         <img class="logo" src="../images/myntra-logo-freelogovectors.net.svg">
-        
+        <div class="nav-container">
         <p class="header_menu">
-            <b><a class="header_men" href="../Men's/index.html">MEN</a></b>
+            <a href="./Men's/index.html" class="header_men" >MEN</a>
             <div class="header_submenu men">
                 <div class="submenu_column">
                     <p><b>Topwear</b></p>
@@ -85,7 +87,7 @@
             </div>
         </p>
         <p class="header_menu">
-            <b><a class="header_women" href="../women/women's.html">WOMEN</a></b>
+            <b><a class="header_women" href="./women/women's.html">WOMEN</a></b>
             <div class="header_submenu women">
                 <div class="submenu_column">
                     <p><b>Bottomwear</b></p>
@@ -131,7 +133,7 @@
             </div>
         </p>
         <p class="header_menu">
-            <b><a class="header_kids" href="../kids/kids.html">KIDS</a></b>
+            <b><a class="header_kids" href="./kids/kids.html">KIDS</a></b>
             <div class="header_submenu kids">
                 <div class="submenu_column">
                     <p><b>Topwear</b></p>
@@ -179,7 +181,7 @@
             </div>
         </p>
         <p class="header_menu">
-            <b><a class="header_home" href="../Home&Living/index.html">HOME & LIVING</a></b>
+            <b><a class="header_home" href="./Home&Living/index.html">HOME & LIVING</a></b>
             <div class="header_submenu home">
                 <div class="submenu_column">
                     <p><b>Topwear</b></p>
@@ -227,7 +229,7 @@
             </div>
         </p>
         <p class="header_menu">
-            <b><a class="header_beauty" href="../index.html">BEAUTY</a></b>
+            <b><a class="header_beauty" href="index.html">BEAUTY</a></b>
             <div class="header_submenu beauty">
                 <div class="submenu_column">
                     <p><b>Topwear</b></p>
@@ -275,7 +277,7 @@
             </div>
         </p>
         <p class="header_menu">
-            <b><a class="header_studio" href="../index.html">STUDIO</a></b>
+            <b><a class="header_studio" href="index.html">STUDIO</a></b>
             <div class="header_submenu studio">
                 <div class="submenu_column">
                     <p><b>Topwear</b></p>
@@ -318,27 +320,29 @@
                     <p><b>Gadgets</b></p>
                     <p>Topwear</p>
                     <p>Casual Shirts</p>
-                    <p>Formal Shirts</p>
+                    <p>Formal Shirts</p> 
                 </div>
             </div>
         </p>
+    </div>
         <h6 class="new_pink">NEW</h6>
         <div class="header_input_div">
             <i id="lensIcon" class="fa regular fa-magnifying-glass"></i>
-            <input class="header_input" placeholder="Search for products">
+            <input class="header_input" placeholder="Search for products, and brands more">
         </div>
-        
-        <div class="header_icon_div">
+        <div class="header-icon-container">
+
+        <div class="header_icon_div profile-menu">
             <i id="phone_view_icon" class="fa light fa-user"></i>
             <p class="header_icon_text">
-                <b>Profile</b>
+                Profile
                 <div class="header_profile_submenu_div profile">
                     <p><b>Welcome</b></p>
                     <p>To access account and manage orders</p>
                     <div class="login_div">
-                        <a href="../signinupmyntra/index.html">LOGIN/SIGNUP</a>
+                        <a href="./signinupmyntra/index.html">LOGIN/SIGNUP</a>
                     </div>
-                    <hr class="header_profile_submenu_hr">
+                    <hr>
                     <p>Order</p>
                     <p>Wishlist</p>
                     <p>Gift Cards</p>
@@ -353,17 +357,14 @@
         </div>
         <div class="header_icon_div">
             <i id="phone_view_icon" class="fa-regular fa-heart"></i>
-            <p class="header_icon_text"><B>Wishlist</B></p>
+            <p class="header_icon_text">Wishlist</p>
         </div>
         <div class="header_icon_div">
-            <a href="../add-bag/index.html"><i id="phone_view_icon" class="fa regular fa-bag-shopping"></i></a>
-            <p class="header_icon_text"><B>Bag</B></p>
+            <a href="./add-bag/index.html"><i id="phone_view_icon" class="fa regular fa-bag-shopping"></i></a>
+            <p class="header_icon_text bag">Bag</p>
         </div>
     </header>
-    <div class="counter">
-        <div class="sale_edn">Sale Ends in-</div>
-        <div class="timer">00:00</div>
-    </div>
+</div>
 <!-- =======================================header end============================ -->
 
     <div class="big_img">

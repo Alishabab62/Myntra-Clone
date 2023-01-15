@@ -1,69 +1,88 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* ===============================vineet Header css code start================= */
-body {
-  background-color: rgb(225, 224, 224);
-}
 .header {
   background-color: white;
   height: 80px;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
   position: sticky;
+  align-items: center;
   top: 0;
   z-index: 20;
 }
+.nav-container{
+  display: flex;
+  margin-left: 3.5%
+}
 .header_menu {
-  font-size: 1em;
-  margin-top: 0.5%;
   cursor: pointer;
   font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Helvetica, Arial, sans-serif;
+    margin-bottom: 0px;
+    margin-top: 0px;
 }
 .header_menu a {
   text-decoration: none;
-  color: black;
+  color: #282c3f;
+  padding: 0px 17px 31px 17px;
+  letter-spacing: .3px;
+  font-size: 14px;
+  font-weight: 500;
 }
 .new_pink {
   color: #ff3f6c;
-  margin-left: -3%;
-  font-size: small;
+  margin-left: -1%;
+  font-size: 10px;
+  margin-top: 0px;
 }
 #lensIcon {
   color: rgb(156, 154, 154);
-  margin-left: 1%;
+  margin-left: 5%;
 }
 .header_input_div {
   background-color: rgb(244, 242, 242);
-  width: 23%;
-  margin-left: 5%;
+  width: 32%;
+  margin-left: 3%;
   margin-right: 2%;
-  padding: 0.5%;
-  height: 25%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
 }
 .header_input {
   border: none;
   width: 92%;
   padding-left: 6%;
+  font-size: 14px;
   background-color: rgb(244, 242, 242);
 }
 .header_icon_div {
   cursor: pointer;
-  font-size: small;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 62px;
+  margin: 0px 5px;
+  padding-bottom: 5px;
 }
 .header_icon_div i {
-  margin-left: 25%;
   color: rgb(0, 0, 0);
+  font-size: 18px;
+}
+.header-icon-container{
+  display: flex;
+  align-items: center ;
+}
+.header_icon_text{
+  font-size: 12px;
+  color: #000;
+  margin-top: 3px;
+  font-weight: 500;
+  margin-bottom: 0px;
 }
 .logo {
   cursor: pointer;
-  width: 3.8%;
-  margin-right: 2%;
+  width: 53px;
+  height: 36px;
+  margin-left: 4%;
 }
 
 /* ================================Header Sub menu================ */
@@ -74,11 +93,12 @@ body {
   color: rgb(133, 132, 132);
   cursor: pointer;
   display: flex;
-  margin-top: 4.5%;
+  margin-top: 5.1%;
   width: 50%;
   position: absolute;
   left: 12%;
   top: 3%;
+  font-size: 14px;
 }
 .header_submenu p b {
   color: #ff3f6c;
@@ -87,7 +107,7 @@ body {
   margin: 5%;
 }
 .submenu_column p {
-  margin-top: 10%;
+  margin: 3px;
 }
 .men {
   display: none;
@@ -113,16 +133,20 @@ body {
 .header_profile_submenu_div {
   border: 1px solid lightgray;
   background-color: white;
-  color: rgb(99, 98, 98);
+  color: #3e4152;
   cursor: pointer;
   position: absolute;
-  margin-top: 1%;
-  margin-left: -8.7%;
+  margin-top: 3.8%;
+  right: 50px;
   padding: 1%;
-  font-size: medium;
+  font-size: 14px;
+}
+.header_profile_submenu_div p{
+  margin: 10px 0px;
 }
 .header_profile_submenu_div p b {
-  color: black;
+  color: #3e4152;
+  font-weight: 500;
 }
 .login_div {
   border: 1px solid rgb(167, 164, 164);
@@ -139,26 +163,31 @@ body {
   font-weight: bold;
 }
 
+.header_icon_div .bag{
+  margin-bottom: 7px;
+}
+
 /* ========================For Tab and Mobile view============== */
 
-p {
-  margin: 0%;
-  padding: 0%;
+.burger_div{
+  display: none;
 }
 .burger_div p {
   width: 50%;
-  /* font-weight: bold; */
+  margin-bottom: 0px;
+}
+.menu{
+  padding-left: 0px;
 }
 .menu li {
   list-style: none;
-  padding: 5%;
+  font-size: 16px;
+  padding: 3%;
   border-bottom: 1px solid rgb(145, 133, 133);
-  /* text-align: center; */
 }
 .menu li a {
   text-decoration: none;
   color: rgb(32, 32, 32);
-  font-size: large;
   font-weight: bold;
 }
 .menu li i {
@@ -171,15 +200,15 @@ p {
   margin-top: 1%;
   left: 0;
   width: 50%;
-  background-color: rgb(250, 224, 224);
+  background-color: white;
   display: none;
 }
 
 .header_profile_submenu_div p {
   margin-bottom: 10px;
 }
+
 .counter {
-  /* border: 1px solid; */
   background-image: linear-gradient(90deg, #f9f9ff, #dee8ff);
   display: flex;
   justify-content: center;
@@ -187,12 +216,21 @@ p {
   color: #9d9ea2;
   padding: 1%;
 }
-.timer {
-  color: #ff3f6c;
+.header_phone_view_div i{
+  font-size: 20px;
+  color: rgb(133, 132, 132);
 }
-/* =========================vineet's header code end======================= */
+.header_phone_view_div p{
+  color: rgb(133, 132, 132);
+}
 
-/* ==============================Vineet's Responsive Code start===================== */
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 1200px) {
   .header_menu,
@@ -205,7 +243,23 @@ p {
   .burger_div {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-left: 15px;
   }
+  .header{
+    justify-content: space-between;
+  }
+ .header .header-icon-container{
+  display: flex;
+  align-items: center;
+ }
+ .header .header_icon_div{
+  width: 40px;
+ }
+ .header .header_icon_div i{
+  margin-bottom: 0px;
+  color: rgb(167, 164, 164);
+ }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -213,6 +267,3 @@ p {
     display: none;
   }
 }
-
-
-/* ========================Vineet Responsive code end ============== */

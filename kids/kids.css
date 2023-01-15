@@ -2,18 +2,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* margin: auto; */
 }
 .kidimage {
   justify-content: center;
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  /* margin: auto; */
 }
 .text-banner-container {
   width: 100%;
-  /* border: 5px solid red; */
 }
 
 .kidbox {
@@ -32,7 +29,6 @@
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  /* margin: auto; */
 }
 .kidimage img {
   width: 140px;
@@ -42,7 +38,6 @@
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  /* margin: auto; */
 }
 .kidimage2 img {
   width: 240px;
