@@ -14,6 +14,10 @@ body {
 }
 /* =========================vineet's header code end======================= */
 
+
+a{
+  text-decoration: none;
+}
 .text-banner-container {
   width: 100%;
   padding: 3%;

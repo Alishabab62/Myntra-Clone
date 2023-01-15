@@ -52,6 +52,7 @@
   padding-left: 6%;
   font-size: 14px;
   background-color: rgb(244, 242, 242);
+  height: 100%;
 }
 .header_icon_div {
   cursor: pointer;
@@ -61,7 +62,8 @@
   justify-content: center;
   width: 62px;
   margin: 0px 5px;
-  padding-bottom: 5px;
+  padding-bottom: 12px;
+  padding-top:19px ;
 }
 .header_icon_div i {
   color: rgb(0, 0, 0);
@@ -136,7 +138,7 @@
   color: #3e4152;
   cursor: pointer;
   position: absolute;
-  margin-top: 3.8%;
+  margin-top: 32.8%;
   right: 50px;
   padding: 1%;
   font-size: 14px;

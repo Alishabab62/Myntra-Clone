@@ -300,6 +300,11 @@ main .filter .filter-header #clear{
   cursor: pointer;
   font-weight: 500;
 }
+.filter .filter-clear{
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 30px 0px 10px;
+}
 main .filter .gender-container div{
   color: black;
   font-weight: bold;

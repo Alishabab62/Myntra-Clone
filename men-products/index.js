@@ -100,7 +100,7 @@ window.addEventListener('load', renderProduct)
 
 let addProduct = document.getElementById("add-product");
 function renderProduct(){
-fetch("https://myntraapi-5zfq.onrender.com/myntra/get")
+fetch("https://myntraapi-5zfq.onrender.com/myntra/get/Mens")
   .then((data) => {
     return data.json();
   })
