@@ -100,21 +100,21 @@ burgerIcon.addEventListener("click", openSideBar);
 let addProduct = document.getElementById("add-product");
 let productDiv = "";
 
-fetch("https://fakestoreapi.com/products")
+fetch("https://myntraapi-5zfq.onrender.com/myntra/get/kids")
   .then((data) => {
     return data.json();
   })
   .then((data2) => {
-    for (let item of data2) {
+    for (let item of data2.products) {
       let product = document.createElement("div");
       product.classList = "product";
       product.innerHTML=`
-      <img src="${item.image}" alt="">
+      <img src="${item.imageLink}" alt="">
       <div class="info-container">
-        <div class="item-name">${item.title}</div>
-        <div class="description">${item.description}</div>
+        <div class="item-name">${item.brand}</div>
+        <div class="description">${item.name}</div>
        <div class="add-to-wishlist-btn"><button id="wishlist-btn">WISHLIST</button></div>
-      <div class="price">Rs.${item.price}
+      <div class="price">Rs.<span>${item.price}
       </span><span id="discount-price">${item.price*2}
       </span><span id="discount-percentage">(50% OFF)</span></span></div>
   </div>`
