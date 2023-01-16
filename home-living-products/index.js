@@ -1,7 +1,7 @@
 let addProduct = document.getElementById("add-product");
 let productDiv = "";
 window.addEventListener("load", async () => {
-  await fetch("https://myntraapi-5zfq.onrender.com/myntra/get/home-living")
+  await fetch("https://myntraapi-5zfq.onrender.com/myntra/get/Home & Living")
     .then((data) => {
       return data.json();
     })

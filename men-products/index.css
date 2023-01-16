@@ -13,7 +13,6 @@ body {
 }
 .header {
   background-color: white;
-  /* height: 2em; */
   padding: 1%;
   display: flex;
   justify-content: space-evenly;
