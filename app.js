@@ -79,18 +79,15 @@ profile.addEventListener('mouseout',()=>{
 
 
 function openSubmenuMen() {
-  // console.log("vineet");
   men.style.display = "flex";
 }
 function closeSubmenuMen() {
   men.style.display = "none";
 }
 function openSubmenuWomen() {
-  console.log(women);
   men.style.display = "flex";
 }
 function closeSubmenuWomen() {
-  console.log(women);
   men.style.display = "none";
 }
 function openSubmenuKids() {
@@ -145,8 +142,6 @@ const burgerIcon = document.querySelector("#burgerIcon");
 const sidebar = document.querySelector(".sidebarMenu");
 
 function openSideBar() {
-  // console.log("vineet");
-  // sidebar.style.display="block"
   if (sidebar.style.display !== "block") {
     sidebar.style.display = "block";
   } else {
@@ -172,3 +167,16 @@ function timeupdate() {
   time--;
 }
 // =================================vineet's js code end======================
+
+
+const loggedDiv=document.querySelector('.logged-div');
+const userLogin = localStorage.getItem('user');
+console.log(userLogin)
+if(userLogin){
+  loggedDiv.style.display="block";
+  document.querySelector('.sign-up-div').style.display="none";
+}
+else{
+  loggedDiv.style.display="none";
+  document.querySelector('.sign-up-div').style.display="block";
+}
