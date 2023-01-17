@@ -1,19 +1,3 @@
-// ===================== Sale End Timer=================================
-
-const startingTime = 60;
-let time = startingTime * 60;
-
-const timer = document.querySelector(".timer");
-
-setInterval(timeupdate, 1000);
-
-function timeupdate() {
-  const min = Math.floor(time / 60);
-  let sec = time % 60;
-
-  timer.innerHTML = `${min}: ${sec}`;
-  time--;
-}
 
 // ===========================vineet header js code start==========================
 
@@ -110,8 +94,6 @@ const burgerIcon = document.querySelector("#burgerIcon");
 const sidebar = document.querySelector(".sidebarMenu");
 
 function openSideBar() {
-  // console.log("vineet");
-  // sidebar.style.display="block"
   if (sidebar.style.display !== "block") {
     sidebar.style.display = "block";
   } else {

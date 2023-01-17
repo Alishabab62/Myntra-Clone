@@ -356,6 +356,24 @@ h4 {
 }
 
 
+@media only screen and (max-width: 769px) {
+  .menimage img{
+    width: 177px;
+    margin: 5px 5px;
+  }
+  .menimage1 img{
+    width: 123px;
+  }
+  .menimage2 img{
+    width: 150px;
+    margin: 0px 0px;
+  }
+.text-banner-container  h4{
+    font-size: 1.7em;
+    margin: 15px 0px;
+  }
+}
+
 @media only screen and (max-width: 541px) {
   .menimage img{
     width: 109px;
@@ -367,6 +385,14 @@ h4 {
   .menimage2 img{
     width: 104px;
     margin: 0px 0px;
+  }
+  .menimage3 img{
+    width: 150px;
+    margin: 0px 5px;
+  }
+  .menimage4 img{
+    width: 150px;
+    margin: 0px 5px;
   }
 .text-banner-container  h4{
     font-size: 1.5em;
@@ -393,7 +419,7 @@ h4 {
 }
 
 
-@media only screen and (max-width: 391px) {
+@media only screen and (max-width: 394px) {
   .menimage img{
     width: 95px;
     margin: 0px 0px;
@@ -429,29 +455,5 @@ h4 {
   }
 }
 
-@media only screen and (max-width: 376px) {
-  .menimage img{
-    width: 66px;
-    margin: 0px 0px;
-  }
-  .menimage1 img{
-    width: 86px;
-  }
-  .menimage2 img{
-    width: 55px;
-    margin: 0px 0px;
-  }
-  .menimage3 img{
-    width: 130px;
-    margin: 0px 10px;
-  }
-  .menimage4 img{
-    width: 150px;
-    margin: 0px 10px;
-  }
-.text-banner-container  h4{
-    font-size: 0.9em;
-    margin: 10px 0px;
-  }
-}
+
 
