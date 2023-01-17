@@ -99,8 +99,8 @@ window.addEventListener('load', renderProduct)
 
 
 let addProduct = document.getElementById("add-product");
-function renderProduct(){
-fetch("https://myntraapi-5zfq.onrender.com/myntra/get/Mens")
+async function renderProduct(){
+await fetch("https://myntraapi-5zfq.onrender.com/myntra/get/Mens")
   .then((data) => {
     return data.json();
   })
@@ -143,7 +143,6 @@ addProduct.addEventListener("click", async (e) => {
     "productName": `${itemName}`,
     "price": Number(price)
   }
-  console.log(data)
 const response = await fetch('https://myntraapi-5zfq.onrender.com/myntra/addtobag', {
     method: 'POST',
     headers: {

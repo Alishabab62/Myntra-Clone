@@ -135,7 +135,7 @@ const alternatePhoneNumber = document.querySelector(".alternate-phone-number");
 const createButton = document.querySelector(".cretae-account-btn");
 let selectedGender;
 
-createButton.addEventListener("click", singUpDetailsSubmission);
+createButton.addEventListener("click",singUpDetailsSubmission);
 async function singUpDetailsSubmission() {
   gender.forEach((gen) => {
     if (gen.checked) {
@@ -143,14 +143,14 @@ async function singUpDetailsSubmission() {
     }
   });
   const data = {
-    mobileNumber: `${alternatePhoneNumber.value}`,
+    mobileNumber: `${ contactNumberLocalStorage}`,
     Password: `${password.value}`,
     full_name: `${fullName.value}`,
     email: `${email.value}`,
     gender: `${selectedGender.value}`,
     alternate_phoneNumber: `${alternatePhoneNumber.value}`,
   };
-  // console.log(password.value,fullName.value,email.value,alternatePhoneNumber.value,contactNumberLocalStorage,selectedGender.value);
+  
   const signUpResponse = await fetch(
     "https://api-vqd9.onrender.com/users/signup",
     {
@@ -168,7 +168,7 @@ async function singUpDetailsSubmission() {
     setTimeout(()=>{
       location="../index.html";
     },1000);
-}
+} 
 else{
   document.querySelector("#user-alreay-exist").style.display="block";
     document.querySelector("#text").innerText="Account created sucessfully";
