@@ -53,7 +53,7 @@
   padding: 1%;
 }
 .img_row img {
-  width: 49%;
+  width: 100%;
   padding: 1%;
   cursor: pointer;
   overflow: hidden;
@@ -89,7 +89,7 @@
   margin-left: 5%;
 }
 .brands_img_div img {
-  width: 19%;
+  width: 100%;
   cursor: pointer;
 }
 

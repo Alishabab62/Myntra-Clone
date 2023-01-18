@@ -47,6 +47,7 @@
   border-radius: 5px;
 }
 .header_input {
+  outline: none;
   border: none;
   width: 92%;
   padding-left: 6%;

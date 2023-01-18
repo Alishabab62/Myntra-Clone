@@ -14,9 +14,7 @@ footer {
   font-family: Arial, Helvetica, sans-serif;
 }
 footer .footer-container {
-  /* display: flex; */
   width: 72%;
-  /* padding: 50px 0px 0px 0px; */
   margin-left: 10%;
 }
 .container-1 {
@@ -211,15 +209,16 @@ footer .container-1 .original-return {
   justify-content: center;
   align-items: center;
 }
+.menimage img {
+  width: 300px;
+  margin: 10px 15px;
+}
+
 .menimage1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-}
-.menimage img {
-  width: 300px;
-  margin: 10px 15px;
 }
 .menimage1 img {
   width: 220px;
@@ -272,7 +271,29 @@ h4 {
   text-align: center;
 }
 
-
+@media only screen and (max-width: 1367px) {
+  .menimage img{
+    width: 290px;
+    margin: 5px 13px;
+  }
+  .menimage1 img{
+    width: 210px;
+  }
+  .menimage2 img{
+    width: 250px;
+    margin: 0px 0px;
+  }
+  .menimage3 img{
+    width: 180px;
+  }
+  .menimage4 img{
+    width: 220px;
+  }
+.text-banner-container  h4{
+    font-size: 1.8em;
+    margin: 15px 0px;
+  }
+}
 
 
 @media only screen and (max-width: 1281px) {
