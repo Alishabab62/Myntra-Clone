@@ -27,51 +27,29 @@ window.addEventListener("load", async () => {
 });
 
 addProduct = document.getElementById("add-product");
-let productArray = [];
-addProduct.addEventListener("click", (e) => {
+addProduct.addEventListener("click" , async (e) => {
   let item = e.target.parentElement.children[0].src;
-  let itemName = e.target.parentElement.children[1].innerText;
-  let description = e.target.parentElement.children[2].innerText;
-  let price = e.target.parentElement.children[4].firstElementChild.innerText;
-  console.log(price);
-  if (productArray.length == 0) {
-    productArray.push({
-      itemLink: item,
-      itemName: itemName,
-      description: description,
-      price: price,
-    });
-    localStorage.setItem("productArray", JSON.stringify(productArray));
-  } else {
-    let flag = true;
-    let a = localStorage.getItem("productArray");
-    let productArrayy = JSON.parse(a);
-    productArrayy.forEach((value, i) => {
-      if (value.itemLink == item) {
-        flag = false;
-      }
-    });
-    if (flag) {
-      productArray.push({
-        itemLink: item,
-        itemName: itemName,
-        description: description,
-        price: price,
-      });
-    }
-    localStorage.setItem("productArray", JSON.stringify(productArray));
+  let brand = e.target.parentElement.children[1].children[0].innerText;
+  let itemName = e.target.parentElement.children[1].children[1].innerText;
+  let price =e.target.parentElement.children[1].children[3].children[0].innerText;
+  console.log(item,brand,itemName,price);
+  let userId=localStorage.getItem('number');
+  const data = {
+    "user":userId,
+    "imageLink":`${item}`,
+    "brand": `${brand}`,
+    "productName": `${itemName}`,
+    "price": Number(price)
   }
+const response = await fetch('https://myntraapi-5zfq.onrender.com/myntra/addtobag', {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(data)
+})
+const res = await response.json();
+console.log(res)
 });
 
-//wishlist button event
-addProduct.addEventListener("mouseover", (e) => {
-  if (e.target.classList.contains("product")) {
-    console.log(e.target.parentElement.childElement);
-    e.target.childNodes[6].style.display = "block";
-  }
-});
-addProduct.addEventListener("mouseout", (e) => {
-  if (e.target.parentElement.children) {
-    e.target.childNodes[6].style.display = "none";
-  }
-});
+
