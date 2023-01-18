@@ -125,41 +125,30 @@ fetch("https://myntraapi-5zfq.onrender.com/myntra/get/Kids")
     console.log("Error:", error);
   });
 
-addProduct = document.getElementById("add-product");
-let productArray = [];
-addProduct.addEventListener("click", (e) => {
-  let item = e.target.parentElement.children[0].src;
-  let itemName = e.target.parentElement.children[1].children[0].innerText;
-  let description = e.target.parentElement.children[1].children[1].innerText;
-  let price =e.target.parentElement.children[1].children[3].firstElementChild.innerText;
-  console.log(item,itemName,description,price);
-  if (productArray.length == 0) {
-    productArray.push({
-      itemLink: item,
-      itemName: itemName,
-      description: description,
-      price: price,
-    });
-    localStorage.setItem("productArray", JSON.stringify(productArray));
-  } else {
-    let flag = true;
-    let a = localStorage.getItem("productArray");
-    let productArrayy = JSON.parse(a);
-    productArrayy.forEach((value, i) => {
-      if (value.itemLink == item) {
-        flag = false;
-      }
-    });
-    if (flag) {
-      productArray.push({
-        itemLink: item,
-        itemName: itemName,
-        description: description,
-        price: price,
-      });
+  addProduct = document.getElementById("add-product");
+  addProduct.addEventListener("click" , async (e) => {
+    let item = e.target.parentElement.children[0].src;
+    let brand = e.target.parentElement.children[1].children[0].innerText;
+    let itemName = e.target.parentElement.children[1].children[1].innerText;
+    let price =e.target.parentElement.children[1].children[3].children[0].innerText;
+    console.log(item,brand,itemName,price);
+    let userId=localStorage.getItem('number');
+    const data = {
+      "user":userId,
+      "imageLink":`${item}`,
+      "brand": `${brand}`,
+      "productName": `${itemName}`,
+      "price": Number(price)
     }
-    localStorage.setItem("productArray", JSON.stringify(productArray));
-  }
-});
+  const response = await fetch('https://myntraapi-5zfq.onrender.com/myntra/addtobag', {
+      method: 'POST',
+      headers: {
+          'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data)
+  })
+  const res = await response.json();
+  console.log(res)
+  });
 
 

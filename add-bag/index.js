@@ -8,13 +8,14 @@ const totalAmount = document.querySelector("#total-amount");
 const totalAmountDiscount = document.querySelector("#total-amount-discount");
 const totalItem = document.querySelector("#total-item");
 const mainBag = document.querySelector(".product-bag");
+let price = 0;
+let productObj;
 let num = localStorage.getItem("number");
 window.addEventListener("load", async () => {
-  let price = 0;
   const response = await fetch( `https://myntraapi-5zfq.onrender.com/myntra/addtobag/get/${num}`
   );
   let b = await response.json(); 
-  let productObj = b.message; 
+   productObj = b.message; 
   productObj.forEach((product) => {
     mainBag.innerHTML += ` <div class="product">
         <div class="image"><img src="${product.imageLink}" alt=""></div>
@@ -68,24 +69,23 @@ mainBag.addEventListener("click", async (e) => {
         body: JSON.stringify(data),
       }
     );
-
-    const responseAfterDelete = await fetch(
-      `https://myntraapi-5zfq.onrender.com/myntra/addtobag/get/${num}`
-    );
-    let b = await responseAfterDelete.json();
-    let productObj = b.message;
-    let price = 0;
-    productObj.forEach((product) => {
-      price += product.price;
-    });
-    totalAmount.innerText = price;
-    totalAmountDiscount.innerText = price;
   }
 });
 
+
+
+mainBag.addEventListener('click',(e)=>{
+  if (e.target.classList.contains("remove-btn")){
+    totalItem.innerText--;
+    let amountAfterDelete=e.target.parentElement.children[0].lastElementChild.innerText;
+    console.log(amountAfterDelete)
+    totalAmount.innerText = totalAmount.innerText-amountAfterDelete;
+    totalAmountDiscount.innerText = totalAmountDiscount.innerText-amountAfterDelete;
+  }
+})
 const placeOrderBtn = document.querySelector(".place_order_btn");
 placeOrderBtn.addEventListener("click", () => {
-  if (total != 0) {
+  if (totalItem.innerText != 0) {
     location = "../adresspage/index.html";
   } else {
     document.querySelector(".error-product").style.display = "block";
