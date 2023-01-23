@@ -20,9 +20,9 @@ const studio = document.querySelector(".studio");
 const profile = document.querySelector(".profile");
 const profileMouseOut = document.querySelector(".header_profile_submenu_div");
 
-men.addEventListener('mouseover',()=>{
-  men.style.display="flex"
-})
+// men.addEventListener('mouseover',()=>{
+//   men.style.display="flex"
+// })
 men.addEventListener('mouseout',()=>{
   men.style.display="none"
 })
