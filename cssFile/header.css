@@ -96,24 +96,56 @@
   color: rgb(133, 132, 132);
   cursor: pointer;
   display: flex;
-  margin-top: 5.1%;
-  width: 50%;
+  justify-content: center;
+  margin-top: 3.4%;
+  width: 75%;
   position: absolute;
-  left: 12%;
-  top: 3%;
+  left: 9%;
   font-size: 14px;
 }
-.header_submenu p b {
+.men #sub-column-heading{
   color: #ff3f6c;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.women  #sub-column-heading{
+  color: rgb(240, 137, 228);
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-family: sans-serif;
+}
+.kids  #sub-column-heading{
+  color: rgb(240, 137, 228);
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-family: sans-serif;
+}
+.home  #sub-column-heading{
+  color: rgb(230, 217, 37);
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-family: sans-serif;
+}
+.beauty  #sub-column-heading{
+  color: rgb(57, 134, 186);
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-family: sans-serif;
+}
+.studio  #sub-column-heading{
+  color: rgb(240, 137, 228);
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-family: sans-serif;
 }
 .submenu_column {
-  margin: 5%;
+  margin: 25px 30px;
 }
 .submenu_column p {
   margin: 3px;
 }
 .men {
-  display: none;
+  display:none;
 }
 .women {
   display: none;
