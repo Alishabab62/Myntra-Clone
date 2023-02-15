@@ -27,6 +27,7 @@ function timeupdate() {
 
 // ==============================For Laptop view===========================
 
+// ===========================vineet header js code start==========================
 const header_men = document.querySelector(".header_men");
 const header_women = document.querySelector(".header_women");
 const header_kids = document.querySelector(".header_kids");
@@ -34,6 +35,7 @@ const header_home = document.querySelector(".header_home");
 const header_beauty = document.querySelector(".header_beauty");
 const header_studio = document.querySelector(".header_studio");
 const header_profile = document.querySelector(".header_icon_div");
+// const logo = document.querySelector(".logo");
 
 const men = document.querySelector(".men");
 const women = document.querySelector(".women");
@@ -44,26 +46,81 @@ const studio = document.querySelector(".studio");
 const profile = document.querySelector(".profile");
 const profileMouseOut = document.querySelector(".header_profile_submenu_div");
 
+men.addEventListener('mouseover',()=>{
+  men.style.display="flex"
+})
+men.addEventListener('mouseout',()=>{
+  men.style.display="none"
+})
+
+women.addEventListener('mouseover',()=>{
+  women.style.display="flex"
+})
+women.addEventListener('mouseout',()=>{
+  women.style.display="none"
+})
+
+kids.addEventListener('mouseover',()=>{
+  kids.style.display="flex"
+})
+kids.addEventListener('mouseout',()=>{
+  kids.style.display="none"
+})
+
+home.addEventListener('mouseover',()=>{
+  home.style.display="flex"
+})
+home.addEventListener('mouseout',()=>{
+  home.style.display="none"
+})
+
+beauty.addEventListener('mouseover',()=>{
+  beauty.style.display="flex"
+})
+beauty.addEventListener('mouseout',()=>{
+  beauty.style.display="none"
+})
+
+studio.addEventListener('mouseover',()=>{
+  studio.style.display="flex"
+})
+studio.addEventListener('mouseout',()=>{
+  studio.style.display="none"
+})
+
+
+
+document.querySelector(".profile-menu").addEventListener('mouseover',()=>{
+  profile.style.display="block"
+})
+document.querySelector(".profile-menu").addEventListener('mouseout',()=>{
+  profile.style.display="none"
+})
+profile.addEventListener('mouseover',()=>{
+  profile.style.display="block"
+})
+profile.addEventListener('mouseout',()=>{
+  profile.style.display="none"
+})
+
+
 function openSubmenuMen() {
-  // console.log("vineet");
   men.style.display = "flex";
 }
 function closeSubmenuMen() {
   men.style.display = "none";
 }
 function openSubmenuWomen() {
-  console.log(women);
-  men.style.display = "flex";
+  women.style.display = "flex";
 }
 function closeSubmenuWomen() {
-  console.log(women);
-  men.style.display = "none";
+  women.style.display = "none";
 }
 function openSubmenuKids() {
-  men.style.display = "flex";
+  kids.style.display = "flex";
 }
 function closeSubmenuKids() {
-  men.style.display = "none";
+  kids.style.display = "none";
 }
 function openSubmenuHome() {
   home.style.display = "flex";
@@ -91,8 +148,10 @@ function closeSubmenuProfile() {
 }
 header_men.addEventListener("mouseover", openSubmenuMen);
 header_men.addEventListener("mouseout", closeSubmenuMen);
+
 header_women.addEventListener("mouseover", openSubmenuWomen);
 header_women.addEventListener("mouseout", closeSubmenuWomen);
+
 header_kids.addEventListener("mouseover", openSubmenuKids);
 header_kids.addEventListener("mouseout", closeSubmenuKids);
 header_home.addEventListener("mouseover", openSubmenuHome);
@@ -101,8 +160,9 @@ header_beauty.addEventListener("mouseover", openSubmenuBeauty);
 header_beauty.addEventListener("mouseout", closeSubmenuBeauty);
 header_studio.addEventListener("mouseover", openSubmenuStudio);
 header_studio.addEventListener("mouseout", closeSubmenuStudio);
-header_profile.addEventListener("mouseover", openSubmenuProfile);
-profileMouseOut.addEventListener("mouseout", closeSubmenuProfile);
+logo.addEventListener("click", () => {
+  location = "index.html";
+});
 
 // ===========================For Tab and Mobile view=================
 
@@ -110,8 +170,6 @@ const burgerIcon = document.querySelector("#burgerIcon");
 const sidebar = document.querySelector(".sidebarMenu");
 
 function openSideBar() {
-  // console.log("vineet");
-  // sidebar.style.display="block"
   if (sidebar.style.display !== "block") {
     sidebar.style.display = "block";
   } else {
@@ -120,3 +178,4 @@ function openSideBar() {
 }
 
 burgerIcon.addEventListener("click", openSideBar);
+

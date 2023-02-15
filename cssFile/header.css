@@ -104,36 +104,36 @@
   font-size: 14px;
 }
 .men #sub-column-heading{
-  color: #ff3f6c;
+  color: #ee5f73;
   font-weight: bold;
   margin-bottom: 10px;
 }
 .women  #sub-column-heading{
-  color: rgb(240, 137, 228);
+  color: #fb56c1;
   font-weight: 600;
   margin-bottom: 10px;
   font-family: sans-serif;
 }
 .kids  #sub-column-heading{
-  color: rgb(240, 137, 228);
+  color: #f26a10;
   font-weight: 600;
   margin-bottom: 10px;
   font-family: sans-serif;
 }
 .home  #sub-column-heading{
-  color: rgb(230, 217, 37);
+  color: #f2c210;
   font-weight: 600;
   margin-bottom: 10px;
   font-family: sans-serif;
 }
 .beauty  #sub-column-heading{
-  color: rgb(57, 134, 186);
+  color: #0db7af;
   font-weight: 600;
   margin-bottom: 10px;
   font-family: sans-serif;
 }
 .studio  #sub-column-heading{
-  color: rgb(240, 137, 228);
+  color: #ff3f6c;
   font-weight: 600;
   margin-bottom: 10px;
   font-family: sans-serif;
