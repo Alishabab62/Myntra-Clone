@@ -85,16 +85,16 @@ function closeSubmenuMen() {
   men.style.display = "none";
 }
 function openSubmenuWomen() {
-  men.style.display = "flex";
+  women.style.display = "flex";
 }
 function closeSubmenuWomen() {
-  men.style.display = "none";
+  women.style.display = "none";
 }
 function openSubmenuKids() {
-  men.style.display = "flex";
+  kids.style.display = "flex";
 }
 function closeSubmenuKids() {
-  men.style.display = "none";
+  kids.style.display = "none";
 }
 function openSubmenuHome() {
   home.style.display = "flex";
@@ -122,8 +122,10 @@ function closeSubmenuProfile() {
 }
 header_men.addEventListener("mouseover", openSubmenuMen);
 header_men.addEventListener("mouseout", closeSubmenuMen);
+
 header_women.addEventListener("mouseover", openSubmenuWomen);
 header_women.addEventListener("mouseout", closeSubmenuWomen);
+
 header_kids.addEventListener("mouseover", openSubmenuKids);
 header_kids.addEventListener("mouseout", closeSubmenuKids);
 header_home.addEventListener("mouseover", openSubmenuHome);
