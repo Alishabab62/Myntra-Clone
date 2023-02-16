@@ -1,0 +1,288 @@
+.user-address-container {
+  display: none;
+  width: 70%;
+  border: 1px solid rgb(177, 176, 176);
+  margin-right: 5%;
+  margin-left: 7%;
+  box-shadow: 1px 0px 0px 0px gray;
+  font-size:small;
+  font-family: Arial, Helvetica, sans-serif; 
+}
+
+button:hover {
+  cursor: pointer;
+}
+.user-address-container-upper{
+  display: flex;
+  justify-content: space-between;
+  width: 49%;
+  margin-right: 5%;
+  margin-left: 11%;
+}
+.hide{
+  display: none;
+}
+#addaddressbtn{
+ padding: 5% 8px 5% 8px;
+  font-weight: bold;
+  border-radius: 6px;
+  font-size: 12px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 100;
+  background-color: white;
+  margin-top: 18%;
+}
+#selectaddress{
+  margin-top: 10%;
+  margin-bottom: 8%;
+  font-size: 20px;
+}
+#defaultaddress{
+  margin-bottom: 5%;
+  font-size: 15px;
+}
+.add-new-address{
+  display: none;
+  width: 70%;
+  border: 1px solid rgb(177, 176, 176);
+  margin-right: 5%;
+  margin-left: 3%;
+}
+.user-address-container button {
+  padding: 0.6%;
+  margin: 1.5%;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: transparent;
+  border-radius: 5px;
+}
+.user-address-container button :hover{
+  cursor: pointer;
+}
+.user-address-container span {
+  font-weight: bolder;
+}
+.details {
+  margin: auto;
+  height: 70%;
+  width: 35%;
+  border: 1px solid rgb(180, 178, 178);
+  /* display: none; */
+}
+.details input {
+  margin-left: 3%;
+  margin-right: 3%;
+  width: 90%;
+  padding: 2%;
+  margin-bottom: 4%;
+  border-radius: 5px;
+  text-decoration: none;
+  border: 1px solid rgb(163, 163, 163);
+}
+.details h5 {
+  margin-left: 3%;
+}
+#small,
+#small1 {
+  width: 39%;
+}
+#b1,
+#b2 {
+  padding: 4px 16px;
+  border: 1px solid #282c3f;
+  border-radius: 20px;
+  font-size: 12px;
+  margin-right: 16px;
+  background-color: white;
+}
+
+#b1 {
+  margin-left: 3%;
+  margin-bottom: 10%;
+}
+#continuebtn{
+  width: 110%;
+  /* margin-left: 3%; */
+  margin-right: 3%;
+  color: white;
+  background-color: rgb(255, 33, 96);
+  padding: 3%;
+  margin: 2%;
+  border-radius: 2px;
+  border: none;
+  display: none;
+
+}
+#_name{
+  font-size: 95%;
+  font-weight: bold;
+  margin-top: -3.8%;
+  margin-left: 4.5%;
+}
+#_address{
+  margin-left: 4.5%;
+  color: rgb(71, 71, 71);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#_mobile{
+  margin-left: 4.5%;
+  color: rgb(71, 71, 71);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+._delivery{
+  margin-left: 4.5%;
+  color: rgb(71, 71, 71);
+}
+#removebtnn{
+  margin-left: 6%
+}
+
+
+
+
+
+
+#radio{
+ margin-left: 2%;
+ margin-top: 2.2%;
+
+}
+a{
+  text-decoration: none;
+}
+#b3 {
+  width: 95%;
+  margin-left: 3%;
+  margin-right: 3%;
+  color: white;
+  background-color: rgb(255, 33, 96);
+  padding: 3%;
+  margin: 2%;
+  border-radius: 10px;
+  border: none;
+}
+.outer {
+  width: 99.8%;
+  border: 1px solid rgb(146, 146, 146);
+  box-shadow: 0px 0px 1px 0px;
+}
+
+.full {
+  display: flex;
+  margin-left: 5%;
+}
+.right {
+  width: 30%;
+  margin-right: 15%;
+  height: 30%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+#side,
+#side1,
+#colorc {
+  padding-left: 40%;
+  padding-bottom: 3%;
+}
+#down {
+  padding-bottom: 10%;
+}
+#borderb,
+#side1 {
+  /* border-bottom: 1px solid rgb(177, 174, 174); */
+  padding-bottom: 5%;
+}
+.footerr {
+  margin-top: 2%;
+  display: grid;
+  column-gap: 0ch;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+  margin-left: 8%;
+  margin-right: 20%;
+  align-items: center;
+}
+.footerr h6 {
+  font-size: 68%;
+  padding-left: 90%;
+  display: flex;
+  font-weight: bolder;
+}
+#ft {
+  margin-right: 35%;
+}
+
+.delievery-estimate {
+  margin: 20px 0px;
+}
+.delievery-estimate img{
+  height: 50px;
+  width: 50px;
+}
+.image-delievery{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 1328px) {
+  .footerr {
+    display: none;
+  }
+  .right {
+    display: none;
+  }
+  .details {
+    width: 70%;
+
+    /* margin-left: 5%; */
+  }
+  html,
+  body {
+    font-size: 31px;
+  }
+  .details input {
+    padding: 2.3%;
+  }
+}
+/* //for phone */
+@media only screen and (max-width:588px){
+    html,body{
+        font-size: 20px;
+    }
+      .footerr{
+       display: none;
+      }
+      .right{
+        display: none;
+    } 
+    .details{
+        width: 80%;
+        margin-left: 1.5%;
+    }
+ }
+ 
+ /* ======================Add Address Div Vineet=================================== */
+
+.add_added_div{
+    display: none;
+    border: 1px solid rgb(180, 178, 178);
+    width: 30%;
+    margin: auto;
+    padding: 2%;
+    /* display: block; */
+}
+/* .details{
+    display: none;
+} */
+.myname{
+    display: flex;
+}
+.go_back, .make_payment{
+    border: none;
+    padding: 1.5%;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: red;
+}
+.pad{
+    margin-left: 5%;
+}

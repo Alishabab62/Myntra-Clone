@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="otp.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Myntra</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../images/myntra-logo-freelogovectors.net.svg"
+    />
+  </head>
+  <body>
+    <div class="otp"></div>
+    <div class="centre">
+      <img
+        src="images/Screenshot 2022-12-19 211024.png"
+        height="25%"
+        width="25%"
+      />
+
+      <text class="write">
+        <h2>Verify with OTP</h2>
+        <p id="numbertosend">Sent to</p>
+        <!--in dom write inner text == sent to phone no in index.html input type tel -->
+      </text>
+
+      <div class="flex">
+        <input type="text" id="otp1" />
+        <input type="text" id="otp2"  disabled/>
+        <input type="text" id="otp3"  disabled/>
+        <input type="text" id="otp4" disabled/>
+      </div>
+      <div id="wrong"></div>
+      <p class="text2" id="timer">Resend OTP in 30</p>
+      <!--by dom timer of 30 seconds-->
+      <p id="text3">Log in using <span>Password</span></p>
+      <p id="text4">Having trouble loggin in?<span> Get help</span></p>
+    </div>
+  </body>
+  <script src="./otp.js"></script>
+</html>

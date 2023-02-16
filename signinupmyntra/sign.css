@@ -1,0 +1,126 @@
+html,
+body {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  background-color: rgb(255, 237, 239);
+}
+
+.centre {
+  height: 80%;
+  width: 30%;
+  background-color: white;
+  margin: auto;
+  /* margin-top: 2%; */
+}
+
+.text {
+  margin-left: 10%;
+}
+
+.text p {
+  margin-left: 10%;
+  font-weight: normal;
+  padding-bottom: 0.8rem;
+}
+.text span {
+  font-size: 1.5rem;
+  color: #7b7c80;
+  font-weight: bold;
+}
+.text span {
+  color: #535766;
+}
+#number {
+  margin-left: 10%;
+  width: 80%;
+  height: 2rem;
+}
+.centre input::placeholder {
+  padding-left: 2%;
+}
+.textt p {
+  margin-left: 10%;
+  width: 85%;
+  font-size: 15px;
+  margin-top: 6%;
+  margin-bottom: 6%;
+  color: #7b7c80;
+}
+.textt span {
+  color: rgb(255, 33, 96);
+  font-weight: bolder;
+}
+
+.button {
+  background-color: rgb(255, 33, 96);
+  margin-left: 10%;
+  width: 82%;
+  height: 2.5rem;
+  margin-bottom: 2%;
+  border: none;
+}
+.button :hover {
+  cursor: pointer;
+}
+
+.button SPAN {
+  color: white;
+  font-weight: bolder;
+  text-align: center;
+}
+.text3 p {
+  margin-left: 10%;
+  width: 85%;
+  font-size: 15px;
+  margin-top: 6%;
+  padding-bottom: 50px;
+}
+.text3 span {
+  color: rgb(255, 33, 96);
+  font-weight: bolder;
+}
+.text3 span :hover {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+
+/* //for tab */
+@media only screen and (max-width: 900px) {
+  .centre {
+    height: 90%;
+    width: 70%;
+  }
+}
+
+/* //for phone */
+@media only screen and (max-width: 588px) {
+  .centre {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+/* ============================================================ */
+
+.or {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  padding: 3%;
+}
+.create_acc {
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: rgb(255, 33, 96);
+  margin-left: 9%;
+  width: 83%;
+  height: 2.5rem;
+  margin-bottom: 2%;
+  border: none;
+}

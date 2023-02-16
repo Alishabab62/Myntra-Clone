@@ -1,0 +1,90 @@
+html,
+body {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  background-color: rgb(255, 237, 239);
+}
+.centre {
+  height: 80%;
+  width: 30%;
+  background-color: white;
+  margin: auto;
+  margin-top: 2%;
+}
+
+.centre img {
+  margin-top: 11%;
+  margin-left: 12%;
+}
+.write p {
+  margin-left: 12%;
+  font-size: 0.8rem;
+  color: #afb0b3;
+  margin-top: -2%;
+  margin-bottom: 10%;
+}
+.write h2 {
+  margin-left: 12%;
+  margin-top: 0.5%;
+}
+.flex {
+  display: flex;
+  margin-left: 12%;
+}
+.flex input {
+  width: 5%;
+  height: 100%;
+  font-size: 25px;
+  margin-right: 7%;
+}
+.text2 {
+  margin-left: 12%;
+  font-size: 0.8rem;
+  color: #afb0b3;
+  margin-top: 7%;
+}
+#text3 {
+  margin-left: 12%;
+}
+#text3 span {
+  color: rgb(255, 33, 96);
+}
+#text4 {
+  margin-left: 12%;
+  padding-bottom: 25%;
+}
+#text4 span {
+  color: rgb(255, 33, 96);
+}
+#btn {
+  background-color: transparent;
+  border: 1px solid rgb(255, 33, 96);
+  padding: 4px 8px 4px 8px;
+  margin-left: 12%;
+  color: rgb(255, 33, 96);
+  font-weight: bold;
+  border-radius: 3px;
+}
+#wrong {
+  color: red;
+  margin-left: 25%;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 900px) {
+  .centre {
+    height: 80%;
+    width: 70%;
+  }
+}
+
+/* //for phone */
+@media only screen and (max-width: 588px) {
+  .centre {
+    height: 100%;
+    width: 100%;
+  }
+}
