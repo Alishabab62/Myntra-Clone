@@ -1,0 +1,383 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+footer {
+    background-color: #FAFBFC;
+    font-family: Assistant,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    width: 100%;
+  }
+  footer .footer-container {
+    width: 71%;
+    margin: 30px auto 0px auto;
+    padding-top: 30px;
+  }
+  footer .footer-container .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+    padding: 0px;
+  }
+  footer .footer-container .heading{
+    margin-bottom: 22px;
+    color: #282c3f;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: Assistant,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+
+  }
+  footer .footer-container .item{
+    margin: 2.5px 0px;
+    font-size: 15px;
+    font-family: Assistant,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+
+  }
+  footer .footer-container .item a{
+    font-family: Assistant,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    color: #696b79;
+    text-decoration: none;
+  }
+  footer .shop-container .useful-link{
+    margin-top: 30px;
+  }
+  .container .sub-container img{
+    height: 50px;
+    width: 150px;
+    margin-right: 5px ;
+  }
+  .container .keep-in-touch .logos{
+    display: flex;
+  }
+  .footer-container .container .keep-in-touch{
+    margin-top: 30px;
+  }
+  footer .footer-container .logos > div{
+    padding: 0px 8px;
+  }
+  footer .footer-container .container svg{
+    height: 25px;
+    width: 25px;
+  }
+  .container .keep-in-touch-res{
+    display: none;
+  }
+  footer .sub-container .original{
+    display: flex;
+  }
+ footer .footer-container .original img{
+  height: 48px;
+  width: 40px;
+ }
+ footer .original .text {
+  margin-left: 10px;
+  font-size: 15px;
+  color: #696b79;
+ }
+ footer .original .text span{
+  color: #282c3f;
+  font-weight: 700;
+  font-size: 15px;
+  margin-right: 5px;
+ }
+  footer .btn{
+    text-align: left;
+    display: block;
+    padding: 0;
+  }
+ 
+
+footer .footer-container .useful-link-container {
+  border-top:1px solid #eaeaec;
+  margin: 30px 0px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-container .useful-link-container .heading{
+  position: absolute;
+  top: -9px;
+  background-color: white;
+  padding-right: 7px;
+}
+footer .footer-container .useful-link-container .item-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+footer .useful-link-container .item-container .item > a{
+  font-size: 15px;
+  color: #696b79;
+  line-height: 25px;
+}
+
+footer .useful-link-container .contact-div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  color: #696b79;
+  font-size: 16px;
+}
+footer .useful-link-container .contact a{
+  font-size: 16px;
+  color: #526cd0;
+  font-weight: 700;
+}
+footer .useful-link-container .contact-div .all-right{
+  position: absolute;
+  right: 0px;
+  color: #94969f;
+}
+
+footer #address-container{
+  border-top: 1px solid #eaeaec;
+  border-bottom: 1px solid #eaeaec;
+  display: flex;
+  align-items: end;
+  flex-wrap: wrap;
+  padding: 30px 0px;
+  font-family: Assistant,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+}
+
+footer #address-container .heading{
+  font-size: 15px;
+  margin: 15px 0px;
+  font-weight: 700;
+  color: #282c3f;
+  line-height: 20px;
+}
+
+footer #address-container p{
+  color: #94969f;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+
+footer #ONLINE-SHOPPING-MADE-EASY-AT-MYNTRA{
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0px;
+
+}
+footer #ONLINE-SHOPPING-MADE-EASY-AT-MYNTRA .heading{
+  font-size: 12px;
+  color: #535766;
+  font-weight: 700;
+  margin-bottom: -12px;
+}
+
+footer #ONLINE-SHOPPING-MADE-EASY-AT-MYNTRA .text  p{
+  font-family: Assistant,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  margin: 14px 0px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #94969f;
+}
+
+
+footer #best-online-shopping{
+  display: flex;
+  flex-direction: column;
+  
+}
+footer #best-online-shopping .heading{
+  margin-bottom: -12px;
+  font-size: 14px;
+  color: #535766;
+  font-weight: 700;
+}
+
+footer #best-online-shopping .text {
+  font-family: Assistant,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  margin: 14px 0px;
+  color: #94969f;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+footer #best-online-shopping .cont-2 {
+    font-family: Assistant,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    margin-left: 40px;
+    padding: 14px 0px;
+    line-height: 19px;
+    color: #94969f;
+    font-size: 14px;
+    text-align: left;
+}
+footer #best-online-shopping .cont-2 span{
+  font-size: 14px;
+  color: #535766;
+  font-weight: 700;
+}
+
+footer #AFFORDABLE-FASHION-AT-YOUR-FINGERTIPS{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+footer #AFFORDABLE-FASHION-AT-YOUR-FINGERTIPS .heading{
+  margin-bottom: -12px;
+  font-size: 14px;
+  color: #535766;
+  font-weight: 700;
+}
+
+footer #AFFORDABLE-FASHION-AT-YOUR-FINGERTIPS .text{
+  font-family: Assistant,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  margin: 14px 0px;
+  color: #94969f;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+footer #myntra-insider{
+  display: flex;
+  flex-direction: column;
+}
+
+footer #myntra-insider .heading{
+  margin-bottom: -12px;
+  font-size: 14px;
+  color: #535766;
+  font-weight: 700;
+}
+footer #myntra-insider .text{
+  font-family: Assistant,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  margin: 14px 0px;
+  color: #94969f;
+  font-size: 14px;
+  line-height: 18px;
+}
+footer #myntra-insider .text-2{
+  margin-top: 5px;
+}
+
+footer #myntra-insider .sub-heading{
+  margin: 14px 0px;
+  line-height: 18px;
+  color: #535766;
+  font-size: 14px;
+  font-weight:700 ;
+}
+footer #myntra-insider .cont-2{
+  margin: 7px 0px 7px 40px;
+  color: #94969f;
+  font-size: 14px;
+}
+
+footer #myntra-studio{
+  display: flex;
+  flex-direction: column;
+}
+footer #myntra-studio .heading{
+  margin-bottom: -12px;
+  font-size: 14px;
+  color: #535766;
+  font-weight: 700;
+}
+footer #myntra-studio .text{
+  font-family: Assistant,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  margin: 14px 0px;
+  color: #94969f;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+footer #myntra-studio .cont-2{
+  margin-left: 40px;
+}
+
+footer #myntra-studio .cont-2 .heading{
+  margin: 14px 0px;
+  line-height: 18px;
+  color: #535766;
+  font-size: 14px;
+  font-weight: 700;
+}
+footer #myntra-studio .cont-2 p{
+  margin: 14px 0px;
+  line-height: 18px;
+  color: #94969f;
+  font-size: 14px;
+}
+
+footer #myntra-app-footer{
+  display: flex;
+  flex-direction: column;
+}
+footer #myntra-app-footer .heading{
+  margin-bottom: -12px;
+  font-size: 14px;
+  color: #535766;
+  font-weight: 700;
+}
+footer #myntra-app-footer .text{
+  line-height: 18px;
+  color: #94969f;
+  font-size: 14px;
+  margin: 14px 0px;
+  font-family: Assistant,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+
+}
+footer #myntra-app-footer  .text-2{
+  margin-top: 5px;
+  font-family: Assistant,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+
+}
+ 
+  
+  @media only screen and (max-width: 1280px) {
+    footer .footer-container {
+      width: 75%;
+    }
+    
+  }
+  @media only screen and (max-width: 1024px) {
+    footer .footer-container {
+      width: 100%;
+    }
+    
+  }
+  @media only screen and (max-width: 912px) {
+    footer .footer-container {
+      width: 95%;
+    }
+    footer .footer-container .mobile-app, .original-return{
+      display: none;
+    }
+    footer .container .keep-in-touch-res{
+      display: block;
+    }
+    footer .footer-container .container-first{
+      flex-direction: column;
+    }
+    footer .footer-container .container-first .shop-container-tab{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    footer .footer-container .container-first .shop-container-tab .item{
+      padding-left: 5px;
+      border-right: 1px solid #eaeaec;
+    }
+    footer .footer-container .container-first .customer-policies{
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 540px) {
+    footer .footer-container .container-first .customer-policies{
+      display: block;
+    }
+    footer .footer-container .container-first .customer-policies .heading{
+      margin-top: 14px;
+    }
+    footer .footer-container .container-first .useful-link-container .contact-div .contact, .all-right{
+      display: none;
+    } 
+  }
