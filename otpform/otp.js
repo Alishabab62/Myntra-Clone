@@ -101,14 +101,19 @@ async function  otpValidation(){
         body:JSON.stringify(data)
       });
     let res = await response.json();
-    if ((res.message == "User not exists!")) {
+    console.log(res.result)
+    if ((res.result == null)) {
       localStorage.setItem('user' , false);
+      localStorage.clear("userNumber");
+      localStorage.clear("userName");
       wrong.innerText = "User not exists!! Create account";
       setTimeout(() => {
         location = "../signup_Page/index.html";
       }, 1000);
-    } else {
-      localStorage.setItem('user' , true);
+    } 
+    else {
+      localStorage.setItem('userNumber' , res.result.mobileNumber);
+      localStorage.setItem('userName' , res.result.full_name);
       location = "../index.html";
     }
   }

@@ -53,3 +53,20 @@ console.log(res)
 });
 
 
+const loggedDiv=document.querySelector('.logged-div');
+const userName = localStorage.getItem('userName');
+const userNumber = localStorage.getItem('userNumber');
+if(userName != null){
+  loggedDiv.innerHTML = `<span>${userName}</span><br>
+  <span>${userNumber}</span>`
+  document.querySelector(".sign-up-div").style.display = "none";
+  document.querySelector("#log-out").style.display = "block"
+}
+else{
+  document.querySelector(".sign-up-div").style.display = "block";
+}
+
+const logOut = document.querySelector("#log-out");
+logOut.addEventListener("click",()=>{
+  localStorage.clear();
+})

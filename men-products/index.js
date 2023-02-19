@@ -156,48 +156,21 @@ console.log(res)
 
 
 
+const loggedDiv=document.querySelector('.logged-div');
+const userName = localStorage.getItem('userName');
+const userNumber = localStorage.getItem('userNumber');
+if(userName != null){
+  loggedDiv.innerHTML = `<span>${userName}</span><br>
+  <span>${userNumber}</span>`
+  document.querySelector(".sign-up-div").style.display = "none";
+  document.querySelector("#log-out").style.display = "block"
 
+}
+else{
+  document.querySelector(".sign-up-div").style.display = "block";
+}
 
-
-
-
-
-
-// addProduct = document.getElementById("add-product");
-// let productArray = [];
-// addProduct.addEventListener("click", (e) => {
-//   let item = e.target.parentElement.children[0].src;
-//   let itemName = e.target.parentElement.children[1].children[0].innerText;
-//   let description = e.target.parentElement.children[1].children[1].innerText;
-//   let price =e.target.parentElement.children[1].children[3].firstElementChild.innerText;
-//   console.log(item,itemName,description,price);
-//   if (productArray.length == 0) {
-//     productArray.push({
-//       itemLink: item,
-//       itemName: itemName,
-//       description: description,
-//       price: price,
-//     });
-//     localStorage.setItem("productArray", JSON.stringify(productArray));
-//   } else {
-//     let flag = true;
-//     let a = localStorage.getItem("productArray");
-//     let productArrayy = JSON.parse(a);
-//     productArrayy.forEach((value, i) => {
-//       if (value.itemLink == item) {
-//         flag = false;
-//       }
-//     });
-//     if (flag) {
-//       productArray.push({
-//         itemLink: item,
-//         itemName: itemName,
-//         description: description,
-//         price: price,
-//       });
-//     }
-//     localStorage.setItem("productArray", JSON.stringify(productArray));
-//   }
-// });
-
-
+const logOut = document.querySelector("#log-out");
+logOut.addEventListener("click",()=>{
+  localStorage.clear();
+})

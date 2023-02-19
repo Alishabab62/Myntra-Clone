@@ -61,10 +61,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 62px;
   margin: 0px 5px;
-  padding-bottom: 12px;
-  padding-top:19px ;
 }
 .header_icon_div i {
   color: rgb(0, 0, 0);
@@ -72,7 +69,10 @@
 }
 .header-icon-container{
   display: flex;
-  align-items: center ;
+  align-items: center;
+  justify-content: space-between;
+  width: 150px;
+  margin-left: 60px;
 }
 .header_icon_text{
   font-size: 12px;
@@ -164,6 +164,7 @@
 }
 .profile {
   display: none;
+  position: absolute;
 }
 .header_profile_submenu_div {
   border: 1px solid lightgray;
@@ -171,13 +172,15 @@
   color: #3e4152;
   cursor: pointer;
   position: absolute;
-  margin-top: 34.2%;
+  /* margin-top: 33%; */
   right: 50px;
+  bottom: -481px;
   padding: 1%;
   font-size: 14px;
 }
 .profile-menu{
-  padding-top: 38px;
+  padding-top: 26px;
+  padding-bottom: 5px;
 }
 .header_profile_submenu_div p{
   margin: 10px 0px;
@@ -187,20 +190,23 @@
   font-weight: 500;
 }
 .login_div {
-  border: 1px solid rgb(167, 164, 164);
   color: #ff3f6c;
-  display: inline;
-  padding: 8px;
+  width: fit-content;
 }
 .login_div a {
+  border: 1px solid rgb(167, 164, 164);
+  padding: 12px;
   color: #ff3f6c;
   text-decoration: none;
   font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Helvetica, Arial, sans-serif;
   font-size: 1em;
   font-weight: bold;
+  /* display: none; */
 }
-
+#log-out{
+  display: none;
+}
 .header_icon_div .bag{
   margin-bottom: 7px;
 }

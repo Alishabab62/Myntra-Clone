@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="add.css">
-    <link rel="stylesheet" href="../add-bag/style.css">
+    <!-- <link rel="stylesheet" href="../add-bag/style.css"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ADDRESS</title>
     <link rel="icon" type="image/x-icon" href="../images/myntra-logo-freelogovectors.net.svg">
@@ -34,22 +34,24 @@
        <p id="defaultaddress">DEFAULT ADDRESS</p>
     </div>
     <div class="user-address-container-upper-right">
-        <button id="addaddressbtn">ADD NEW ADDRESS</button>
+        <button id="addaddressBtn">ADD NEW ADDRESS</button>
     </div>
     </div>
 </div>
 
 
 
-    <div class="full">
+        <div class="full">
             <div class="user-address-container">
-                <input type="radio" id="radio" checked><p id = "_name">namehere</p>
-                <p id="_address">Lorem ipsum dolor sit amet.<span id="_pincode">-110096</span></p>
-                <p id ="_mobile">Mobile <span class="phone">-6363636363363</span> </p>
-                <p class="_delivery">• Pay on Delivery Available</p>
-                <button id="removebtnn">REMOVE</button>
-                <BUTTON>EDIT</BUTTON>
-        </div>
+                <!-- <div class="row row-1"><input type="radio" id="radio" checked><p id = "_name">Shabab ALi</p><div class="address_type">Home</div></div>
+                <div class="row"><p id="_address">Sudhhowala</p><span  id="_address" style="margin-left: 5px;">Chakrata Road</span></div>
+                <div class="row"><p id="_address" style="margin-top: 0px;"> Dehradun UK 248001 </p></div>
+                <div class="row"><p id ="_mobile">Mobile <span class="phone">: &nbsp; 6396042652</span> </p></div>
+                <div class="row"><p class="_delivery">• Pay on Delivery Available</p></div>
+                <div class="row" style="margin-top: 16px;"><button id="removebtnn">REMOVE</button>
+                                                           <BUTTON style="margin-left: 16px;">EDIT</BUTTON>
+                </div> -->
+            </div>
        
         <!-- <div class="add-new-address">Add New Address</div> -->
 
@@ -64,8 +66,10 @@
                 <input class="state" type="text" id="small1" placeholder="State*">
                 <input class="pin" type="text" placeholder="Pin Code*">
                 <h5 class="nones">SAVE ADDRESS AS</h5>
-                <button class="nones" id="b1">Home</button>
-                <button class="nones" id="b2">Work</button>
+                <div class="address-type">
+                    <input type="radio" name="addressType" id="Home" value="Home">Home
+                    <input type="radio" name="addressType" id="Work" value="Work">Work
+                </div>
                 <div class="outer nones">
                     <button id="b3">ADD ADDRESS</button>
                 </div>
@@ -78,7 +82,6 @@
                 <div class="image-delievery">
                     <img src="https://www.shutterstock.com/image-photo/classic-school-backpack-colorful-supplies-260nw-1902577153.jpg" alt="">
                     <div class="delieveryTime"></div>
-
                 </div>
             </div>
             <table>
@@ -101,7 +104,6 @@
                 </tr>
             </table>
             <a href="../payment page/index.html"><button id="continuebtn">CONTINUE</button></a>
-
         </div>
     </div>
     
