@@ -62,6 +62,7 @@
   align-items: center;
   justify-content: center;
   margin: 0px 5px;
+  padding: 20px 0px;
 }
 .header_icon_div i {
   color: rgb(0, 0, 0);
@@ -164,7 +165,6 @@
 }
 .profile {
   display: none;
-  position: absolute;
 }
 .header_profile_submenu_div {
   border: 1px solid lightgray;
@@ -172,15 +172,15 @@
   color: #3e4152;
   cursor: pointer;
   position: absolute;
-  /* margin-top: 33%; */
-  right: 50px;
-  bottom: -481px;
+  right: 20px;
+  top: 79px;
   padding: 1%;
   font-size: 14px;
+  z-index: 500;
 }
 .profile-menu{
-  padding-top: 26px;
-  padding-bottom: 5px;
+  /* padding-top: 26px; */
+  /* padding-bottom: 26px; */
 }
 .header_profile_submenu_div p{
   margin: 10px 0px;
@@ -210,7 +210,10 @@
 .header_icon_div .bag{
   margin-bottom: 7px;
 }
-
+.logged-div{
+  color: #9d9ea2;
+  font-weight: 600;
+}
 /* ========================For Tab and Mobile view============== */
 
 .burger_div{
