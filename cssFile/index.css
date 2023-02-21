@@ -128,3 +128,227 @@ h4 {
 }
 
 /* ========================Vineet Responsive code end ============== */
+
+
+@media only screen and (max-width: 1280px) {
+  .container .first-box .images1 img{
+    width: 150px;
+  }
+  .container .second-box .images2 img{
+    width: 172px;
+  }
+  .container .third-box .images3 img{
+    width: 150px;
+  }
+  .container .fourth-box .images4 img{
+    width: 150px;
+  }
+  .container .fifth-box .images5 img{
+    width: 305px;
+  }
+  .container .sixth-box .images6 img{
+    width: 150px;
+  }
+  .container .seventh-box .images7 img{
+    width: 150px;
+  }
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .container .first-box .images1 img{
+    width: 160px;
+  }
+  .container .second-box .images2 img{
+    width: 136px;
+  }
+  .container .third-box .images3 img{
+    width: 118px;
+  }
+  .container .fourth-box .images4 img{
+    width: 118px;
+  }
+  .container .fifth-box .images5 img{
+    width: 240px;
+  }
+  .container .sixth-box .images6 img{
+    width: 117px;
+  }
+  .container .seventh-box .images7 img{
+    width: 117px;
+  }
+}
+
+@media only screen and (max-width: 912px) {
+  .container .first-box .images1 img{
+    width: 105px;
+  }
+  .container .second-box .images2 img{
+    width: 120px;
+  }
+  .container .third-box .images3 img{
+    width: 104px;
+  }
+  .container .fourth-box .images4 img{
+    width: 104px;
+  }
+  .container .fifth-box .images5 img{
+    width: 212px;
+  }
+  .container .sixth-box .images6 img{
+    width: 103px;
+  }
+  .container .seventh-box .images7 img{
+    width: 103px;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .container .first-box .images1 img{
+    width: 94px;
+  }
+  .container .second-box .images2 img{
+    width: 108px;
+  }
+  .container .third-box .images3 img{
+    width: 94px;
+  }
+  .container .fourth-box .images4 img{
+    width: 94px;
+  }
+  .container .fifth-box .images5 img{
+    width: 192px;
+  }
+  .container .sixth-box .images6 img{
+    width: 94px;
+  }
+  .container .seventh-box .images7 img{
+    width: 94px;
+  }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .container .first-box .images1 img{
+    width: 87px;
+  }
+  .container .second-box .images2 img{
+    width: 100px;
+  }
+  .container .third-box .images3 img{
+    width: 87px;
+  }
+  .container .fourth-box .images4 img{
+    width: 87px;
+  }
+  .container .fifth-box .images5 img{
+    width: 177px;
+  }
+  .container .sixth-box .images6 img{
+    width: 87px;
+  }
+  .container .seventh-box .images7 img{
+    width: 87px;
+  }
+}
+
+
+@media only screen and (max-width: 540px) {
+  .container .first-box .images1 img{
+    width: 60px;
+  }
+  .container .second-box .images2 img{
+    width: 69px;
+  }
+  .container .third-box .images3 img{
+    width: 60px;
+  }
+  .container .fourth-box .images4 img{
+    width: 60px;
+  }
+  .container .fifth-box .images5 img{
+    width: 125px;
+  }
+  .container .sixth-box .images6 img{
+    width: 60px;
+  }
+  .container .seventh-box .images7 img{
+    width: 60px;
+  }
+}
+
+
+@media only screen and (max-width: 414px) {
+  .container .first-box .images1 img{
+    width: 60px;
+  }
+  .container .second-box .images2 img{
+    width: 51px;
+  }
+  .container .third-box .images3 img{
+    width: 44px;
+  }
+  .container .fourth-box .images4 img{
+    width: 44px;
+  }
+  .container .fifth-box .images5 img{
+    width: 93px;
+  }
+  .container .sixth-box .images6 img{
+    width: 44px;
+  }
+  .container .seventh-box .images7 img{
+    width: 44px;
+  }
+}
+
+
+@media only screen and (max-width: 394px) {
+  .container .first-box .images1 img{
+    width: 41px;
+  }
+  .container .second-box .images2 img{
+    width: 48px;
+  }
+  .container .third-box .images3 img{
+    width: 41px;
+  }
+  .container .fourth-box .images4 img{
+    width: 41px;
+  }
+  .container .fifth-box .images5 img{
+    width: 88px;
+  }
+  .container .sixth-box .images6 img{
+    width: 41px;
+  }
+  .container .seventh-box .images7 img{
+    width: 41px;
+  }
+}
+
+
+@media only screen and (max-width: 376px) {
+  .container .first-box .images1 img{
+    width: 40px;
+  }
+  .container .second-box .images2 img{
+    width: 46px;
+  }
+  .container .third-box .images3 img{
+    width: 40px;
+  }
+  .container .fourth-box .images4 img{
+    width: 40px;
+  }
+  .container .fifth-box .images5 img{
+    width: 84px;
+  }
+  .container .sixth-box .images6 img{
+    width: 40px;
+  }
+  .container .seventh-box .images7 img{
+    width: 40px;
+  }
+}
